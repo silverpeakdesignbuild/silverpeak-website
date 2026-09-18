@@ -81,16 +81,57 @@ These are meta-refresh + canonical stubs, not true 301s — GitHub Pages cannot 
 
 Pushing to `main` runs `.github/workflows/deploy.yml`, which builds, runs `npm run check`, and publishes `dist/` to GitHub Pages.
 
-One-time setup:
+The build targets whatever URL it is given, via three environment variables:
+
+| Variable | Set by | Meaning |
+|---|---|---|
+| `BASE_PATH` | `actions/configure-pages` | `/repo-name` on a project URL, empty on a domain root. Rewrites every `href`, `src`, `srcset` and `url()`. |
+| `SITE_ORIGIN` | `actions/configure-pages` | Origin used in `sitemap.xml`. |
+| `CUSTOM_DOMAIN` | you, in `deploy.yml` | `"1"` = live: ship `CNAME`, allow indexing. Anything else = preview: no `CNAME`, `noindex,nofollow`, `robots.txt` disallows everything. |
+
+### Phase 1 — preview on the GitHub URL
+
+`CUSTOM_DOMAIN: "0"` (the default in `deploy.yml`).
 
 1. Push this repo to GitHub.
-2. **Settings → Pages → Source: GitHub Actions**.
-3. Point DNS for `silverpeakdesignbuild.com` at GitHub Pages:
-   - `A` records for the apex: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - `CNAME` for `www` → `<user>.github.io`
-4. **Settings → Pages → Custom domain**: `silverpeakdesignbuild.com`, then tick **Enforce HTTPS** once the certificate is issued.
+2. **Settings -> Pages -> Source: GitHub Actions**.
+3. Wait for the **Actions** tab to go green. The site is at
+   `https://<user>.github.io/<repo>/`.
 
-`src/CNAME` is copied into `dist/` on every build, so the custom domain survives redeploys.
+The preview is deliberately `noindex` — it will not be found in search and
+cannot compete with the live site.
+
+### Phase 2 — go live on silverpeakdesignbuild.com
+
+1. Point DNS at GitHub Pages:
+   - apex `A` records: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - `www` `CNAME` -> `<user>.github.io`
+2. **Settings -> Pages -> Custom domain**: `silverpeakdesignbuild.com`, save.
+3. Edit `.github/workflows/deploy.yml` and set `CUSTOM_DOMAIN: "1"`. Commit and push.
+4. Once the certificate is issued, tick **Enforce HTTPS**.
+
+Step 3 is what removes `noindex` and restores `robots.txt`. Do not skip it, and
+do not do it before the domain resolves.
+
+### Building locally
+
+`npm run build` defaults to preview mode at the domain root. To reproduce a
+particular deploy, set the variables yourself:
+
+```bash
+# what the github.io preview looks like
+BASE_PATH=/your-repo SITE_ORIGIN=https://you.github.io npm run build
+BASE_PATH=/your-repo npm run check
+BASE_PATH=/your-repo npm run serve     # http://localhost:4173/your-repo/
+
+# what production looks like
+CUSTOM_DOMAIN=1 npm run build
+```
+
+On Windows PowerShell use `$env:BASE_PATH="/your-repo"; npm run build`.
+
+`src/CNAME` is only copied into `dist/` when `CUSTOM_DOMAIN=1`, so a preview
+deploy can never hijack your custom domain.
 
 ## Known limits
 
