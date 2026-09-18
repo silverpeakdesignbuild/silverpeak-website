@@ -380,3 +380,68 @@ html body.sp-unified-shell .faq-verify-link{
   html body.sp-unified-shell footer .footer-logo{width:96px!important;max-width:96px!important}
   html body.sp-unified-shell footer .footer-bottom{flex-direction:column!important}
 }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   UNIFIED SITE HEADER — single source of truth
+   ═══════════════════════════════════════════════════════════════════════
+   Each page stylesheet defines its own header rules, which had drifted into
+   four different variants. Measured in-browser at 1440px before this block:
+
+     variant                     nav weight  nav size  CTA button
+     home / about-us / privacy      700      12.48px   194x36 @12.48px
+     services                       650      12.16px   204x40 @13.28px
+     our-work                       600      12.48px   193x36, nav centred
+     blogs / faqs / contact / spr   700      12.48px   179x36 @11.52px
+
+   These values are the homepage's. shared-shell.css loads last on every
+   page, and these selectors outrank the per-page rules.
+
+   Deliberately NOT normalised here:
+     - header background / position: already consistent (fixed, transparent
+       at top, rgba(55,55,55,.92) once .is-scrolled)
+     - .nav-dropdown-menu links: smaller, sentence case, by design
+   ════════════════════════════════════════════════════════════════════ */
+
+html body.sp-unified-shell .site-header .nav-wrap{
+  display:flex!important;
+  align-items:center!important;
+  gap:24px!important;
+  max-width:1240px!important;
+}
+
+/* our-work carried margin-right:auto as well, which centred the nav
+   instead of right-aligning it — 164px adrift from every other page. */
+html body.sp-unified-shell .site-header .main-nav{
+  display:flex!important;
+  align-items:center!important;
+  gap:20px!important;
+  margin:0 0 0 auto!important;
+  flex:0 1 auto!important;
+}
+
+/* Top-level items only: not the CTA, not the dropdown menu contents. */
+html body.sp-unified-shell .site-header .main-nav > a:not(.nav-cta),
+html body.sp-unified-shell .site-header .main-nav > .nav-dropdown > .nav-dropdown-trigger{
+  font-size:12.48px!important;
+  font-weight:700!important;
+  letter-spacing:.624px!important;
+  text-transform:uppercase!important;
+  padding:28px 0!important;
+}
+
+/* line-height is pinned because services inherited 15.936px, making the
+   button 40px tall against 36px everywhere else. */
+html body.sp-unified-shell .site-header .main-nav > a.nav-cta{
+  font-size:12.48px!important;
+  font-weight:700!important;
+  letter-spacing:.624px!important;
+  line-height:1!important;
+  text-transform:uppercase!important;
+  padding:12px 16px!important;
+  border-radius:0!important;
+}
+
+html body.sp-unified-shell .site-header .brand img{
+  width:142px!important;
+  height:auto!important;
+}
