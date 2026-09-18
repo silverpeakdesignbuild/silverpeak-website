@@ -1,0 +1,47 @@
+:root{--orange:#d16002;--orange-dark:#ad4e00;--ink:#2d2d2d;--muted:#635f59;--cream:#f6f0e6;--cream-soft:#fffaf3;--line:rgba(45,45,45,.13);--max:1240px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream-soft);color:var(--ink);font-family:Poppins,Arial,Helvetica,sans-serif;line-height:1.75}
+body.menu-open{overflow:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font:inherit}
+.container{width:min(var(--max),calc(100% - 48px));margin-inline:auto}
+.skip-link{position:fixed;top:-80px;left:16px;z-index:1400;background:#fff;padding:12px 18px;box-shadow:0 12px 30px rgba(0,0,0,.15)}
+.skip-link:focus{top:16px}
+.menu-toggle{display:none;margin-left:auto;width:45px;height:45px;padding:8px;border:0;background:transparent;cursor:pointer}
+.menu-toggle span{display:block;height:2px;margin:7px 0;background:#fff}
+.eyebrow{margin:0 0 12px;color:var(--orange);font-size:.77rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+.policy-hero{position:relative;overflow:hidden;padding:160px 0 84px;background:linear-gradient(135deg,#202020 0%,#3a3835 62%,#4d4138 100%);color:#fff}
+.policy-hero::after{content:"";position:absolute;right:-140px;bottom:-210px;width:520px;height:520px;border:1px solid rgba(255,255,255,.11);border-radius:50%;box-shadow:0 0 0 78px rgba(255,255,255,.025),0 0 0 156px rgba(255,255,255,.018)}
+.policy-hero-inner{position:relative;z-index:1}
+.policy-hero .eyebrow{color:#f0a663}
+.policy-hero h1{max-width:860px;margin:0 0 22px;font-size:clamp(3rem,7vw,6.4rem);font-weight:800;letter-spacing:-.06em;line-height:.95;text-transform:uppercase}
+.policy-hero p:last-child{max-width:760px;margin:0;color:rgba(255,255,255,.8);font-size:1.05rem;line-height:1.75}
+.policy-section{padding:88px 0 110px;background:var(--cream-soft)}
+.policy-layout{display:grid;grid-template-columns:250px minmax(0,820px);gap:74px;align-items:start;justify-content:center}
+.policy-nav{position:sticky;top:108px;display:grid;padding:26px 0;border-top:3px solid var(--orange);border-bottom:1px solid var(--line)}
+.policy-nav-title{margin:0 0 13px;color:var(--ink);font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.policy-nav a{padding:7px 0;color:#6b655e;font-size:.82rem;line-height:1.4;transition:color .2s ease,padding-left .2s ease}
+.policy-nav a:hover,.policy-nav a:focus{padding-left:5px;color:var(--orange)}
+.policy-content{min-width:0}
+.last-updated{display:inline-flex;margin:0 0 30px;padding:8px 12px;background:#eee5d9;color:#5d5851;font-size:.76rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+.policy-content section{scroll-margin-top:105px;padding:0 0 34px;margin:0 0 36px;border-bottom:1px solid var(--line)}
+.policy-content h2{margin:0 0 15px;color:#292929;font-size:clamp(1.55rem,3vw,2.25rem);line-height:1.15;letter-spacing:-.025em}
+.policy-content p,.policy-content li{color:var(--muted);font-size:1rem;line-height:1.82}
+.policy-content p{margin:0 0 16px}
+.policy-content ul{margin:14px 0 0;padding-left:22px}
+.policy-content li{padding-left:5px;margin-bottom:7px}
+.policy-content a{color:var(--orange-dark);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.policy-content strong{color:#35312d}
+.policy-contact{padding:38px!important;margin-top:48px!important;background:#292929;border:0!important;color:#fff}
+.policy-contact .eyebrow{color:#f0a663;font-size:.73rem}
+.policy-contact h2{color:#fff}
+.policy-contact p,.policy-contact address{color:rgba(255,255,255,.76)}
+.policy-contact address{font-style:normal;line-height:1.8}
+.policy-contact address strong{color:#fff}
+.policy-contact a{color:#fff}
+.policy-note{margin-top:28px!important;color:#807970!important;font-size:.82rem!important;font-style:italic}
+@media(max-width:900px){.policy-layout{grid-template-columns:1fr;gap:36px}.policy-nav{position:static;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px}.policy-nav-title{grid-column:1/-1}.policy-hero{padding:138px 0 74px}}
+@media(max-width:720px){.container{width:min(100% - 32px,var(--max))}.menu-toggle{display:block}.policy-hero{padding:120px 0 62px}.policy-section{padding:64px 0 82px}.policy-nav{grid-template-columns:1fr}.policy-contact{padding:28px 22px!important}.policy-content p,.policy-content li{font-size:.96rem}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}

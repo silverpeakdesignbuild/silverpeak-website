@@ -1,0 +1,2223 @@
+:root {
+  --charcoal:#4f4f4f;
+  --charcoal-dark:#383838;
+  --cream:#f3efe7;
+  --cream-soft:#fbf8f1;
+  --white:#ffffff;
+  --gold:#D16002;
+  --ink:#2f2f2f;
+  --muted:#656565;
+  --line:rgba(79,79,79,.14);
+  --radius-xl:34px;
+  --radius-lg:24px;
+  --shadow:0 24px 70px rgba(31,31,30,.18);
+  --soft-shadow:0 16px 40px rgba(31,31,30,.10);
+  --container:1440px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Poppins',system-ui,sans-serif;background:var(--cream);color:var(--ink)}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+button{font-family:inherit}
+.container{width:min(var(--container),calc(100% - 48px));margin-inline:auto}
+.site-header{position:absolute;inset:0 0 auto 0;z-index:1000;background:transparent;transition:background .25s ease,box-shadow .25s ease,backdrop-filter .25s ease}
+.site-header.is-scrolled{position:fixed;background:rgba(79,79,79,.96);box-shadow:0 14px 44px rgba(0,0,0,.16);backdrop-filter:blur(14px)}
+.nav-wrap{min-height:94px;width:min(1680px,calc(100% - 48px));margin-inline:auto;display:flex;align-items:center;gap:34px}
+.brand img{width:190px;height:auto}
+.text-logo{color:var(--white);font-size:28px;font-weight:900;letter-spacing:-.04em;line-height:.9;display:grid;text-shadow:0 1px 8px rgba(0,0,0,.24)}
+.text-logo small{font-size:9px;letter-spacing:.12em;font-weight:500;margin-top:8px}
+.main-nav{display:flex;align-items:center;justify-content:center;gap:28px;margin-inline:auto}
+.main-nav>a,.nav-dropdown-trigger{color:var(--white);font-size:13px;line-height:1;letter-spacing:.16em;text-transform:uppercase;font-weight:850;text-shadow:0 1px 8px rgba(0,0,0,.28);padding:22px 0}
+.btn{min-height:58px;padding:0 32px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;gap:10px;font-size:13px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;border:1px solid transparent;transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--gold);color:var(--ink);border-color:var(--gold);box-shadow:0 12px 34px rgba(209,96,2,.28)}
+.btn-light{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.45);color:var(--white)}
+.btn-row{display:flex;flex-wrap:wrap;gap:16px;margin-top:28px}
+.menu-toggle{display:none}
+.nav-dropdown{position:relative;display:inline-flex;align-items:center;padding-bottom:22px;margin-bottom:-22px}
+.nav-dropdown-menu{position:absolute;top:calc(100% - 1px);left:50%;transform:translateX(-50%) translateY(10px);min-width:330px;padding:22px 30px;background:var(--cream-soft);border:1px solid var(--line);box-shadow:0 24px 70px rgba(0,0,0,.18);border-radius:0 0 28px 28px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .2s ease,transform .2s ease,visibility .2s ease}
+.nav-dropdown:hover .nav-dropdown-menu,.nav-dropdown:focus-within .nav-dropdown-menu{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0)}
+.nav-dropdown-menu a{display:block;padding:17px 10px;color:var(--ink)!important;-webkit-text-fill-color:var(--ink)!important;text-shadow:none!important;font-size:15px;font-weight:700;letter-spacing:.14em;border-bottom:1px solid var(--line)}
+.nav-dropdown-menu a:last-child{border-bottom:0}
+.nav-dropdown-menu a:hover{color:var(--gold)!important;-webkit-text-fill-color:var(--gold)!important}
+.hero{min-height:88vh;display:flex;align-items:center;color:var(--white);background:linear-gradient(90deg,rgba(31,31,30,.88),rgba(31,31,30,.62),rgba(31,31,30,.28)),url('/assets/background-001.webp');background-size:cover;background-position:center;padding-top:100px}
+.eyebrow{margin:0 0 18px;color:var(--gold);font-size:13px;font-weight:900;letter-spacing:.42em;text-transform:uppercase}
+h1,h2,h3,p{margin-top:0}
+h1{max-width:1040px;font-size:clamp(54px,8vw,128px);line-height:.94;letter-spacing:-.06em;margin-bottom:24px}
+h2{font-size:clamp(38px,5.4vw,92px);line-height:.96;letter-spacing:-.055em;margin-bottom:20px}
+h3{font-size:clamp(24px,2vw,36px);line-height:1.1;letter-spacing:-.035em;margin-bottom:14px}
+.lead{max-width:820px;color:rgba(255,255,255,.84);font-size:clamp(18px,1.5vw,24px);line-height:1.7}
+.section-pad{padding:clamp(78px,9vw,132px) 0}
+.section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.62fr);gap:40px;align-items:end;margin-bottom:38px}
+.section-head p{color:var(--muted);line-height:1.8;font-size:17px}
+.filter-bar{display:flex;flex-wrap:wrap;gap:12px;margin:34px 0 46px}
+.filter-btn{min-height:50px;border:1px solid var(--line);border-radius:999px;padding:0 20px;background:var(--cream-soft);color:var(--ink);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:900;cursor:pointer;transition:background .18s ease,color .18s ease,transform .18s ease}
+.filter-btn:hover,.filter-btn.is-active{background:var(--gold);color:var(--ink);transform:translateY(-1px)}
+.project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.project-card{background:var(--cream-soft);border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--soft-shadow);transition:transform .2s ease,box-shadow .2s ease}
+.project-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.project-card img{width:100%;height:340px;object-fit:cover}
+.project-card-body{padding:30px}
+.project-card p{color:var(--muted);line-height:1.75;font-size:16px}
+.meta-row{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 0}
+.meta-row span{min-height:36px;display:inline-flex;align-items:center;border-radius:999px;background:var(--charcoal);color:var(--white);padding:8px 12px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.project-detail-section:nth-of-type(even){background:var(--charcoal);color:var(--white)}
+.project-detail-section:nth-of-type(even) h2{color:var(--white)}
+.featured-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(30px,5vw,76px);align-items:center}
+.featured-image{border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow)}
+.featured-image img{width:100%;height:560px;object-fit:cover}
+.featured-copy p{color:var(--muted);line-height:1.85;font-size:17px}
+.project-detail-section:nth-of-type(even) .featured-copy p{color:rgba(255,255,255,.78)}
+.detail-list{display:grid;gap:12px;margin:28px 0 0}
+.detail-list div{display:grid;grid-template-columns:160px minmax(0,1fr);gap:14px;padding:14px 0;border-bottom:1px solid rgba(79,79,79,.18)}
+.project-detail-section:nth-of-type(even) .detail-list div{border-bottom-color:rgba(255,255,255,.14)}
+.detail-list strong{color:var(--gold);font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+.gallery-section{background:var(--cream)}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.gallery-item{margin:0;border-radius:22px;overflow:hidden;background:var(--cream-soft);box-shadow:var(--soft-shadow);border:1px solid var(--line)}
+.gallery-item.wide{grid-column:span 2}
+.gallery-item img{width:100%;height:360px;object-fit:cover;transition:transform .25s ease}
+.gallery-item:hover img{transform:scale(1.025)}
+.cta{padding:clamp(78px,9vw,132px) 0;background:var(--cream)}
+.cta-shell{padding:clamp(36px,6vw,74px);border-radius:var(--radius-xl);background:linear-gradient(135deg,rgba(59,59,59,.98),rgba(79,79,79,.92));color:var(--white);box-shadow:var(--shadow);text-align:left}
+.cta-shell h2{color:var(--white);font-size:clamp(42px,6vw,86px)}
+.cta-shell p{max-width:780px;color:rgba(255,255,255,.78);font-size:18px;line-height:1.8}
+
+@media(max-width:1180px){
+  .main-nav{display:none}
+  .menu-toggle{display:inline-flex;margin-left:auto;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:var(--white);border-radius:999px;padding:12px 18px;text-transform:uppercase;letter-spacing:.12em;font-weight:800}
+  .header-cta{display:none}
+  .section-head,.featured-grid{grid-template-columns:1fr}
+  .project-grid,.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:720px){
+  .container{width:min(100% - 32px,var(--container))}
+  .nav-wrap{width:min(100% - 32px,1680px)}
+  .brand img{width:150px}
+  .project-grid,.gallery-grid,.footer-grid{grid-template-columns:1fr}
+  .gallery-item.wide{grid-column:auto}
+  .gallery-item img,.project-card img,.featured-image img{height:310px}
+  h1{font-size:clamp(46px,14vw,76px)}
+  h2{font-size:clamp(36px,12vw,62px)}
+  .detail-list div{grid-template-columns:1fr}
+}
+
+
+/* Expanded project narrative summaries */
+.project-detail-section .project-narrative-kicker{
+  margin-top: 1.45rem;
+  margin-bottom: .35rem;
+  font-family: var(--font-heading, inherit);
+  font-size: .86rem;
+  line-height: 1.25;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--color-primary, #00203D);
+  font-weight: 800;
+}
+.project-detail-section .project-narrative-paragraph{
+  margin-top: .65rem;
+}
+
+/* Requested update: CTA button color only + slightly smaller tab fonts */
+.btn-primary,
+.header-cta,
+.primary-btn,
+.cta-button,
+.cta-btn,
+.nav-cta,
+.site-cta,
+.button-primary,
+.schedule-btn,
+button.btn-primary,
+input[type="submit"].btn-primary,
+a.btn-primary,
+a[href*="site-assessment"].btn,
+a[href*="site-assessment"].header-cta,
+a[href*="contact"].btn-primary {
+  background: #D16002 !important;
+  background-color: #D16002 !important;
+  border-color: #D16002 !important;
+  box-shadow: 0 12px 34px rgba(209,96,2, .28) !important;
+}
+
+.btn-primary:hover,
+.header-cta:hover,
+.primary-btn:hover,
+.cta-button:hover,
+.cta-btn:hover,
+.nav-cta:hover,
+.site-cta:hover,
+.button-primary:hover,
+.schedule-btn:hover,
+button.btn-primary:hover,
+input[type="submit"].btn-primary:hover,
+a.btn-primary:hover,
+a[href*="site-assessment"].btn:hover,
+a[href*="site-assessment"].header-cta:hover,
+a[href*="contact"].btn-primary:hover {
+  background: #D16002 !important;
+  background-color: #D16002 !important;
+  border-color: #D16002 !important;
+  box-shadow: 0 14px 36px rgba(209,96,2, .32) !important;
+}
+
+/* Make main navigation tabs a little smaller without changing their color */
+.main-nav > a,
+.main-nav .nav-dropdown-trigger,
+.nav-links > a,
+.nav-menu > a,
+.site-nav > a,
+header nav > a,
+header nav .nav-dropdown-trigger {
+  font-size: 12px !important;
+  letter-spacing: .12em !important;
+}
+
+.nav-dropdown-menu a,
+.dropdown-menu a,
+.sub-menu a {
+  font-size: 14px !important;
+  letter-spacing: .10em !important;
+}
+
+/* Same update as homepage: CTA buttons orange only + elegant smaller navigation tabs */
+.btn-primary,
+.header-cta,
+.primary-btn,
+.cta-button,
+.cta-btn,
+.nav-cta,
+.site-cta,
+.button-primary,
+.schedule-btn,
+button.btn-primary,
+input[type="submit"].btn-primary,
+a.btn-primary,
+a[href*="site-assessment"].btn,
+a[href*="site-assessment"].header-cta,
+a[href*="contact"].btn-primary {
+  background: #D16002 !important;
+  background-color: #D16002 !important;
+  border-color: #D16002 !important;
+  box-shadow: 0 12px 34px rgba(209,96,2, .28) !important;
+}
+
+.btn-primary:hover,
+.header-cta:hover,
+.primary-btn:hover,
+.cta-button:hover,
+.cta-btn:hover,
+.nav-cta:hover,
+.site-cta:hover,
+.button-primary:hover,
+.schedule-btn:hover,
+button.btn-primary:hover,
+input[type="submit"].btn-primary:hover,
+a.btn-primary:hover,
+a[href*="site-assessment"].btn:hover,
+a[href*="site-assessment"].header-cta:hover,
+a[href*="contact"].btn-primary:hover {
+  background: #D16002 !important;
+  background-color: #D16002 !important;
+  border-color: #D16002 !important;
+  box-shadow: 0 14px 36px rgba(209,96,2, .32) !important;
+}
+
+.main-nav,
+.nav-links,
+.nav-menu,
+.site-nav,
+header nav {
+  font-size: 11px !important;
+  letter-spacing: .11em !important;
+}
+
+.main-nav > a,
+.main-nav .nav-dropdown-trigger,
+.nav-links > a,
+.nav-menu > a,
+.site-nav > a,
+header nav > a,
+header nav .nav-dropdown-trigger {
+  font-size: 11px !important;
+  letter-spacing: .11em !important;
+}
+
+.nav-dropdown-menu a,
+.dropdown-menu a,
+.sub-menu a {
+  font-size: 13px !important;
+  letter-spacing: .09em !important;
+}
+
+.portfolio-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.portfolio-summary-grid article {
+  background: var(--cream-soft, #FFFCF7);
+  border: 1px solid var(--line, rgba(79,79,79,.14));
+  border-radius: var(--radius-lg, 24px);
+  padding: 28px;
+  box-shadow: var(--soft-shadow, 0 14px 40px rgba(0,0,0,.07));
+}
+
+.portfolio-summary-grid p {
+  color: var(--muted, #6B6B6B);
+}
+
+@media (max-width: 900px) {
+  .portfolio-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Requested fix: View Project buttons should not have orange fill */
+.view-project-no-orange,
+a.view-project-no-orange,
+button.view-project-no-orange,
+.view-project-no-orange:hover,
+a.view-project-no-orange:hover,
+button.view-project-no-orange:hover {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Keep header and true primary CTA buttons orange */
+.site-header .header-cta,
+.site-header a.header-cta,
+.site-header .btn-primary:not(.view-project-no-orange),
+.site-header a.btn-primary:not(.view-project-no-orange),
+.header-cta:not(.view-project-no-orange),
+.btn-primary:not(.view-project-no-orange),
+.primary-btn:not(.view-project-no-orange),
+.cta-button:not(.view-project-no-orange),
+.cta-btn:not(.view-project-no-orange),
+.nav-cta:not(.view-project-no-orange),
+.site-cta:not(.view-project-no-orange),
+.button-primary:not(.view-project-no-orange),
+.schedule-btn:not(.view-project-no-orange),
+input[type="submit"].btn-primary {
+  background: #D16002 !important;
+  background-color: #D16002 !important;
+  border-color: #D16002 !important;
+  box-shadow: 0 12px 34px rgba(209,96,2, .28) !important;
+}
+
+/* Match homepage/About hero height so the cream section does not show too early */
+main > .hero:first-child {
+  min-height: 100vh !important;
+  padding: 150px 0 58px !important;
+  display: flex !important;
+  align-items: center !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+
+main > .hero:first-child::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: auto 0 0 0 !important;
+  height: 32% !important;
+  background: linear-gradient(0deg, rgba(79,79,79,.82), transparent) !important;
+  pointer-events: none !important;
+}
+
+@media (max-width: 900px) {
+  main > .hero:first-child {
+    min-height: 88vh !important;
+    padding: 124px 0 46px !important;
+  }
+}
+
+/* Match the Homepage/About/Contact hero spacing */
+main > .hero:first-child {
+  position: relative !important;
+  min-height: 82vh !important;
+  padding: 140px 0 180px !important;
+  display: flex !important;
+  align-items: center !important;
+  overflow: hidden !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+
+main > .hero:first-child::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: auto 0 0 0 !important;
+  height: 190px !important;
+  background: linear-gradient(180deg, transparent, rgba(79,79,79,.65)) !important;
+  pointer-events: none !important;
+  z-index: 1 !important;
+}
+
+main > .hero:first-child > .container {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+main > .hero:first-child + .section-pad {
+  position: relative !important;
+  z-index: 3 !important;
+  margin-top: -24px !important;
+  border-radius: 36px 36px 0 0 !important;
+  overflow: hidden !important;
+}
+
+@media (max-width: 900px) {
+  main > .hero:first-child {
+    min-height: 88vh !important;
+    padding: 124px 0 130px !important;
+  }
+}
+
+/* Requested fix: View Project button font color should be white */
+.view-project-white-text,
+a.view-project-white-text,
+button.view-project-white-text,
+.view-project-no-orange,
+a.view-project-no-orange,
+button.view-project-no-orange {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.view-project-white-text:hover,
+a.view-project-white-text:hover,
+button.view-project-white-text:hover,
+.view-project-no-orange:hover,
+a.view-project-no-orange:hover,
+button.view-project-no-orange:hover {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Portfolio update: lighter orange CTAs, smaller hero title, and project sub-pages */
+body.portfolio-page {
+  --portfolio-cta-orange: #D16002;
+  --portfolio-cta-orange-hover: #D16002;
+}
+
+body.portfolio-page .btn-primary:not(.view-project-no-orange),
+body.portfolio-page .header-cta,
+body.portfolio-page a.btn-primary:not(.view-project-no-orange),
+body.portfolio-page button.btn-primary:not(.view-project-no-orange) {
+  background: var(--portfolio-cta-orange) !important;
+  background-color: var(--portfolio-cta-orange) !important;
+  border-color: var(--portfolio-cta-orange) !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  box-shadow: 0 12px 34px rgba(209,96,2, .28) !important;
+}
+body.portfolio-page .btn-primary:not(.view-project-no-orange):hover,
+body.portfolio-page .header-cta:hover,
+body.portfolio-page a.btn-primary:not(.view-project-no-orange):hover,
+body.portfolio-page button.btn-primary:not(.view-project-no-orange):hover {
+  background: var(--portfolio-cta-orange-hover) !important;
+  background-color: var(--portfolio-cta-orange-hover) !important;
+  border-color: var(--portfolio-cta-orange-hover) !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  box-shadow: 0 14px 38px rgba(209,96,2, .32) !important;
+}
+
+/* Keep the View Projects control neutral because it is a navigation control, not a CTA. */
+body.portfolio-page .view-project-no-orange,
+body.portfolio-page .view-project-no-orange:hover {
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+}
+
+/* Smaller, calmer hero heading to match the updated homepage scale. */
+body.portfolio-page main > .hero:first-child h1 {
+  max-width: 920px !important;
+  font-size: clamp(44px, 6vw, 86px) !important;
+  line-height: 1.01 !important;
+  letter-spacing: -0.045em !important;
+}
+
+/* Our Work project dropdown */
+body.portfolio-page .portfolio-dropdown-menu {
+  width: min(680px, calc(100vw - 40px));
+  min-width: 620px;
+  max-height: min(72vh, 680px);
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 22px;
+  overscroll-behavior: contain;
+}
+body.portfolio-page .portfolio-dropdown-menu a {
+  white-space: normal;
+  line-height: 1.35;
+  padding: 13px 0;
+}
+body.portfolio-page .portfolio-dropdown-menu a.is-active {
+  color: var(--ink) !important;
+  -webkit-text-fill-color: var(--ink) !important;
+  font-weight: 900;
+  background: rgba(79,79,79,.06);
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Same-file project sub-pages. The overview remains short; only the selected project is shown. */
+body.portfolio-page.portfolio-js-ready [data-portfolio-view] {
+  display: none !important;
+}
+body.portfolio-page.portfolio-js-ready [data-portfolio-view].is-active {
+  display: block !important;
+}
+body.portfolio-page.portfolio-subpage-active header.site-header,
+body.portfolio-page.portfolio-subpage-active header.site-header.is-scrolled {
+  position: fixed !important;
+  inset: 0 0 auto 0 !important;
+  background: rgba(79,79,79,.97) !important;
+  box-shadow: 0 14px 44px rgba(0,0,0,.16) !important;
+  backdrop-filter: blur(14px) !important;
+}
+body.portfolio-page.portfolio-subpage-active .project-detail-section.is-active {
+  padding-top: clamp(150px, 13vw, 190px) !important;
+}
+body.portfolio-page .portfolio-back-link {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 24px;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+body.portfolio-page .portfolio-back-link:hover {
+  color: var(--portfolio-cta-orange-hover);
+}
+
+@media (max-width: 1180px) {
+  body.portfolio-page .portfolio-dropdown-menu {
+    width: auto;
+    min-width: 0;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 720px) {
+  body.portfolio-page main > .hero:first-child h1 {
+    font-size: clamp(40px, 12vw, 62px) !important;
+    line-height: 1.04 !important;
+  }
+  body.portfolio-page.portfolio-subpage-active .project-detail-section.is-active {
+    padding-top: 132px !important;
+  }
+}
+
+:root {
+  --portfolio-cta: #D16002;
+  --portfolio-cta-hover: #D16002;
+}
+
+/* Match the cleaner homepage feel: smaller, lighter typography */
+body.portfolio-page h1 {
+  max-width: 900px !important;
+  font-size: clamp(42px, 5.6vw, 72px) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.04em !important;
+  font-weight: 700 !important;
+}
+body.portfolio-page .lead {
+  max-width: 760px !important;
+  font-size: clamp(17px, 1.45vw, 21px) !important;
+  line-height: 1.72 !important;
+}
+body.portfolio-page .section-pad {
+  padding: clamp(64px, 7vw, 92px) 0 !important;
+}
+body.portfolio-page .section-head {
+  margin-bottom: 28px !important;
+}
+body.portfolio-page h2,
+body.portfolio-page .featured-copy h2,
+body.portfolio-page .gallery-section h2,
+body.portfolio-page .cta-shell h2,
+body.portfolio-page .section-head h2 {
+  font-size: clamp(28px, 3.2vw, 42px) !important;
+  line-height: 1.14 !important;
+  letter-spacing: -0.02em !important;
+  font-weight: 600 !important;
+  margin-bottom: 16px !important;
+}
+body.portfolio-page h3,
+body.portfolio-page .project-card h3,
+body.portfolio-page .project-card-body h3 {
+  font-size: clamp(19px, 1.9vw, 27px) !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.01em !important;
+  font-weight: 500 !important;
+  margin-bottom: 10px !important;
+}
+body.portfolio-page p,
+body.portfolio-page .section-head p,
+body.portfolio-page .featured-copy p,
+body.portfolio-page .project-card p,
+body.portfolio-page .gallery-section p,
+body.portfolio-page .cta-shell p,
+body.portfolio-page .detail-list span {
+  font-size: 16px !important;
+  line-height: 1.78 !important;
+}
+body.portfolio-page .eyebrow,
+body.portfolio-page .detail-list strong,
+body.portfolio-page .portfolio-back-link,
+body.portfolio-page .meta,
+body.portfolio-page .pill {
+  color: var(--portfolio-cta) !important;
+}
+body.portfolio-page .eyebrow,
+body.portfolio-page .detail-list strong,
+body.portfolio-page .meta,
+body.portfolio-page .pill {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.16em !important;
+}
+body.portfolio-page .detail-list div {
+  padding: 12px 0 !important;
+}
+body.portfolio-page .project-card-body {
+  padding: 24px !important;
+}
+body.portfolio-page .project-card img {
+  height: 300px !important;
+}
+body.portfolio-page .project-card p {
+  margin-bottom: 14px !important;
+}
+
+/* Exact CTA orange with white text */
+body.portfolio-page .btn-primary,
+body.portfolio-page .site-header .btn,
+body.portfolio-page .nav-actions .btn,
+body.portfolio-page a[href="site-assessment.html"].btn,
+body.portfolio-page a[href="site-assessment.html"] {
+  background: var(--portfolio-cta) !important;
+  background-color: var(--portfolio-cta) !important;
+  border-color: var(--portfolio-cta) !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  box-shadow: 0 12px 30px rgba(209,96,2,.26) !important;
+}
+body.portfolio-page .btn-primary:hover,
+body.portfolio-page .site-header .btn:hover,
+body.portfolio-page .nav-actions .btn:hover,
+body.portfolio-page a[href="site-assessment.html"].btn:hover,
+body.portfolio-page a[href="site-assessment.html"]:hover {
+  background: var(--portfolio-cta-hover) !important;
+  background-color: var(--portfolio-cta-hover) !important;
+  border-color: var(--portfolio-cta-hover) !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Keep secondary buttons cleaner and lighter */
+body.portfolio-page .btn-light {
+  font-weight: 600 !important;
+}
+
+@media (max-width: 980px) {
+  body.portfolio-page h1 {
+    font-size: clamp(38px, 9vw, 56px) !important;
+  }
+  body.portfolio-page h2,
+  body.portfolio-page .featured-copy h2,
+  body.portfolio-page .gallery-section h2,
+  body.portfolio-page .cta-shell h2,
+  body.portfolio-page .section-head h2 {
+    font-size: clamp(26px, 6vw, 36px) !important;
+  }
+  body.portfolio-page h3,
+  body.portfolio-page .project-card h3,
+  body.portfolio-page .project-card-body h3 {
+    font-size: clamp(18px, 4.5vw, 24px) !important;
+  }
+}
+
+:root { --orange: #D16002 !important; --homepage-cta-orange: #D16002 !important; }
+.btn-primary,
+.btn-primary:visited,
+button.btn-primary,
+input[type="submit"].btn-primary,
+a.btn-primary,
+.inline-cta-button,
+.hero .btn-primary,
+.cta .btn-primary,
+.nav-actions .btn-primary,
+a[href*="site-assessment"].btn-primary,
+a[href*="contact"].btn-primary {
+  background: #D16002 !important;
+  background-color: #D16002 !important;
+  border-color: #D16002 !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  box-shadow: 0 12px 28px rgba(209,96,2,.24) !important;
+}
+.btn-primary *,
+.inline-cta-button *,
+.hero .btn-primary *,
+.cta .btn-primary * {
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+button.btn-primary:hover,
+input[type="submit"].btn-primary:hover,
+a.btn-primary:hover,
+.inline-cta-button:hover,
+.hero .btn-primary:hover,
+.cta .btn-primary:hover,
+.nav-actions .btn-primary:hover,
+a[href*="site-assessment"].btn-primary:hover,
+a[href*="contact"].btn-primary:hover {
+  background: #D16002 !important;
+  background-color: #D16002 !important;
+  border-color: #D16002 !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  box-shadow: 0 12px 28px rgba(209,96,2,.24) !important;
+}
+
+/* Unified header CTA across every tab */
+.site-header .header-cta-unified,
+header .header-cta-unified,
+.site-header a.header-cta-unified,
+header a.header-cta-unified {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 50px !important;
+  padding: 15px 24px !important;
+  border: 1px solid #D16002 !important;
+  border-radius: 999px !important;
+  background: #D16002 !important;
+  background-color: #D16002 !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+  line-height: 1 !important;
+  letter-spacing: .12em !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
+  box-shadow: 0 12px 28px rgba(209,96,2,.24) !important;
+}
+.site-header .header-cta-unified:hover,
+.site-header .header-cta-unified:focus,
+header .header-cta-unified:hover,
+header .header-cta-unified:focus {
+  background: #D16002 !important;
+  background-color: #D16002 !important;
+  border-color: #D16002 !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  transform: translateY(-2px);
+}
+.site-header .header-cta-unified *,
+header .header-cta-unified * {
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
+  font-weight: 700 !important;
+}
+@media (max-width: 1200px) {
+  .site-header .header-cta-unified,
+  header .header-cta-unified {
+    min-height: 46px !important;
+    padding: 14px 18px !important;
+    font-size: 11px !important;
+  }
+}
+
+/* Match the hero heading size used on the homepage and the other tabs. */
+body.portfolio-page main > .hero:first-child h1 {
+  max-width: 900px !important;
+  margin-bottom: 22px !important;
+  font-size: clamp(42px, 5.6vw, 72px) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.04em !important;
+  font-weight: 700 !important;
+}
+@media (max-width: 980px) {
+  body.portfolio-page main > .hero:first-child h1 {
+    font-size: clamp(38px, 9vw, 56px) !important;
+  }
+}
+
+body.portfolio-page .project-card-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 235px;
+}
+body.portfolio-page .project-card h3 {
+  font-size: clamp(1.55rem, 2vw, 1.85rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0 0 12px;
+}
+body.portfolio-page .project-card .meta-row {
+  margin-top: auto;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+body.portfolio-page .project-card-body > p {
+  font-size: 15px;
+}
+
+/* Portfolio update: descriptive titles restored, while keeping the enhanced project images from the latest approved image set. */
+
+body.portfolio-page .project-card:nth-child(6) img,
+body.portfolio-page .project-card:nth-child(7) img,
+body.portfolio-page .project-card:nth-child(8) img {
+  width: 100% !important;
+  height: 340px !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+body.portfolio-page .project-detail-section:nth-of-type(7) .featured-image img,
+body.portfolio-page .project-detail-section:nth-of-type(8) .featured-image img,
+body.portfolio-page .project-detail-section:nth-of-type(9) .featured-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+
+/* Elegant visible gallery button for project sub-pages */
+body.portfolio-page .project-detail-section .btn-row {
+  align-items: center !important;
+  gap: 14px !important;
+  flex-wrap: wrap !important;
+}
+body.portfolio-page a.btn.gallery-cta,
+body.portfolio-page a.btn.btn-light.gallery-cta,
+body.portfolio-page a.btn.btn-light[href^="#gallery-"] {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  min-height: 52px !important;
+  padding: 14px 22px !important;
+  border-radius: 999px !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border: 1px solid rgba(31, 35, 38, 0.16) !important;
+  color: #1F2326 !important;
+  -webkit-text-fill-color: #1F2326 !important;
+  box-shadow: 0 14px 34px rgba(20, 24, 28, 0.14) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.01em !important;
+  text-decoration: none !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+body.portfolio-page a.btn.gallery-cta::after,
+body.portfolio-page a.btn.btn-light[href^="#gallery-"]::after {
+  content: "→";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--portfolio-cta, #D16002);
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+  font-size: 16px;
+  line-height: 1;
+  box-shadow: 0 8px 18px rgba(209,96,2, 0.28);
+  transition: transform .22s ease, background-color .22s ease, box-shadow .22s ease;
+}
+body.portfolio-page a.btn.gallery-cta:hover,
+body.portfolio-page a.btn.btn-light[href^="#gallery-"]:hover {
+  transform: translateY(-2px) !important;
+  border-color: rgba(209,96,2, 0.45) !important;
+  color: #1F2326 !important;
+  -webkit-text-fill-color: #1F2326 !important;
+  box-shadow: 0 18px 42px rgba(20, 24, 28, 0.18) !important;
+}
+body.portfolio-page a.btn.gallery-cta:hover::after,
+body.portfolio-page a.btn.btn-light[href^="#gallery-"]:hover::after {
+  transform: translateX(3px);
+  background: var(--portfolio-cta-hover, #D16002);
+  box-shadow: 0 10px 22px rgba(209,96,2, 0.34);
+}
+body.portfolio-page .project-detail-section:nth-of-type(even) a.btn.gallery-cta,
+body.portfolio-page .project-detail-section:nth-of-type(even) a.btn.btn-light[href^="#gallery-"] {
+  background: rgba(255, 255, 255, 0.96) !important;
+  background-color: rgba(255, 255, 255, 0.96) !important;
+  border-color: rgba(255, 255, 255, 0.34) !important;
+  color: #1F2326 !important;
+  -webkit-text-fill-color: #1F2326 !important;
+}
+body.portfolio-page .gallery-section {
+  scroll-margin-top: 120px !important;
+}
+@media (max-width: 720px) {
+  body.portfolio-page a.btn.gallery-cta,
+  body.portfolio-page a.btn.btn-light[href^="#gallery-"] {
+    width: 100% !important;
+  }
+}
+
+/* Keep View Project Gallery directly beside the primary CTA on project pages */
+body.portfolio-page .project-detail-section .featured-copy .btn-row {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 14px !important;
+  flex-wrap: wrap !important;
+  margin-top: 26px !important;
+}
+body.portfolio-page .project-detail-section .featured-copy .btn-row .btn {
+  width: auto !important;
+  white-space: nowrap !important;
+  margin: 0 !important;
+}
+body.portfolio-page .project-detail-section .featured-copy .btn-row .gallery-cta,
+body.portfolio-page .project-detail-section .featured-copy .btn-row a.btn.btn-light[href^="#gallery-"] {
+  margin-left: 0 !important;
+}
+@media (max-width: 640px) {
+  body.portfolio-page .project-detail-section .featured-copy .btn-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  body.portfolio-page .project-detail-section .featured-copy .btn-row .btn {
+    width: 100% !important;
+    white-space: normal !important;
+  }
+}
+
+body.portfolio-page .project-detail-section .featured-copy > p {
+  font-size: 16.5px;
+  line-height: 1.78;
+  margin: 0 0 16px;
+}
+body.portfolio-page .project-detail-section .btn-row {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 14px !important;
+  flex-wrap: wrap !important;
+  margin-top: 28px !important;
+}
+body.portfolio-page .project-detail-section .btn-row .btn {
+  margin: 0 !important;
+}
+body.portfolio-page .project-detail-section .btn-row a[href^="#gallery"] {
+  background: rgba(255,255,255,.96) !important;
+  border: 1px solid rgba(209,96,2,.42) !important;
+  color: #1f2a24 !important;
+  box-shadow: 0 12px 28px rgba(0,0,0,.10) !important;
+  padding-right: 24px !important;
+}
+body.portfolio-page .project-detail-section .btn-row a[href^="#gallery"]::after {
+  content: " →";
+  color: #D16002;
+  font-weight: 700;
+}
+body.portfolio-page .project-detail-section .btn-row a[href^="#gallery"]:hover {
+  transform: translateY(-2px);
+  border-color: #D16002 !important;
+  box-shadow: 0 16px 36px rgba(0,0,0,.16) !important;
+}
+@media (max-width: 640px) {
+  body.portfolio-page .project-detail-section .btn-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  body.portfolio-page .project-detail-section .btn-row .btn {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+}
+
+/* Primary project long-form content with image callouts */
+body.portfolio-page .primary-project-story {
+  margin-top: clamp(34px, 4vw, 58px) !important;
+}
+body.portfolio-page .primary-story-head {
+  max-width: 920px;
+  margin-bottom: 24px;
+}
+body.portfolio-page .primary-story-head h3,
+body.portfolio-page .primary-story-summary h3 {
+  font-size: clamp(26px, 3vw, 40px) !important;
+  line-height: 1.16 !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em !important;
+  margin: 0 0 12px !important;
+}
+body.portfolio-page .primary-story-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+body.portfolio-page .primary-story-card {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.92fr) minmax(0, 1.08fr);
+  gap: clamp(18px, 3vw, 34px);
+  align-items: center;
+  padding: clamp(16px, 2.2vw, 26px);
+  background: rgba(255,255,255,.62);
+  border: 1px solid rgba(79,79,79,.12);
+  border-radius: 28px;
+  box-shadow: 0 18px 48px rgba(31,31,30,.08);
+}
+body.portfolio-page .primary-story-card:nth-child(even) .primary-story-image {
+  order: 2;
+}
+body.portfolio-page .primary-story-card:nth-child(even) .primary-story-copy {
+  order: 1;
+}
+body.portfolio-page .primary-story-image img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 16px 34px rgba(31,31,30,.14);
+}
+body.portfolio-page .primary-story-copy h4 {
+  font-size: clamp(20px, 2vw, 28px) !important;
+  line-height: 1.22 !important;
+  letter-spacing: -0.01em !important;
+  margin: 0 0 10px !important;
+  font-weight: 600 !important;
+  color: var(--ink) !important;
+}
+body.portfolio-page .primary-story-copy p,
+body.portfolio-page .primary-story-summary p {
+  font-size: 16.5px !important;
+  line-height: 1.82 !important;
+  margin: 0 0 14px !important;
+}
+body.portfolio-page .primary-story-summary {
+  margin-top: 24px;
+  padding: clamp(22px, 3vw, 36px);
+  border-radius: 30px;
+  background: rgba(79,79,79,.06);
+  border: 1px solid rgba(79,79,79,.12);
+}
+@media (max-width: 860px) {
+  body.portfolio-page .primary-story-card,
+  body.portfolio-page .primary-story-card:nth-child(even) {
+    grid-template-columns: 1fr;
+  }
+  body.portfolio-page .primary-story-card:nth-child(even) .primary-story-image,
+  body.portfolio-page .primary-story-card:nth-child(even) .primary-story-copy {
+    order: initial;
+  }
+}
+
+body.portfolio-page .primary-story-image {
+  min-height: 0 !important;
+}
+body.portfolio-page .primary-story-image img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 260px !important;
+  max-height: 420px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+@media (max-width: 860px) {
+  body.portfolio-page .primary-story-image img {
+    min-height: 220px !important;
+    max-height: 340px !important;
+  }
+}
+
+body.portfolio-page #warm-wood-bathroom-remodel .featured-grid {
+  align-items: center !important;
+  gap: clamp(28px, 4vw, 58px) !important;
+}
+body.portfolio-page #warm-wood-bathroom-remodel .featured-copy {
+  max-width: 760px !important;
+}
+body.portfolio-page #warm-wood-bathroom-remodel .featured-copy h2 {
+  font-size: clamp(38px, 4.2vw, 68px) !important;
+  line-height: 1.02 !important;
+  margin-bottom: 18px !important;
+}
+body.portfolio-page #warm-wood-bathroom-remodel .featured-copy .project-narrative-paragraph {
+  font-size: 16.5px !important;
+  line-height: 1.72 !important;
+  margin-bottom: 14px !important;
+}
+body.portfolio-page .compact-project-story {
+  margin-top: clamp(46px, 6vw, 86px) !important;
+}
+body.portfolio-page .compact-story-head {
+  display: grid !important;
+  grid-template-columns: minmax(0,.78fr) minmax(280px,.62fr) !important;
+  gap: 28px !important;
+  align-items: end !important;
+  margin-bottom: clamp(28px, 4vw, 48px) !important;
+}
+body.portfolio-page .compact-story-head h3 {
+  font-size: clamp(28px, 3.2vw, 46px) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.025em !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
+  color: var(--ink) !important;
+}
+body.portfolio-page .compact-story-head p:not(.eyebrow) {
+  font-size: 16px !important;
+  line-height: 1.72 !important;
+  margin: 0 !important;
+  color: var(--muted) !important;
+}
+body.portfolio-page .compact-story-wrap {
+  display: grid !important;
+  gap: clamp(24px, 3vw, 38px) !important;
+}
+body.portfolio-page .compact-story-row {
+  display: grid !important;
+  grid-template-columns: minmax(320px, .94fr) minmax(0, 1.06fr) !important;
+  gap: clamp(24px, 3.5vw, 52px) !important;
+  align-items: center !important;
+  padding: clamp(18px, 2.4vw, 30px) !important;
+  border-radius: 26px !important;
+  background: rgba(255,255,255,.66) !important;
+  border: 1px solid rgba(79,79,79,.12) !important;
+  box-shadow: 0 16px 40px rgba(31,31,30,.06) !important;
+}
+body.portfolio-page .compact-story-row.is-reverse .compact-story-image {
+  order: 2 !important;
+}
+body.portfolio-page .compact-story-row.is-reverse .compact-story-copy {
+  order: 1 !important;
+}
+body.portfolio-page .compact-story-image {
+  margin: 0 !important;
+  overflow: hidden !important;
+  border-radius: 22px !important;
+  background: var(--cream-soft) !important;
+  box-shadow: 0 14px 32px rgba(31,31,30,.12) !important;
+}
+body.portfolio-page .compact-story-image img {
+  display: block !important;
+  width: 100% !important;
+  height: clamp(260px, 26vw, 365px) !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+body.portfolio-page .compact-story-copy {
+  max-width: 650px !important;
+}
+body.portfolio-page .compact-story-eyebrow {
+  margin: 0 0 8px !important;
+  color: #D16002 !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  letter-spacing: .18em !important;
+  text-transform: uppercase !important;
+}
+body.portfolio-page .compact-story-copy h4 {
+  font-size: clamp(22px, 2vw, 32px) !important;
+  line-height: 1.18 !important;
+  letter-spacing: -0.012em !important;
+  font-weight: 600 !important;
+  margin: 0 0 12px !important;
+  color: var(--ink) !important;
+  text-transform: none !important;
+}
+body.portfolio-page .compact-story-copy p:not(.compact-story-eyebrow) {
+  font-size: 15.8px !important;
+  line-height: 1.72 !important;
+  color: var(--muted) !important;
+  margin: 0 0 11px !important;
+}
+body.portfolio-page .compact-renovation-summary {
+  margin-top: clamp(28px, 4vw, 52px) !important;
+  padding: clamp(24px, 3vw, 38px) !important;
+  border-radius: 26px !important;
+  background: rgba(79,79,79,.06) !important;
+  border: 1px solid rgba(79,79,79,.12) !important;
+}
+body.portfolio-page .compact-renovation-summary h3 {
+  font-size: clamp(24px, 2.4vw, 36px) !important;
+  line-height: 1.16 !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.018em !important;
+  margin: 0 0 18px !important;
+  color: var(--ink) !important;
+}
+body.portfolio-page .compact-summary-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+}
+body.portfolio-page .compact-summary-grid div {
+  padding: 18px !important;
+  border-radius: 18px !important;
+  background: rgba(255,255,255,.72) !important;
+  border: 1px solid rgba(79,79,79,.1) !important;
+}
+body.portfolio-page .compact-summary-grid strong {
+  display: block !important;
+  margin-bottom: 7px !important;
+  color: var(--ink) !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+}
+body.portfolio-page .compact-summary-grid p {
+  color: var(--muted) !important;
+  font-size: 15px !important;
+  line-height: 1.65 !important;
+  margin: 0 !important;
+}
+@media (max-width: 980px) {
+  body.portfolio-page .compact-story-head,
+  body.portfolio-page .compact-story-row {
+    grid-template-columns: 1fr !important;
+  }
+  body.portfolio-page .compact-story-row.is-reverse .compact-story-image,
+  body.portfolio-page .compact-story-row.is-reverse .compact-story-copy {
+    order: initial !important;
+  }
+  body.portfolio-page .compact-story-copy {
+    max-width: none !important;
+  }
+  body.portfolio-page .compact-summary-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media (max-width: 640px) {
+  body.portfolio-page .compact-story-row {
+    padding: 16px !important;
+  }
+  body.portfolio-page .compact-story-image img {
+    height: 240px !important;
+  }
+}
+
+/* Project 1 requested refinements: align intro, reduce oversized headings, and keep gallery compact. */
+body.portfolio-page .compact-story-head {
+  display: block !important;
+  max-width: 780px !important;
+  margin: 0 0 clamp(24px, 3vw, 38px) !important;
+}
+body.portfolio-page .compact-story-head h3 {
+  display: none !important;
+}
+body.portfolio-page .compact-story-head p:not(.eyebrow) {
+  max-width: 760px !important;
+  font-size: 15.8px !important;
+  line-height: 1.7 !important;
+}
+body.portfolio-page .compact-story-copy h4 {
+  font-size: clamp(20px, 1.55vw, 26px) !important;
+  line-height: 1.2 !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.006em !important;
+}
+body.portfolio-page .compact-story-row {
+  gap: clamp(20px, 3vw, 42px) !important;
+}
+body.portfolio-page .compact-renovation-summary h3 {
+  font-size: clamp(21px, 2vw, 30px) !important;
+  font-weight: 600 !important;
+}
+body.portfolio-page #gallery-warm-wood-bathroom-remodel .section-head {
+  align-items: start !important;
+  margin-bottom: 30px !important;
+}
+body.portfolio-page #gallery-warm-wood-bathroom-remodel .section-head h2 {
+  font-size: clamp(34px, 4vw, 62px) !important;
+}
+body.portfolio-page #gallery-warm-wood-bathroom-remodel .gallery-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+}
+body.portfolio-page #gallery-warm-wood-bathroom-remodel .gallery-item {
+  border-radius: 18px !important;
+}
+body.portfolio-page #gallery-warm-wood-bathroom-remodel .gallery-item img {
+  height: 260px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+body.portfolio-page #gallery-warm-wood-bathroom-remodel .gallery-item.wide {
+  grid-column: span 2 !important;
+}
+@media (max-width: 980px) {
+  body.portfolio-page #gallery-warm-wood-bathroom-remodel .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+@media (max-width: 640px) {
+  body.portfolio-page #gallery-warm-wood-bathroom-remodel .gallery-grid {
+    grid-template-columns: 1fr !important;
+  }
+  body.portfolio-page #gallery-warm-wood-bathroom-remodel .gallery-item.wide {
+    grid-column: auto !important;
+  }
+  body.portfolio-page #gallery-warm-wood-bathroom-remodel .gallery-item img {
+    height: 230px !important;
+  }
+}
+
+.gallery-grid--project2-final,
+.gallery-grid--project2-interior,
+.gallery-grid--project2-progress{margin-top:10px}
+
+/* Project 6 spacing correction: match the previous featured project layout */
+body.portfolio-page #residential-bathroom-upgrade .compact-project-story {
+  margin-top: clamp(42px, 5vw, 72px) !important;
+}
+body.portfolio-page #residential-bathroom-upgrade .compact-story-head {
+  margin-bottom: clamp(26px, 3.5vw, 42px) !important;
+}
+
+/* Final Portfolio match to Homepage: CTA color and footer sizing */
+:root { --homepage-cta-orange: #D16002; }
+
+/* Only true primary CTA buttons use the Homepage CTA color. */
+.btn-primary,
+.btn-primary:visited,
+a.btn-primary,
+.header-cta,
+.header-cta:visited,
+.primary-btn,
+.cta-button,
+.cta-btn,
+.nav-cta,
+.site-cta,
+.button-primary,
+.schedule-btn,
+.inline-cta-button,
+a[href*="site-assessment"].btn-primary,
+a[href*="site-assessment"].header-cta,
+button.btn-primary,
+input[type="submit"].btn-primary {
+  background: #D16002 !important;
+  background-color: #D16002 !important;
+  border-color: #D16002 !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  box-shadow: 0 12px 28px rgba(209,96,2,.24) !important;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+a.btn-primary:hover,
+a.btn-primary:focus,
+.header-cta:hover,
+.header-cta:focus,
+.primary-btn:hover,
+.primary-btn:focus,
+.cta-button:hover,
+.cta-button:focus,
+.cta-btn:hover,
+.cta-btn:focus,
+.nav-cta:hover,
+.nav-cta:focus,
+.site-cta:hover,
+.site-cta:focus,
+.button-primary:hover,
+.button-primary:focus,
+.schedule-btn:hover,
+.schedule-btn:focus,
+.inline-cta-button:hover,
+.inline-cta-button:focus,
+a[href*="site-assessment"].btn-primary:hover,
+a[href*="site-assessment"].header-cta:hover,
+button.btn-primary:hover,
+button.btn-primary:focus,
+input[type="submit"].btn-primary:hover,
+input[type="submit"].btn-primary:focus {
+  background: #D16002 !important;
+  background-color: #D16002 !important;
+  border-color: #D16002 !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  box-shadow: 0 14px 32px rgba(209,96,2,.28) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Keep secondary / non-CTA buttons transparent on Portfolio. */
+.btn-light,
+a.btn-light,
+.btn-secondary,
+a.btn-secondary,
+.view-project-no-orange,
+a.view-project-no-orange,
+body.portfolio-page a.btn.btn-light,
+body.portfolio-page .project-detail-section .featured-copy .btn-row a.btn.btn-light,
+body.portfolio-page .project-detail-section .featured-copy .btn-row a.btn.btn-light[href^="#gallery"],
+body.portfolio-page .project-detail-section .btn-row a[href^="#gallery"],
+body.portfolio-page .hero .btn-light,
+body.portfolio-page .btn-row .btn-light {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 1px solid rgba(255,255,255,.42) !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  box-shadow: none !important;
+  backdrop-filter: blur(10px) !important;
+}
+.btn-light:hover,
+a.btn-light:hover,
+.btn-secondary:hover,
+a.btn-secondary:hover,
+.view-project-no-orange:hover,
+a.view-project-no-orange:hover,
+body.portfolio-page a.btn.btn-light:hover,
+body.portfolio-page .project-detail-section .featured-copy .btn-row a.btn.btn-light:hover,
+body.portfolio-page .project-detail-section .featured-copy .btn-row a.btn.btn-light[href^="#gallery"]:hover,
+body.portfolio-page .project-detail-section .btn-row a[href^="#gallery"]:hover,
+body.portfolio-page .hero .btn-light:hover,
+body.portfolio-page .btn-row .btn-light:hover {
+  background: rgba(255,255,255,.10) !important;
+  background-color: rgba(255,255,255,.10) !important;
+  border-color: rgba(255,255,255,.56) !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  box-shadow: none !important;
+}
+
+/* Secondary buttons on light sections stay transparent but readable. */
+body.portfolio-page .project-detail-section .featured-copy .btn-row a.btn.btn-light,
+body.portfolio-page .project-detail-section .featured-copy .btn-row a.btn.btn-light[href^="#gallery"],
+body.portfolio-page .project-detail-section .btn-row a[href^="#gallery"] {
+  border-color: rgba(47,47,47,.28) !important;
+  color: #2F2F2F !important;
+  -webkit-text-fill-color: #2F2F2F !important;
+}
+body.portfolio-page .project-detail-section .featured-copy .btn-row a.btn.btn-light:hover,
+body.portfolio-page .project-detail-section .featured-copy .btn-row a.btn.btn-light[href^="#gallery"]:hover,
+body.portfolio-page .project-detail-section .btn-row a[href^="#gallery"]:hover {
+  background: rgba(47,47,47,.06) !important;
+  background-color: rgba(47,47,47,.06) !important;
+  color: #2F2F2F !important;
+  -webkit-text-fill-color: #2F2F2F !important;
+}
+body.portfolio-page .project-detail-section .btn-row a[href^="#gallery"]::after {
+  color: #2F2F2F !important;
+}
+
+/* Homepage footer spacing, logo size, and typography copied to Portfolio. */
+footer {
+  background: var(--charcoal, #4F4F4F) !important;
+  color: var(--white, #ffffff) !important;
+  padding: 68px 0 34px !important;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
+}
+footer .container {
+  width: min(1240px, calc(100% - 48px)) !important;
+  margin-inline: auto !important;
+}
+footer .footer-grid {
+  border-top: 1px solid rgba(255,255,255,.12) !important;
+  padding-top: 48px !important;
+  display: grid !important;
+  grid-template-columns: 1.1fr .9fr .9fr 1fr !important;
+  gap: 42px !important;
+  align-items: start !important;
+}
+footer img,
+footer .footer-brand img {
+  height: 56px !important;
+  width: auto !important;
+  max-width: 190px !important;
+  margin-bottom: 20px !important;
+}
+footer p,
+footer a {
+  color: rgba(255,255,255,.60) !important;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.8 !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+footer h3,
+footer .footer-grid > div h3,
+footer .footer-col h3 {
+  color: #D16002 !important;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
+  font-size: 12px !important;
+  line-height: 1.2 !important;
+  font-weight: 400 !important;
+  text-transform: uppercase !important;
+  letter-spacing: .18em !important;
+  margin: 0 0 18px 0 !important;
+}
+footer ul {
+  list-style: none !important;
+  display: grid !important;
+  gap: 10px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+footer .copyright,
+footer .footer-bottom,
+.copyright {
+  display: flex !important;
+  justify-content: space-between !important;
+  gap: 24px !important;
+  margin-top: 50px !important;
+  padding-top: 26px !important;
+  border-top: 1px solid rgba(255,255,255,.10) !important;
+  color: rgba(255,255,255,.38) !important;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
+  font-size: 12px !important;
+  line-height: 1.6 !important;
+  font-weight: 400 !important;
+  text-transform: uppercase !important;
+  letter-spacing: .12em !important;
+}
+@media (max-width: 960px) {
+  footer .footer-grid { grid-template-columns: 1fr 1fr !important; gap: 38px !important; }
+}
+@media (max-width: 680px) {
+  footer .container { width: min(100% - 32px, 1240px) !important; }
+  footer .footer-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+  footer .copyright,
+  .copyright { flex-direction: column !important; }
+}
+
+/* Final fix: Portfolio true CTA buttons now use the exact Homepage CTA color. */
+:root,
+body.portfolio-page {
+  --gold: #D16002 !important;
+  --orange: #D16002 !important;
+  --homepage-cta-orange: #D16002 !important;
+  --portfolio-cta: #D16002 !important;
+  --portfolio-cta-hover: #D16002 !important;
+  --portfolio-cta-orange: #D16002 !important;
+  --portfolio-cta-orange-hover: #D16002 !important;
+}
+
+body.portfolio-page .btn.btn-primary,
+body.portfolio-page a.btn.btn-primary,
+body.portfolio-page button.btn-primary,
+body.portfolio-page input[type="submit"].btn-primary,
+body.portfolio-page .site-header .header-cta,
+body.portfolio-page .site-header a.header-cta,
+body.portfolio-page .site-header .header-cta-unified,
+body.portfolio-page .site-header a.header-cta-unified,
+body.portfolio-page .nav-actions .btn-primary,
+body.portfolio-page .nav-actions a.btn-primary,
+body.portfolio-page .primary-btn,
+body.portfolio-page .cta-button,
+body.portfolio-page .cta-btn,
+body.portfolio-page .site-cta,
+body.portfolio-page .schedule-btn,
+body.portfolio-page .inline-cta-button,
+body.portfolio-page a[href*="site-assessment"].btn-primary,
+body.portfolio-page a[href*="site-assessment"].header-cta {
+  background: #D16002 !important;
+  background-color: #D16002 !important;
+  border-color: #D16002 !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  box-shadow: 0 12px 34px rgba(209,96,2,.26) !important;
+}
+
+body.portfolio-page .btn.btn-primary:hover,
+body.portfolio-page a.btn.btn-primary:hover,
+body.portfolio-page button.btn-primary:hover,
+body.portfolio-page input[type="submit"].btn-primary:hover,
+body.portfolio-page .site-header .header-cta:hover,
+body.portfolio-page .site-header a.header-cta:hover,
+body.portfolio-page .site-header .header-cta-unified:hover,
+body.portfolio-page .site-header a.header-cta-unified:hover,
+body.portfolio-page .nav-actions .btn-primary:hover,
+body.portfolio-page .nav-actions a.btn-primary:hover,
+body.portfolio-page .primary-btn:hover,
+body.portfolio-page .cta-button:hover,
+body.portfolio-page .cta-btn:hover,
+body.portfolio-page .site-cta:hover,
+body.portfolio-page .schedule-btn:hover,
+body.portfolio-page .inline-cta-button:hover,
+body.portfolio-page a[href*="site-assessment"].btn-primary:hover,
+body.portfolio-page a[href*="site-assessment"].header-cta:hover {
+  background: #D16002 !important;
+  background-color: #D16002 !important;
+  border-color: #D16002 !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  box-shadow: 0 14px 38px rgba(209,96,2,.30) !important;
+}
+
+/* Keep non-CTA / secondary controls transparent, not orange. */
+body.portfolio-page .btn.btn-light,
+body.portfolio-page a.btn.btn-light,
+body.portfolio-page .btn-secondary,
+body.portfolio-page a.btn-secondary,
+body.portfolio-page .view-project-no-orange,
+body.portfolio-page a.view-project-no-orange,
+body.portfolio-page a.btn.gallery-cta,
+body.portfolio-page a.btn.btn-light.gallery-cta,
+body.portfolio-page .project-detail-section .btn-row a[href^="#gallery"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+img { opacity: 1 !important; visibility: visible !important; }
+
+/* === Silver Peak Portfolio: Homepage-aligned final design === */
+:root{
+  --charcoal:#4f4f4f;--charcoal-dark:#272727;--cream:#f6f0e6;--cream-soft:#fffaf3;
+  --ink:#303030;--muted:#6b6b6b;--orange:#d16002;--white:#fff;
+  --line:rgba(48,48,48,.14);--max:1240px;--shadow:0 24px 60px rgba(0,0,0,.16);
+}
+body.portfolio-page{font-family:Poppins,Arial,Helvetica,sans-serif!important;background:var(--cream-soft)!important;color:var(--ink)!important;line-height:1.65!important}
+body.portfolio-page .container{width:min(100% - 48px,var(--max))!important;margin-inline:auto!important}
+
+/* Header: exact homepage behavior and proportions */
+body.portfolio-page .site-header{position:fixed!important;top:0!important;left:0!important;right:0!important;z-index:1000!important;background:transparent!important;box-shadow:none!important;backdrop-filter:none!important;transition:background-color .28s ease,box-shadow .28s ease,backdrop-filter .28s ease!important}
+body.portfolio-page .site-header.is-scrolled,
+body.portfolio-page .site-header.subpage-active{background:rgba(55,55,55,.90)!important;box-shadow:0 10px 32px rgba(0,0,0,.16)!important;backdrop-filter:blur(12px)!important}
+body.portfolio-page .nav-wrap{height:74px!important;min-height:74px!important;display:flex!important;align-items:center!important;gap:28px!important}
+body.portfolio-page .site-header .brand img{width:142px!important;max-width:142px!important;height:auto!important;filter:brightness(0) invert(1)!important}
+body.portfolio-page .main-nav{margin-left:auto!important;display:flex!important;align-items:center!important;gap:24px!important}
+body.portfolio-page .main-nav>a,
+body.portfolio-page .nav-dropdown-trigger{position:relative!important;padding:28px 0!important;color:#fff!important;-webkit-text-fill-color:#fff!important;text-shadow:0 1px 2px rgba(0,0,0,.25)!important;font-size:.78rem!important;line-height:1!important;letter-spacing:.055em!important;text-transform:uppercase!important;font-weight:700!important}
+body.portfolio-page .main-nav>a:not(.nav-cta)::after,
+body.portfolio-page .nav-dropdown-trigger::after{content:""!important;position:absolute!important;height:2px!important;left:0!important;right:100%!important;bottom:20px!important;background:var(--orange)!important;transition:right .25s ease!important}
+body.portfolio-page .main-nav>a:not(.nav-cta):hover::after,
+body.portfolio-page .nav-dropdown:hover .nav-dropdown-trigger::after{right:0!important}
+body.portfolio-page .main-nav .nav-cta{padding:12px 16px!important;background:var(--orange)!important;color:#fff!important;-webkit-text-fill-color:#fff!important;box-shadow:none!important;white-space:nowrap!important}
+body.portfolio-page .main-nav .nav-cta::after{display:none!important}
+body.portfolio-page .header-cta{display:none!important}
+body.portfolio-page .menu-toggle{display:none!important;margin-left:auto!important;border:0!important;background:transparent!important;width:45px!important;height:45px!important;padding:8px!important;cursor:pointer!important}
+body.portfolio-page .menu-toggle span{display:block!important;height:2px!important;background:#fff!important;margin:7px 0!important}
+
+/* Our Work submenu: stable hover bridge, clean project-only labels */
+body.portfolio-page .nav-dropdown{position:relative!important;display:flex!important;align-items:center!important;padding-bottom:18px!important;margin-bottom:-18px!important}
+body.portfolio-page .nav-dropdown::after{content:"";position:absolute;left:-22px;right:-22px;top:100%;height:24px}
+body.portfolio-page .portfolio-dropdown-menu{position:absolute!important;top:calc(100% + 4px)!important;left:50%!important;transform:translateX(-50%) translateY(8px)!important;width:690px!important;min-width:690px!important;padding:20px 26px!important;display:grid!important;grid-template-columns:1fr 1fr!important;column-gap:26px!important;background:#fffaf3!important;border:1px solid var(--line)!important;border-radius:0!important;box-shadow:0 22px 55px rgba(0,0,0,.18)!important;opacity:0!important;visibility:hidden!important;pointer-events:none!important;transition:.2s ease!important}
+body.portfolio-page .portfolio-dropdown:hover .portfolio-dropdown-menu,
+body.portfolio-page .portfolio-dropdown:focus-within .portfolio-dropdown-menu{opacity:1!important;visibility:visible!important;pointer-events:auto!important;transform:translateX(-50%) translateY(0)!important}
+body.portfolio-page .portfolio-dropdown-menu a{display:flex!important;align-items:center!important;min-height:54px!important;padding:10px 8px!important;color:var(--ink)!important;-webkit-text-fill-color:var(--ink)!important;text-shadow:none!important;font-size:.82rem!important;line-height:1.35!important;letter-spacing:.01em!important;text-transform:none!important;font-weight:650!important;border-bottom:1px solid var(--line)!important}
+body.portfolio-page .portfolio-dropdown-menu a:hover,
+body.portfolio-page .portfolio-dropdown-menu a.is-active{color:var(--orange)!important;-webkit-text-fill-color:var(--orange)!important}
+
+/* Hero: homepage visual language, without the former oversized dead space */
+body.portfolio-page main>.hero:first-child{position:relative!important;min-height:650px!important;height:auto!important;padding:112px 0 78px!important;display:flex!important;align-items:center!important;overflow:hidden!important;background-size:cover!important;background-position:center 42%!important;color:#fff!important}
+body.portfolio-page main>.hero:first-child::before{content:""!important;position:absolute!important;inset:0!important;display:block!important;background:linear-gradient(90deg,rgba(13,13,13,.92) 0%,rgba(13,13,13,.70) 44%,rgba(13,13,13,.34) 78%,rgba(13,13,13,.16) 100%)!important;z-index:0!important}
+body.portfolio-page main>.hero:first-child::after{display:none!important;content:none!important;height:0!important}
+body.portfolio-page main>.hero:first-child>.container{position:relative!important;z-index:2!important}
+body.portfolio-page main>.hero:first-child+.section-pad{margin-top:0!important;border-radius:0!important;overflow:visible!important}
+body.portfolio-page .hero-copy{max-width:790px!important;border-left:5px solid var(--orange)!important;padding-left:24px!important}
+body.portfolio-page .hero .eyebrow{color:#ffb15a!important;-webkit-text-fill-color:#ffb15a!important;font-size:.74rem!important;font-weight:800!important;letter-spacing:.16em!important;text-transform:uppercase!important;margin:0 0 16px!important}
+body.portfolio-page .hero h1{max-width:850px!important;font-size:clamp(2.75rem,5.4vw,5.35rem)!important;line-height:1!important;letter-spacing:-.052em!important;font-weight:800!important;text-transform:uppercase!important;margin:0 0 22px!important;color:#fff!important}
+body.portfolio-page .hero .lead{max-width:690px!important;font-size:1rem!important;line-height:1.72!important;color:rgba(255,255,255,.84)!important;margin:0 0 26px!important}
+body.portfolio-page .hero-actions{display:flex!important;gap:14px!important;flex-wrap:wrap!important;margin-top:0!important}
+body.portfolio-page .hero .btn{min-height:auto!important;border-radius:0!important;padding:15px 22px!important;font-size:.78rem!important;font-weight:700!important;letter-spacing:.03em!important;text-transform:none!important}
+body.portfolio-page .hero .btn-primary{background:var(--orange)!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border-color:var(--orange)!important;box-shadow:0 14px 30px rgba(209,96,2,.24)!important}
+body.portfolio-page .hero .btn-light{background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.62)!important;color:#fff!important;-webkit-text-fill-color:#fff!important}
+
+/* Overview section */
+body.portfolio-page #projects{padding:88px 0 96px!important;background:var(--cream-soft)!important}
+body.portfolio-page #projects .section-head{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(320px,.62fr)!important;gap:56px!important;align-items:end!important;margin-bottom:30px!important}
+body.portfolio-page #projects .eyebrow{font-size:.72rem!important;color:var(--orange)!important;-webkit-text-fill-color:var(--orange)!important;font-weight:800!important;letter-spacing:.14em!important;text-transform:uppercase!important;margin:0 0 10px!important}
+body.portfolio-page #projects h2{font-size:clamp(2.3rem,4.5vw,4.45rem)!important;line-height:1.02!important;letter-spacing:-.045em!important;text-transform:uppercase!important;font-weight:700!important;margin:0!important;color:var(--ink)!important}
+body.portfolio-page #projects .section-head>p{font-size:.95rem!important;line-height:1.72!important;color:var(--muted)!important;margin:0!important}
+body.portfolio-page .filter-bar{display:flex!important;flex-wrap:wrap!important;gap:10px!important;margin:26px 0 34px!important}
+body.portfolio-page .filter-btn{min-height:42px!important;border-radius:0!important;border:1px solid var(--line)!important;padding:0 16px!important;background:#fff!important;color:var(--ink)!important;font-size:.68rem!important;font-weight:800!important;letter-spacing:.08em!important;text-transform:uppercase!important;box-shadow:none!important}
+body.portfolio-page .filter-btn:hover,
+body.portfolio-page .filter-btn.is-active{background:var(--orange)!important;color:#fff!important;transform:none!important}
+
+/* Homepage Featured Major Projects look, expanded to the full portfolio */
+body.portfolio-page #projects .project-grid{display:grid!important;grid-template-columns:repeat(12,minmax(0,1fr))!important;grid-auto-rows:300px!important;gap:18px!important}
+body.portfolio-page #projects .project-card{position:relative!important;overflow:hidden!important;color:#fff!important;isolation:isolate!important;border:0!important;border-radius:0!important;background:#222!important;box-shadow:none!important;min-height:300px!important;margin:0!important}
+body.portfolio-page #projects .project-card:nth-child(1){grid-column:span 5!important;grid-row:span 2!important}
+body.portfolio-page #projects .project-card:nth-child(2),
+body.portfolio-page #projects .project-card:nth-child(3){grid-column:span 7!important}
+body.portfolio-page #projects .project-card:nth-child(n+4){grid-column:span 4!important;grid-row:span 1!important}
+body.portfolio-page #projects .project-card>a{position:absolute!important;inset:0!important;display:block!important;color:#fff!important}
+body.portfolio-page #projects .project-card img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;transition:transform .55s ease!important}
+body.portfolio-page #projects .project-card::after{content:""!important;position:absolute!important;inset:0!important;background:linear-gradient(0deg,rgba(20,20,20,.92) 0%,rgba(20,20,20,.50) 42%,rgba(20,20,20,.06) 76%)!important;z-index:1!important;pointer-events:none!important}
+body.portfolio-page #projects .project-card:hover{transform:none!important;box-shadow:none!important}
+body.portfolio-page #projects .project-card:hover img{transform:scale(1.045)!important}
+body.portfolio-page #projects .project-card-body{position:absolute!important;left:24px!important;right:24px!important;bottom:22px!important;z-index:2!important;padding:0!important;background:transparent!important;color:#fff!important}
+body.portfolio-page #projects .project-card h3{font-size:clamp(1.05rem,1.65vw,1.55rem)!important;line-height:1.14!important;text-transform:uppercase!important;font-weight:750!important;letter-spacing:-.02em!important;margin:0 0 8px!important;color:#fff!important}
+body.portfolio-page #projects .project-card p{font-size:.76rem!important;line-height:1.55!important;color:rgba(255,255,255,.82)!important;margin:0!important;display:-webkit-box!important;-webkit-line-clamp:3!important;-webkit-box-orient:vertical!important;overflow:hidden!important}
+body.portfolio-page #projects .meta-row{display:flex!important;flex-wrap:wrap!important;gap:7px!important;margin:12px 0 0!important}
+body.portfolio-page #projects .meta-row span{min-height:0!important;border-radius:0!important;background:rgba(0,0,0,.20)!important;color:rgba(255,255,255,.9)!important;border:1px solid rgba(255,255,255,.3)!important;padding:5px 7px!important;font-size:.58rem!important;font-weight:800!important;letter-spacing:.06em!important;text-transform:uppercase!important}
+
+/* Project detail views */
+body.portfolio-page.portfolio-subpage-active .site-header{background:rgba(55,55,55,.96)!important}
+body.portfolio-page.portfolio-subpage-active .project-detail-section.is-active{padding-top:122px!important}
+body.portfolio-page .section-pad{padding:86px 0!important}
+body.portfolio-page .project-detail-section{background:#fffaf3!important;color:var(--ink)!important}
+body.portfolio-page .project-detail-section:nth-of-type(even){background:var(--charcoal-dark)!important;color:#fff!important}
+body.portfolio-page .featured-grid{display:grid!important;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr)!important;gap:64px!important;align-items:center!important}
+body.portfolio-page .featured-image{border-radius:0!important;overflow:hidden!important;box-shadow:0 18px 42px rgba(0,0,0,.14)!important}
+body.portfolio-page .featured-image img{width:100%!important;height:520px!important;object-fit:cover!important}
+body.portfolio-page .featured-copy h2{font-size:clamp(2.15rem,4vw,4rem)!important;line-height:1.04!important;letter-spacing:-.04em!important;text-transform:uppercase!important;font-weight:700!important;margin:0 0 18px!important}
+body.portfolio-page .featured-copy p{font-size:.94rem!important;line-height:1.75!important;color:var(--muted)!important}
+body.portfolio-page .project-detail-section:nth-of-type(even) .featured-copy p{color:rgba(255,255,255,.8)!important}
+body.portfolio-page .portfolio-back-link{display:inline-flex!important;margin:0 0 24px!important;color:var(--orange)!important;font-size:.7rem!important;font-weight:800!important;letter-spacing:.1em!important;text-transform:uppercase!important}
+body.portfolio-page .detail-list{margin-top:24px!important;gap:0!important}
+body.portfolio-page .detail-list div{display:grid!important;grid-template-columns:150px 1fr!important;gap:16px!important;padding:11px 0!important;border-bottom:1px solid rgba(48,48,48,.16)!important}
+body.portfolio-page .project-detail-section:nth-of-type(even) .detail-list div{border-bottom-color:rgba(255,255,255,.14)!important}
+body.portfolio-page .detail-list strong{font-size:.66rem!important;color:var(--orange)!important;letter-spacing:.12em!important;text-transform:uppercase!important}
+body.portfolio-page .detail-list span{font-size:.88rem!important;line-height:1.55!important}
+
+/* Gallery: tighter and more architectural */
+body.portfolio-page .gallery-section{background:var(--cream)!important;padding:78px 0!important}
+body.portfolio-page .gallery-section h2{font-size:clamp(2rem,3.5vw,3.55rem)!important;line-height:1.05!important;letter-spacing:-.035em!important;text-transform:uppercase!important;margin:0 0 14px!important}
+body.portfolio-page .gallery-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:14px!important}
+body.portfolio-page .gallery-item{margin:0!important;border-radius:0!important;overflow:hidden!important;background:#fff!important;box-shadow:none!important;border:0!important}
+body.portfolio-page .gallery-item img{width:100%!important;height:330px!important;object-fit:cover!important;transition:transform .35s ease!important}
+body.portfolio-page .gallery-item:hover img{transform:scale(1.025)!important}
+
+/* CTA + footer match homepage rhythm */
+body.portfolio-page .cta{padding:82px 0!important;background:linear-gradient(135deg,#4b4742 0%,#353535 55%,#3d372f 100%)!important;color:#fff!important;margin:0!important;position:relative!important;overflow:hidden!important}
+body.portfolio-page .cta::before{content:""!important;display:block!important;position:absolute!important;inset:0!important;background:radial-gradient(circle at 82% 22%,rgba(209,96,2,.18),transparent 25%)!important;pointer-events:none!important}
+body.portfolio-page .cta-shell{position:relative!important;z-index:1!important;padding:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;max-width:1000px!important}
+body.portfolio-page .cta .eyebrow{color:#ffb15a!important;-webkit-text-fill-color:#ffb15a!important;font-size:.72rem!important;font-weight:800!important;letter-spacing:.14em!important;text-transform:uppercase!important}
+body.portfolio-page .cta h2{font-size:clamp(2.3rem,4vw,4rem)!important;line-height:1.05!important;text-transform:uppercase!important;letter-spacing:-.035em!important;margin:0 0 14px!important;color:#fff!important}
+body.portfolio-page .cta p{max-width:770px!important;margin:0!important;color:rgba(255,255,255,.85)!important;font-size:.94rem!important;line-height:1.7!important}
+body.portfolio-page .cta .btn-row{display:flex!important;gap:12px!important;flex-wrap:wrap!important;margin-top:26px!important}
+body.portfolio-page .cta .btn{border-radius:0!important;min-height:auto!important;padding:15px 22px!important;font-size:.76rem!important;font-weight:700!important;text-transform:none!important;letter-spacing:.02em!important}
+body.portfolio-page .cta .btn-primary{background:var(--orange)!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border-color:var(--orange)!important}
+body.portfolio-page .cta .btn-light{border:1px solid rgba(255,255,255,.65)!important;color:#fff!important;-webkit-text-fill-color:#fff!important;background:rgba(255,255,255,.05)!important}
+body.portfolio-page 
+
+/* Reveal animation aligned with homepage */
+body.portfolio-page .sp-reveal{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}
+body.portfolio-page .sp-reveal.is-visible{opacity:1;transform:none}
+
+@media(max-width:1050px){
+  body.portfolio-page .main-nav{display:none!important;position:fixed!important;inset:74px 0 0!important;background:#fff!important;padding:28px!important;flex-direction:column!important;align-items:flex-start!important;gap:0!important;overflow:auto!important}
+  body.portfolio-page .main-nav.open{display:flex!important}
+  body.portfolio-page .main-nav>a,body.portfolio-page .nav-dropdown{width:100%!important}
+  body.portfolio-page .main-nav>a,body.portfolio-page .nav-dropdown-trigger{color:var(--ink)!important;-webkit-text-fill-color:var(--ink)!important;text-shadow:none!important;padding:14px 0!important;border-bottom:1px solid var(--line)!important;width:100%!important}
+  body.portfolio-page .main-nav .nav-cta{margin-top:15px!important;text-align:center!important;color:#fff!important;-webkit-text-fill-color:#fff!important;width:100%!important}
+  body.portfolio-page .menu-toggle{display:block!important}
+  body.portfolio-page .portfolio-dropdown{padding:0!important;margin:0!important;display:block!important}
+  body.portfolio-page .portfolio-dropdown::after{display:none!important}
+  body.portfolio-page .portfolio-dropdown-menu{position:static!important;transform:none!important;width:100%!important;min-width:0!important;grid-template-columns:1fr!important;padding:8px 0 12px 14px!important;box-shadow:none!important;border:0!important;background:transparent!important;opacity:1!important;visibility:visible!important;pointer-events:auto!important;display:grid!important}
+  body.portfolio-page .portfolio-dropdown-menu a{min-height:0!important;padding:10px 0!important;font-size:.8rem!important}
+  body.portfolio-page #projects .project-grid{grid-template-columns:repeat(2,1fr)!important;grid-auto-rows:360px!important}
+  body.portfolio-page #projects .project-card:nth-child(n){grid-column:span 1!important;grid-row:span 1!important}
+  body.portfolio-page .featured-grid{grid-template-columns:1fr!important;gap:36px!important}
+  body.portfolio-page .gallery-grid{grid-template-columns:repeat(2,1fr)!important}
+  body.portfolio-page .gallery-item.wide{grid-column:auto!important}
+  body.portfolio-page footer .footer-grid{grid-template-columns:1fr 1fr!important}
+}
+@media(max-width:680px){
+  body.portfolio-page .container{width:min(100% - 32px,var(--max))!important}
+  body.portfolio-page .nav-wrap{height:68px!important;min-height:68px!important}
+  body.portfolio-page .site-header .brand img{width:126px!important;max-width:126px!important}
+  body.portfolio-page .main-nav{inset:68px 0 0!important}
+  body.portfolio-page main>.hero:first-child{min-height:610px!important;padding:96px 0 58px!important;background-position:center center!important}
+  body.portfolio-page .hero-copy{padding-left:19px!important}
+  body.portfolio-page .hero h1{font-size:clamp(2.35rem,12vw,4rem)!important}
+  body.portfolio-page .hero-actions{flex-direction:column!important}
+  body.portfolio-page .hero-actions .btn{width:100%!important}
+  body.portfolio-page #projects{padding:68px 0!important}
+  body.portfolio-page #projects .section-head{grid-template-columns:1fr!important;gap:18px!important}
+  body.portfolio-page #projects .project-grid{grid-template-columns:1fr!important;grid-auto-rows:430px!important}
+  body.portfolio-page #projects .project-card:nth-child(n){grid-column:auto!important;grid-row:auto!important}
+  body.portfolio-page .section-pad{padding:68px 0!important}
+  body.portfolio-page.portfolio-subpage-active .project-detail-section.is-active{padding-top:106px!important}
+  body.portfolio-page .featured-image img{height:360px!important}
+  body.portfolio-page .detail-list div{grid-template-columns:1fr!important;gap:5px!important}
+  body.portfolio-page .gallery-grid{grid-template-columns:1fr!important}
+  body.portfolio-page .gallery-item img{height:300px!important}
+  body.portfolio-page footer .footer-grid{grid-template-columns:1fr!important}
+  body.portfolio-page .footer-bottom{flex-direction:column!important}
+}
+@media(prefers-reduced-motion:reduce){body.portfolio-page .sp-reveal{opacity:1!important;transform:none!important}}
+
+/* Final readability update: stronger dark contrast behind white text */
+body.portfolio-page main > .hero:first-child::before{
+  background:linear-gradient(90deg,rgba(10,10,10,.95) 0%,rgba(10,10,10,.82) 42%,rgba(10,10,10,.52) 74%,rgba(10,10,10,.28) 100%)!important;
+}
+body.portfolio-page main > .hero:first-child{
+  background-blend-mode:multiply!important;
+}
+body.portfolio-page main > .hero:first-child .hero-copy,
+body.portfolio-page #projects .project-card-body,
+body.portfolio-page .featured-copy,
+body.portfolio-page .hero h1,
+body.portfolio-page .hero .lead,
+body.portfolio-page #projects .project-card h3,
+body.portfolio-page #projects .project-card p,
+body.portfolio-page #projects .meta-row span{
+  text-shadow:0 2px 10px rgba(0,0,0,.45)!important;
+}
+body.portfolio-page #projects .project-card img{
+  filter:brightness(.66) contrast(1.08)!important;
+}
+body.portfolio-page #projects .project-card::after{
+  background:linear-gradient(0deg,rgba(8,8,8,.94) 0%,rgba(8,8,8,.72) 38%,rgba(8,8,8,.26) 72%,rgba(8,8,8,.10) 100%)!important;
+}
+body.portfolio-page #projects .project-card .meta-row span{
+  background:rgba(18,18,18,.68)!important;
+  border:1px solid rgba(255,255,255,.18)!important;
+  color:#fff!important;
+}
+body.portfolio-page .featured-image{
+  position:relative!important;
+}
+body.portfolio-page .featured-image::after{
+  content:""!important;
+  position:absolute!important;
+  inset:0!important;
+  background:linear-gradient(0deg,rgba(0,0,0,.18),rgba(0,0,0,.18))!important;
+  pointer-events:none!important;
+}
+
+/* Balance typography and photo visibility */
+body.portfolio-page .hero h1{
+  font-weight:650!important;
+  letter-spacing:-.045em!important;
+}
+body.portfolio-page .hero .eyebrow{
+  font-weight:700!important;
+}
+body.portfolio-page .hero .lead{
+  font-weight:400!important;
+}
+body.portfolio-page #projects h2{
+  font-weight:600!important;
+}
+body.portfolio-page #projects .project-card h3{
+  font-weight:600!important;
+  letter-spacing:-.015em!important;
+}
+body.portfolio-page #projects .project-card p{
+  font-weight:400!important;
+  color:rgba(255,255,255,.90)!important;
+}
+body.portfolio-page #projects .meta-row span{
+  font-weight:650!important;
+}
+body.portfolio-page .featured-copy h2,
+body.portfolio-page .project-detail-section h2,
+body.portfolio-page .cta-shell h2{
+  font-weight:600!important;
+}
+body.portfolio-page .featured-copy h3,
+body.portfolio-page .project-detail-section h3{
+  font-weight:600!important;
+}
+body.portfolio-page .main-nav>a,
+body.portfolio-page .nav-dropdown-trigger,
+body.portfolio-page .main-nav .nav-cta{
+  font-weight:600!important;
+}
+
+/* Let the photography read more clearly */
+body.portfolio-page main > .hero:first-child::before{
+  background:linear-gradient(90deg,rgba(10,10,10,.88) 0%,rgba(10,10,10,.68) 42%,rgba(10,10,10,.34) 76%,rgba(10,10,10,.16) 100%)!important;
+}
+body.portfolio-page #projects .project-card img{
+  filter:brightness(.82) contrast(1.04) saturate(1.03)!important;
+}
+body.portfolio-page #projects .project-card::after{
+  background:linear-gradient(0deg,rgba(8,8,8,.86) 0%,rgba(8,8,8,.54) 38%,rgba(8,8,8,.16) 72%,rgba(8,8,8,.04) 100%)!important;
+}
+body.portfolio-page #projects .project-card .meta-row span{
+  background:rgba(18,18,18,.50)!important;
+  border:1px solid rgba(255,255,255,.20)!important;
+}
+body.portfolio-page .featured-image::after{
+  background:linear-gradient(0deg,rgba(0,0,0,.06),rgba(0,0,0,.06))!important;
+}
+
+/* Keep readability without making the text feel heavy */
+body.portfolio-page main > .hero:first-child .hero-copy,
+body.portfolio-page #projects .project-card-body,
+body.portfolio-page .hero h1,
+body.portfolio-page .hero .lead,
+body.portfolio-page #projects .project-card h3,
+body.portfolio-page #projects .project-card p,
+body.portfolio-page #projects .meta-row span{
+  text-shadow:0 1px 6px rgba(0,0,0,.36)!important;
+}
+
+/* Portfolio overview styled after the Homepage "What We Build" image tiles */
+body.portfolio-page #projects{
+  background:#262626!important;
+  color:#fff!important;
+  padding:84px 0 92px!important;
+}
+body.portfolio-page #projects .section-head{
+  margin-bottom:28px!important;
+}
+body.portfolio-page #projects .eyebrow{
+  color:#f28a2e!important;
+  -webkit-text-fill-color:#f28a2e!important;
+  font-weight:650!important;
+}
+body.portfolio-page #projects h2{
+  color:#fff!important;
+  font-weight:550!important;
+  text-transform:none!important;
+  letter-spacing:-.035em!important;
+}
+body.portfolio-page #projects .section-head>p{
+  color:rgba(255,255,255,.72)!important;
+  font-weight:400!important;
+}
+body.portfolio-page #projects .filter-bar{
+  margin:24px 0 34px!important;
+}
+body.portfolio-page #projects .filter-btn{
+  background:transparent!important;
+  color:rgba(255,255,255,.78)!important;
+  border-color:rgba(255,255,255,.22)!important;
+  font-weight:600!important;
+}
+body.portfolio-page #projects .filter-btn:hover,
+body.portfolio-page #projects .filter-btn.is-active{
+  background:var(--orange)!important;
+  border-color:var(--orange)!important;
+  color:#fff!important;
+}
+
+body.portfolio-page #projects .project-grid{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  grid-auto-rows:460px!important;
+  gap:2px!important;
+  counter-reset:project-tile!important;
+  background:#262626!important;
+}
+body.portfolio-page #projects .project-card:nth-child(n){
+  grid-column:auto!important;
+  grid-row:auto!important;
+}
+body.portfolio-page #projects .project-card{
+  counter-increment:project-tile!important;
+  min-height:460px!important;
+  height:460px!important;
+  background:#181818!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  overflow:hidden!important;
+  position:relative!important;
+}
+body.portfolio-page #projects .project-card>a{
+  position:absolute!important;
+  inset:0!important;
+  display:block!important;
+  color:#fff!important;
+}
+body.portfolio-page #projects .project-card img{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  filter:brightness(.90) contrast(1.02) saturate(1.04)!important;
+  transform:scale(1.002)!important;
+  transition:transform .65s cubic-bezier(.2,.7,.2,1),filter .45s ease!important;
+}
+body.portfolio-page #projects .project-card::after{
+  content:""!important;
+  position:absolute!important;
+  inset:0!important;
+  z-index:1!important;
+  pointer-events:none!important;
+  background:
+    linear-gradient(90deg,rgba(12,12,12,.82) 0%,rgba(12,12,12,.60) 38%,rgba(12,12,12,.20) 72%,rgba(12,12,12,.06) 100%),
+    linear-gradient(0deg,rgba(8,8,8,.48) 0%,rgba(8,8,8,.10) 55%,rgba(8,8,8,0) 78%)!important;
+}
+body.portfolio-page #projects .project-card:hover img{
+  transform:scale(1.035)!important;
+  filter:brightness(.96) contrast(1.02) saturate(1.05)!important;
+}
+body.portfolio-page #projects .project-card-body{
+  position:absolute!important;
+  left:40px!important;
+  right:36px!important;
+  bottom:36px!important;
+  z-index:2!important;
+  padding:0!important;
+  max-width:600px!important;
+  background:transparent!important;
+  text-align:left!important;
+  color:#fff!important;
+  text-shadow:0 2px 8px rgba(0,0,0,.32)!important;
+}
+body.portfolio-page #projects .project-card-body::before{
+  content:counter(project-tile, decimal-leading-zero)!important;
+  display:block!important;
+  color:#f47a00!important;
+  font-size:.92rem!important;
+  line-height:1!important;
+  font-weight:650!important;
+  letter-spacing:.12em!important;
+  margin:0 0 17px!important;
+  text-shadow:none!important;
+}
+body.portfolio-page #projects .project-card h3{
+  color:#fff!important;
+  font-size:clamp(1.55rem,2.1vw,2.15rem)!important;
+  line-height:1.08!important;
+  font-weight:560!important;
+  letter-spacing:-.025em!important;
+  text-transform:uppercase!important;
+  margin:0 0 14px!important;
+  max-width:95%!important;
+}
+body.portfolio-page #projects .project-card p{
+  color:rgba(255,255,255,.90)!important;
+  font-size:.92rem!important;
+  line-height:1.55!important;
+  font-weight:400!important;
+  margin:0!important;
+  max-width:88%!important;
+  display:-webkit-box!important;
+  -webkit-line-clamp:2!important;
+  -webkit-box-orient:vertical!important;
+  overflow:hidden!important;
+}
+body.portfolio-page #projects .project-card .meta-row{
+  display:none!important;
+}
+body.portfolio-page #projects .project-card-body::after{
+  content:"LEARN MORE  →"!important;
+  display:block!important;
+  margin-top:25px!important;
+  color:#fff!important;
+  font-size:.76rem!important;
+  line-height:1!important;
+  font-weight:650!important;
+  letter-spacing:.08em!important;
+  text-transform:uppercase!important;
+  text-shadow:0 2px 7px rgba(0,0,0,.28)!important;
+}
+body.portfolio-page #projects .project-card:hover .project-card-body::after{
+  color:#ffb15a!important;
+}
+
+@media(max-width:980px){
+  body.portfolio-page #projects .project-grid{
+    grid-template-columns:1fr!important;
+    grid-auto-rows:420px!important;
+  }
+  body.portfolio-page #projects .project-card{
+    min-height:420px!important;
+    height:420px!important;
+  }
+}
+@media(max-width:640px){
+  body.portfolio-page #projects{padding:68px 0 74px!important}
+  body.portfolio-page #projects .project-grid{grid-auto-rows:390px!important}
+  body.portfolio-page #projects .project-card{min-height:390px!important;height:390px!important}
+  body.portfolio-page #projects .project-card-body{left:24px!important;right:22px!important;bottom:26px!important}
+  body.portfolio-page #projects .project-card h3{font-size:1.45rem!important}
+  body.portfolio-page #projects .project-card p{max-width:100%!important;font-size:.86rem!important}
+}
+
+/* Hero only: lighter image contrast so the photography is more visible */
+body.portfolio-page main > .hero:first-child{
+  background-blend-mode:normal!important;
+}
+body.portfolio-page main > .hero:first-child::before{
+  background:linear-gradient(90deg,rgba(10,10,10,.76) 0%,rgba(10,10,10,.50) 43%,rgba(10,10,10,.22) 76%,rgba(10,10,10,.07) 100%)!important;
+}
+body.portfolio-page main > .hero:first-child .hero-copy,
+body.portfolio-page main > .hero:first-child h1,
+body.portfolio-page main > .hero:first-child .lead{
+  text-shadow:0 2px 8px rgba(0,0,0,.38)!important;
+}
+
+/* Requested update: lighten the Browse by project type section only */
+body.portfolio-page #projects{
+  background:#fbf8f2!important;
+}
+body.portfolio-page #projects .filter-btn{
+  background:#ffffff!important;
+}
+body.portfolio-page #projects .filter-btn:hover,
+body.portfolio-page #projects .filter-btn.is-active{
+  background:var(--orange)!important;
+  color:#ffffff!important;
+}
+
+/* Match the light Browse by Project Type reference */
+body.portfolio-page #projects{
+  background:#fbf8f2!important;
+  color:#303030!important;
+  padding-top:74px!important;
+}
+body.portfolio-page #projects .eyebrow{
+  color:#d16002!important;
+  -webkit-text-fill-color:#d16002!important;
+  font-weight:650!important;
+}
+body.portfolio-page #projects h2{
+  color:#2f2f2f!important;
+  -webkit-text-fill-color:#2f2f2f!important;
+  text-shadow:none!important;
+}
+body.portfolio-page #projects .section-head>p{
+  color:#55514d!important;
+  -webkit-text-fill-color:#55514d!important;
+  text-shadow:none!important;
+}
+body.portfolio-page #projects .filter-btn{
+  background:#ffffff!important;
+  color:#303030!important;
+  -webkit-text-fill-color:#303030!important;
+  border:1px solid #ded8cf!important;
+  text-shadow:none!important;
+  font-weight:650!important;
+}
+body.portfolio-page #projects .filter-btn:hover,
+body.portfolio-page #projects .filter-btn.is-active{
+  background:var(--orange)!important;
+  color:#ffffff!important;
+  -webkit-text-fill-color:#ffffff!important;
+  border-color:var(--orange)!important;
+}
+
+/* Tighten the bottom of the Portfolio hero */
+body.portfolio-page main > .hero:first-child{
+  min-height:540px!important;
+  padding:98px 0 44px!important;
+}
+body.portfolio-page main > .hero:first-child .hero-copy{
+  margin-bottom:0!important;
+}
+body.portfolio-page main > .hero:first-child .hero-actions{
+  margin-bottom:0!important;
+}
+
+@media(max-width:900px){
+  body.portfolio-page main > .hero:first-child{
+    min-height:500px!important;
+    padding:92px 0 40px!important;
+  }
+  body.portfolio-page #projects{padding-top:64px!important;}
+}
+@media(max-width:640px){
+  body.portfolio-page main > .hero:first-child{
+    min-height:auto!important;
+    padding:92px 0 42px!important;
+  }
+}
+
+:root{--charcoal:#4f4f4f;--charcoal-dark:#272727;--cream:#f6f0e6;--cream-soft:#fffaf3;--ink:#303030;--muted:#6b6b6b;--orange:#d16002;--white:#fff;--line:rgba(48,48,48,.14);--max:1240px;--shadow:0 24px 60px rgba(0,0,0,.16)}
+body{font-family:Poppins,Arial,Helvetica,sans-serif!important;color:var(--ink);background:var(--cream-soft)}
+.site-header{position:fixed!important;top:0!important;left:0!important;right:0!important;z-index:90!important;background:transparent!important;box-shadow:none!important;backdrop-filter:none!important;transition:background-color .28s ease,box-shadow .28s ease,backdrop-filter .28s ease!important}
+.site-header.is-scrolled{background:rgba(55,55,55,.90)!important;box-shadow:0 10px 32px rgba(0,0,0,.16)!important;backdrop-filter:blur(12px)!important}
+.site-header .brand img{width:142px!important;max-width:142px!important;height:auto!important;filter:brightness(0) invert(1)!important}
+.site-header .main-nav a{color:#fff!important;text-shadow:0 1px 2px rgba(0,0,0,.24)}
+.site-header .menu-toggle span{background:#fff!important}
+.nav-wrap{height:68px!important}
+.nav-cta,.header-cta{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-height:44px!important;height:auto!important;padding:11px 16px!important;border-radius:0!important;background:var(--orange)!important;border-color:var(--orange)!important;color:#fff!important;-webkit-text-fill-color:#fff!important;font-size:.72rem!important;font-weight:800!important;letter-spacing:.035em!important;line-height:1.15!important;box-shadow:0 12px 28px rgba(209,96,2,.24)!important}
+.nav-cta:hover,.header-cta:hover{background:#ad4e00!important;border-color:#ad4e00!important}
+.hero h1,.services-hero h1,.service-hero h1{font-size:clamp(2.45rem,5vw,5.15rem)!important;line-height:1.01!important;letter-spacing:-.05em!important;margin-bottom:22px!important}
+
+@media(max-width:1050px){.site-header{background:rgba(55,55,55,.92)!important;backdrop-filter:blur(10px)!important}.site-header .main-nav{background:#2d2d2d!important}footer .footer-grid{grid-template-columns:1fr 1fr!important}.hero h1,.services-hero h1,.service-hero h1{font-size:clamp(2.25rem,7vw,4rem)!important}}
+@media(max-width:680px){.nav-wrap{height:68px!important}.site-header .brand img{width:126px!important;max-width:126px!important}.hero h1,.services-hero h1,.service-hero h1{font-size:clamp(2rem,10vw,3.3rem)!important;line-height:1.04!important}footer .footer-grid{grid-template-columns:1fr!important}footer .footer-logo{width:96px!important;max-width:96px!important}footer .footer-services{grid-template-columns:1fr 1fr!important}footer .footer-bottom{flex-direction:column!important}}
+
+:root{
+ --charcoal:#4f4f4f!important;--charcoal-dark:#272727!important;--cream:#f6f0e6!important;
+ --cream-soft:#fffaf3!important;--ink:#303030!important;--muted:#6b6b6b!important;
+ --orange:#d16002!important;--gold:#d16002!important;--white:#fff!important;
+ --line:rgba(48,48,48,.14)!important;--max:1240px!important;--container:1240px!important;
+ --shadow:0 24px 60px rgba(0,0,0,.16)!important;
+}
+html{scroll-behavior:smooth}body{font-family:Poppins,Arial,Helvetica,sans-serif!important;color:var(--ink)!important}
+.container{width:min(1240px,calc(100% - 48px))!important;max-width:1240px!important;margin-inline:auto!important}
+.site-header{position:fixed!important;top:0!important;left:0!important;right:0!important;background:transparent!important;box-shadow:none!important;backdrop-filter:none!important;transition:background-color .28s ease,box-shadow .28s ease,backdrop-filter .28s ease!important}
+.site-header .nav-wrap{height:74px!important}
+.site-header .brand img{width:142px!important;max-width:142px!important;height:auto!important;filter:brightness(0) invert(1)!important}
+.site-header .main-nav a{color:#fff!important;text-shadow:0 1px 2px rgba(0,0,0,.24)!important}
+.site-header .main-nav a:not(.nav-cta){background:transparent!important}
+.site-header .nav-cta{background:var(--orange)!important;color:#fff!important;border-radius:0!important}
+.site-header .menu-toggle span{background:#fff!important}
+.site-header.is-scrolled{background:rgba(55,55,55,.90)!important;box-shadow:0 10px 32px rgba(0,0,0,.16)!important;backdrop-filter:blur(12px)!important}
+/* Shared hero typography: same scale as the approved homepage. */
+.hero h1,.services-hero h1,.service-hero h1,.about-page-view h1{
+ font-size:clamp(42px,5.2vw,72px)!important;line-height:1.02!important;font-weight:600!important;
+ letter-spacing:-.032em!important;text-transform:none!important;
+}
+.hero .lead,.services-hero .lead,.service-hero .lead,.about-hero .lead{
+ font-size:clamp(15px,1.35vw,18px)!important;line-height:1.72!important;font-weight:400!important;max-width:700px!important;
+}
+.hero .eyebrow,.services-hero .eyebrow,.service-hero .eyebrow,.about-hero .eyebrow{
+ font-size:10px!important;font-weight:600!important;letter-spacing:.20em!important;
+}
+.btn,.nav-cta{border-radius:0!important}
+.btn-primary{background:var(--orange)!important;color:#fff!important}
+
+@media(max-width:1050px){
+ .site-header{background:rgba(55,55,55,.92)!important;backdrop-filter:blur(10px)!important}
+ .site-header .main-nav{background:#2d2d2d!important;inset:74px 0 0!important}
+ .site-header .main-nav a{color:#fff!important}
+ footer .footer-grid{grid-template-columns:1fr 1fr!important}
+}
+@media(max-width:720px){
+ .container{width:min(100% - 32px,1240px)!important}
+ .site-header .nav-wrap{height:68px!important}
+ .site-header .brand img{width:126px!important;max-width:126px!important}
+ .site-header .main-nav{inset:68px 0 0!important}
+ .hero h1,.services-hero h1,.service-hero h1,.about-page-view h1{font-size:clamp(38px,10vw,52px)!important;line-height:1.04!important}
+ .hero .lead,.services-hero .lead,.service-hero .lead,.about-hero .lead{font-size:15px!important;line-height:1.68!important}
+ footer .footer-grid{grid-template-columns:1fr!important}
+ footer .footer-services{grid-template-columns:1fr!important}
+ footer .footer-logo{width:96px!important;max-width:96px!important}
+}
+
+/* Extracted former inline style attributes */
+.extracted-inline-style-001{margin-top:28px;}
+.extracted-inline-style-002{margin-top:28px;}
+.extracted-inline-style-003{margin-top:28px;}
+.extracted-inline-style-004{margin-top:28px;}
+
+/* Homepage header/footer master consistency override */
+.site-header{position:sticky;top:0;z-index:90;background:rgba(255,255,255,.97);box-shadow:0 8px 24px rgba(0,0,0,.07);backdrop-filter:blur(12px)}
+.nav-wrap{height:84px;display:flex;align-items:center;gap:30px}
+.brand img{width:218px;height:auto;filter:brightness(0)}
+.main-nav{margin-left:auto;display:flex;align-items:center;gap:26px;font-size:.83rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.main-nav a{position:relative;padding:31px 0}
+.main-nav a:not(.nav-cta)::after{content:"";position:absolute;height:2px;left:0;right:100%;bottom:23px;background:#d85d00;transition:.25s}
+.main-nav a:hover::after{right:0}
+.nav-cta{padding:12px 16px!important;background:#d85d00;color:#fff!important}
+footer{background:#1f1f1f;color:rgba(255,255,255,.66);padding:74px 0 24px}
+.footer-grid{display:grid;grid-template-columns:1.6fr .75fr 1.15fr .95fr;gap:55px;padding-bottom:48px}
+.footer-logo{width:235px;filter:brightness(0) invert(1);opacity:.94;margin-bottom:20px}
+.footer-grid h3{color:#fff;text-transform:uppercase;font-size:.83rem;letter-spacing:.1em;margin:0 0 18px}
+.footer-grid p,.footer-grid a{font-size:.83rem}
+.footer-grid ul{list-style:none;padding:0;margin:0}
+.footer-grid li{margin:8px 0}
+.footer-services{display:grid;grid-template-columns:1fr 1fr;column-gap:22px;row-gap:7px;align-content:start}
+@media(max-width:900px){.nav-wrap{height:76px}.brand img{width:190px}.main-nav{gap:14px}}
+
+/* Homepage footer standard */
+footer{background:#1f1f1f;color:rgba(255,255,255,.66);padding:74px 0 24px}.footer-grid{display:grid;grid-template-columns:1.6fr .75fr 1.15fr .95fr;gap:55px;padding-bottom:48px}.footer-logo{width:235px;filter:brightness(0) invert(1);opacity:.94;margin-bottom:20px}.footer-grid h3{color:#fff;text-transform:uppercase;font-size:.83rem;letter-spacing:.1em;margin:0 0 18px}.footer-grid p,.footer-grid a{font-size:.83rem}.footer-grid ul{list-style:none;padding:0;margin:0}.footer-grid li{margin:8px 0}.footer-grid a:hover{color:#fff}.footer-services{display:grid;grid-template-columns:1fr 1fr;column-gap:22px;row-gap:7px;align-content:start}.footer-services a{display:block;line-height:1.45;padding:1px 0}.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;gap:20px;font-size:.75rem}
+
+/* Responsive background images */
+@media (max-width: 700px){.hero{background-image:url(/assets/background-001-960w.webp)}}
+@media (min-width: 701px) and (max-width: 1240px){.hero{background-image:url(/assets/background-001-1280w.webp)}}
+/* responsive-bg */
