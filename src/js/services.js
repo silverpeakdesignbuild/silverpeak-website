@@ -56,6 +56,16 @@
   }
 
   window.addEventListener('scroll', updateHeader, {passive:true});
+
+  /* The header dropdown links are plain anchors to /services/#<service>. On a
+     fresh page load the hash is read below, but clicking one while already on
+     this page only changes the hash - which fires no click handler here and
+     previously left the panel unchanged. Reacting to hashchange also makes the
+     browser Back and Forward buttons switch panels. */
+  window.addEventListener('hashchange', function(){
+    showView((location.hash || '#overview').slice(1), true);
+  });
+
   const initial = (location.hash || '#overview').slice(1);
   showView(initial, false);
   updateHeader();
