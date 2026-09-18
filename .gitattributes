@@ -1,0 +1,13 @@
+# Normalise line endings: LF in the repository, LF on checkout everywhere.
+# The build runs on Linux CI, so keeping LF end-to-end avoids spurious diffs
+# and stops Git warning about CRLF conversion on Windows.
+* text=auto eol=lf
+
+# Binary assets — never touch these.
+*.webp binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.ico  binary
+*.woff  binary
+*.woff2 binary
