@@ -39,16 +39,33 @@ const PAGES = [
   { dir: 'privacy-policy',       url: '/privacy-policy/',      priority: '0.3', changefreq: 'yearly'  },
 ];
 
+/* Legacy URLs -> their new home.
+ *
+ * Verified against https://silverpeakdesignbuild.com/sitemap-1.xml on
+ * 2026-09-18: the live WordPress site has exactly six live URLs, listed
+ * below. The canonical tags in the original export claimed /blogs.html,
+ * /faqs.html, /start-project-review.html and /portfolio — all of which 404
+ * on the live site. They were never real, so no redirect is written for them.
+ *
+ *   live                new                 handled by
+ *   /                   /                   same path
+ *   /services/          /services/          same path
+ *   /about/             /about-us/          about/index.html
+ *   /contact/           /contact-us/        contact/index.html
+ *   /portfolio/         /our-work/          portfolio/index.html
+ *   /service-listing/   /services/          service-listing/index.html
+ *
+ * The bare .html twins cover any hand-written link that omits the slash.
+ */
 const REDIRECTS = {
-  'portfolio.html':            '/our-work/',
-  'portfolio/index.html':      '/our-work/',
-  'blogs.html':                '/blogs/',
-  'contact.html':              '/contact-us/',
-  'contact/index.html':        '/contact-us/',
-  'faqs.html':                 '/faqs/',
-  'services.html':             '/services/',
-  'start-project-review.html': '/start-project-review/',
-  'about.html':                '/about-us/',
+  'about/index.html':           '/about-us/',
+  'contact/index.html':         '/contact-us/',
+  'portfolio/index.html':       '/our-work/',
+  'service-listing/index.html': '/services/',
+  'about.html':                 '/about-us/',
+  'contact.html':               '/contact-us/',
+  'portfolio.html':             '/our-work/',
+  'service-listing.html':       '/services/',
 };
 
 const log = (...a) => console.log(' ', ...a);
