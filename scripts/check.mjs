@@ -6,6 +6,11 @@ const ROOT = path.resolve(import.meta.dirname, '..');
 const DIST = path.join(ROOT, 'dist');
 const errors = [], warnings = [];
 
+let BASE = (process.env.BASE_PATH || '').trim().replace(/\/+$/, '');
+if (BASE === '/') BASE = '';
+if (BASE && !BASE.startsWith('/')) BASE = '/' + BASE;
+const CUSTOM = process.env.CUSTOM_DOMAIN === '1';
+
 async function walk(dir) {
   const out = [];
   for (const e of await readdir(dir, { withFileTypes: true })) {
@@ -18,8 +23,13 @@ async function walk(dir) {
 
 /** Does a site-absolute URL resolve to a real file in dist? */
 function resolves(url) {
-  const clean = url.split('#')[0].split('?')[0];
+  let clean = url.split('#')[0].split('?')[0];
   if (!clean.startsWith('/')) return true;             // external / protocol-relative
+  if (BASE) {
+    if (clean === BASE) clean = '/';
+    else if (clean.startsWith(BASE + '/')) clean = clean.slice(BASE.length);
+    else { errors.push(`reference missing base path ${BASE}: ${url}`); return false; }
+  }
   const p = path.join(DIST, decodeURIComponent(clean));
   if (existsSync(p) && statSync(p).isFile()) return true;
   if (existsSync(p) && statSync(p).isDirectory())
@@ -96,9 +106,14 @@ else for (const m of (await readFile(sm, 'utf8')).matchAll(/<loc>([^<]+)<\/loc>/
   const u = new URL(m[1]).pathname;
   if (!resolves(u)) errors.push(`sitemap.xml: ${m[1]} does not resolve`);
 }
-for (const f of ['robots.txt', 'CNAME', '404.html'])
+for (const f of ['robots.txt', '404.html', '.nojekyll'])
   if (!existsSync(path.join(DIST, f))) errors.push(`${f} missing from dist/`);
+if (CUSTOM && !existsSync(path.join(DIST, 'CNAME')))
+  errors.push('CNAME missing from dist/ (CUSTOM_DOMAIN=1)');
+if (!CUSTOM && existsSync(path.join(DIST, 'CNAME')))
+  errors.push('CNAME present in preview build — would hijack the github.io URL');
 
+console.log(`base path: ${BASE || '(none)'}   mode: ${CUSTOM ? 'production' : 'preview'}`);
 console.log(`checked ${html.length} pages, ${linkCount} links, ${imgCount} srcset entries`);
 if (warnings.length) {
   console.log(`\n${warnings.length} warning(s):`);

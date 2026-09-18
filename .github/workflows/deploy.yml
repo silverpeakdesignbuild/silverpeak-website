@@ -5,6 +5,22 @@ on:
     branches: [main]
   workflow_dispatch:
 
+# ---------------------------------------------------------------------------
+# CUSTOM_DOMAIN controls which URL this site is built for.
+#
+#   "0"  preview  — serves at https://<user>.github.io/<repo>/
+#                   Pages are marked noindex so this copy never competes with
+#                   the real site in search. No CNAME is written.
+#
+#   "1"  live     — serves at https://silverpeakdesignbuild.com
+#                   Ships src/CNAME and allows indexing.
+#
+# Flip to "1" only once DNS points at GitHub Pages AND you have set the
+# custom domain under Settings -> Pages.
+# ---------------------------------------------------------------------------
+env:
+  CUSTOM_DOMAIN: "0"
+
 permissions:
   contents: read
   pages: write
@@ -27,13 +43,23 @@ jobs:
 
       - run: npm ci
 
+      # Resolves base_path ("/repo-name", or "" on a custom domain) and origin.
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
       - name: Build site
         run: npm run build
+        env:
+          BASE_PATH:     ${{ steps.pages.outputs.base_path }}
+          SITE_ORIGIN:   ${{ steps.pages.outputs.origin }}
+          CUSTOM_DOMAIN: ${{ env.CUSTOM_DOMAIN }}
 
       - name: Verify build output
         run: npm run check
-
-      - uses: actions/configure-pages@v5
+        env:
+          BASE_PATH:     ${{ steps.pages.outputs.base_path }}
+          CUSTOM_DOMAIN: ${{ env.CUSTOM_DOMAIN }}
 
       - uses: actions/upload-pages-artifact@v3
         with:

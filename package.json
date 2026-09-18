@@ -2,7 +2,7 @@
   "name": "silverpeak-design-build",
   "version": "1.0.0",
   "private": true,
-  "description": "Silver Peak Design Build — static marketing site for silverpeakdesignbuild.com",
+  "description": "Silver Peak Design Build \u2014 static marketing site for silverpeakdesignbuild.com",
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
