@@ -202,7 +202,13 @@ html body.sp-unified-shell .site-header .menu-toggle span{
   height:2px!important;
   margin:7px 0!important;
   background:#fff!important;
+  transition:transform .2s ease,opacity .2s ease!important;
 }
+/* Open menu: the three bars become an X. Bars sit 9px apart (2px bar + 7px
+   collapsed margin), so the outer two move 9px to meet the middle one. */
+html body.sp-unified-shell .site-header .menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(9px) rotate(45deg)!important}
+html body.sp-unified-shell .site-header .menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0!important}
+html body.sp-unified-shell .site-header .menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-9px) rotate(-45deg)!important}
 
 html body.sp-unified-shell footer{
   margin:0!important;
@@ -315,8 +321,16 @@ html body.sp-unified-shell .faq-verify-link{
 }
 
 @media(max-width:1180px){
-  html body.sp-unified-shell .site-header{background:rgba(55,55,55,.94)!important;backdrop-filter:blur(10px)!important}
+  html body.sp-unified-shell .site-header{background:rgba(55,55,55,.94)!important}
+  /* No blur here: backdrop-filter makes the header the containing block for
+     the fixed .main-nav, which then squeezes into the header's 74px instead
+     of filling the screen below it. */
+  html body.sp-unified-shell .site-header,
+  html body.sp-unified-shell .site-header.is-scrolled,
+  html body.sp-unified-shell .site-header.subpage-active{backdrop-filter:none!important}
   html body.sp-unified-shell .site-header .menu-toggle{display:block!important}
+  /* flex-start, not the desktop centring services/our-work set: a centred
+     column taller than the panel pushes its first links out of scroll reach. */
   html body.sp-unified-shell .site-header .main-nav{
     position:fixed!important;
     inset:74px 0 0!important;
@@ -325,6 +339,7 @@ html body.sp-unified-shell .faq-verify-link{
     padding:28px!important;
     flex-direction:column!important;
     align-items:flex-start!important;
+    justify-content:flex-start!important;
     gap:0!important;
     overflow:auto!important;
     background:#2d2d2d!important;
@@ -332,6 +347,7 @@ html body.sp-unified-shell .faq-verify-link{
   html body.sp-unified-shell .site-header .main-nav.open{display:flex!important}
   html body.sp-unified-shell .site-header .main-nav>a,
   html body.sp-unified-shell .site-header .nav-dropdown-trigger{
+    display:block!important;
     width:100%!important;
     padding:14px 0!important;
     border-bottom:1px solid rgba(255,255,255,.12)!important;
@@ -341,6 +357,7 @@ html body.sp-unified-shell .faq-verify-link{
   html body.sp-unified-shell .site-header .nav-dropdown{display:block!important;width:100%!important;margin-bottom:0!important;padding-bottom:0!important}
   html body.sp-unified-shell .site-header .nav-dropdown-trigger::before{right:8px!important}
   html body.sp-unified-shell .site-header .nav-dropdown-menu,
+  html body.sp-unified-shell .site-header .service-dropdown .nav-dropdown-menu,
   html body.sp-unified-shell .site-header .portfolio-dropdown .nav-dropdown-menu{
     position:static!important;
     width:100%!important;
@@ -358,6 +375,10 @@ html body.sp-unified-shell .faq-verify-link{
     pointer-events:auto!important;
   }
   html body.sp-unified-shell .site-header .nav-dropdown-menu::before{display:none!important}
+  /* The desktop hover/focus rule re-centres the flyout with translate(-50%);
+     in the stacked menu that slides the list half off-screen on tap. */
+  html body.sp-unified-shell .site-header .nav-dropdown:hover .nav-dropdown-menu,
+  html body.sp-unified-shell .site-header .nav-dropdown:focus-within .nav-dropdown-menu{transform:none!important}
   html body.sp-unified-shell .site-header .nav-dropdown-menu a{
     padding:9px 0 9px 16px!important;
     color:#fff!important;
@@ -409,14 +430,23 @@ html body.sp-unified-shell .site-header .nav-wrap{
   max-width:1240px!important;
 }
 
-/* our-work carried margin-right:auto as well, which centred the nav
-   instead of right-aligning it — 164px adrift from every other page. */
-html body.sp-unified-shell .site-header .main-nav{
-  display:flex!important;
-  align-items:center!important;
-  gap:20px!important;
-  margin:0 0 0 auto!important;
-  flex:0 1 auto!important;
+/* Layout is desktop-only. Unscoped, these rules came after the max-width:1180px
+   block at equal specificity and overrode it: the collapsed menu showed as a
+   strip under the header and the hamburger had no visible effect. */
+@media(min-width:1181px){
+  /* our-work carried margin-right:auto as well, which centred the nav
+     instead of right-aligning it — 164px adrift from every other page. */
+  html body.sp-unified-shell .site-header .main-nav{
+    display:flex!important;
+    align-items:center!important;
+    gap:20px!important;
+    margin:0 0 0 auto!important;
+    flex:0 1 auto!important;
+  }
+  html body.sp-unified-shell .site-header .main-nav > a:not(.nav-cta),
+  html body.sp-unified-shell .site-header .main-nav > .nav-dropdown > .nav-dropdown-trigger{
+    padding:28px 0!important;
+  }
 }
 
 /* Top-level items only: not the CTA, not the dropdown menu contents. */
@@ -426,7 +456,6 @@ html body.sp-unified-shell .site-header .main-nav > .nav-dropdown > .nav-dropdow
   font-weight:700!important;
   letter-spacing:.624px!important;
   text-transform:uppercase!important;
-  padding:28px 0!important;
 }
 
 /* line-height is pinned because services inherited 15.936px, making the
