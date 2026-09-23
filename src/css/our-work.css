@@ -1124,6 +1124,11 @@ body.portfolio-page .compact-story-image img {
   object-fit: cover !important;
   object-position: center !important;
 }
+/* For photos whose subject sits at the top edge (e.g. a skylight): the frame's
+   shape varies from 1.2:1 to 2.5:1, so trim from the bottom instead of both ends. */
+body.portfolio-page .compact-story-image img.img-anchor-top {
+  object-position: 50% 0 !important;
+}
 body.portfolio-page .compact-story-copy {
   max-width: 650px !important;
 }
