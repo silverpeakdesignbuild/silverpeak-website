@@ -113,8 +113,7 @@ html body.sp-unified-shell .site-header .nav-dropdown-trigger::before{
   font-size:.62rem!important;
   opacity:.82!important;
 }
-/* display and width are pinned because services.css turned every dropdown into
-   a 640px two-column grid, so About Us opened as a wide box for three links. */
+/* The header dropdowns are styled only here; page stylesheets should not restyle them. */
 html body.sp-unified-shell .site-header .nav-dropdown-menu{
   position:absolute!important;
   top:calc(100% - 2px)!important;
@@ -142,8 +141,10 @@ html body.sp-unified-shell .site-header .nav-dropdown-menu::before{
   left:0!important;
   height:24px!important;
 }
+/* is-open is set by services.js to keep the Services menu open briefly after the pointer leaves. */
 html body.sp-unified-shell .site-header .nav-dropdown:hover .nav-dropdown-menu,
-html body.sp-unified-shell .site-header .nav-dropdown:focus-within .nav-dropdown-menu{
+html body.sp-unified-shell .site-header .nav-dropdown:focus-within .nav-dropdown-menu,
+html body.sp-unified-shell .site-header .nav-dropdown.is-open .nav-dropdown-menu{
   transform:translate(-50%,0)!important;
   opacity:1!important;
   visibility:visible!important;
@@ -156,7 +157,6 @@ html body.sp-unified-shell .site-header .portfolio-dropdown .nav-dropdown-menu{
   max-height:min(72vh,520px)!important;
   overflow-y:auto!important;
 }
-/* min-height:0 cancels the 51px (services.css) and 54px (our-work.css) rows. */
 html body.sp-unified-shell .site-header .nav-dropdown-menu a{
   display:block!important;
   min-height:0!important;

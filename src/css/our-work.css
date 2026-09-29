@@ -35,12 +35,6 @@ button{font-family:inherit}
 .btn-light{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.45);color:var(--white)}
 .btn-row{display:flex;flex-wrap:wrap;gap:16px;margin-top:28px}
 .menu-toggle{display:none}
-.nav-dropdown{position:relative;display:inline-flex;align-items:center;padding-bottom:22px;margin-bottom:-22px}
-.nav-dropdown-menu{position:absolute;top:calc(100% - 1px);left:50%;transform:translateX(-50%) translateY(10px);min-width:330px;padding:22px 30px;background:var(--cream-soft);border:1px solid var(--line);box-shadow:0 24px 70px rgba(0,0,0,.18);border-radius:0 0 28px 28px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .2s ease,transform .2s ease,visibility .2s ease}
-.nav-dropdown:hover .nav-dropdown-menu,.nav-dropdown:focus-within .nav-dropdown-menu{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0)}
-.nav-dropdown-menu a{display:block;padding:17px 10px;color:var(--ink)!important;-webkit-text-fill-color:var(--ink)!important;text-shadow:none!important;font-size:15px;font-weight:700;letter-spacing:.14em;border-bottom:1px solid var(--line)}
-.nav-dropdown-menu a:last-child{border-bottom:0}
-.nav-dropdown-menu a:hover{color:var(--gold)!important;-webkit-text-fill-color:var(--gold)!important}
 .hero{min-height:88vh;display:flex;align-items:center;color:var(--white);background:linear-gradient(90deg,rgba(31,31,30,.88),rgba(31,31,30,.62),rgba(31,31,30,.28)),url('/assets/background-001.webp');background-size:cover;background-position:center;padding-top:100px}
 .eyebrow{margin:0 0 18px;color:var(--gold);font-size:13px;font-weight:900;letter-spacing:.42em;text-transform:uppercase}
 h1,h2,h3,p{margin-top:0}
@@ -175,13 +169,6 @@ header nav .nav-dropdown-trigger {
   letter-spacing: .12em !important;
 }
 
-.nav-dropdown-menu a,
-.dropdown-menu a,
-.sub-menu a {
-  font-size: 14px !important;
-  letter-spacing: .10em !important;
-}
-
 /* Same update as homepage: CTA buttons orange only + elegant smaller navigation tabs */
 .btn-primary,
 .header-cta,
@@ -243,13 +230,6 @@ header nav > a,
 header nav .nav-dropdown-trigger {
   font-size: 11px !important;
   letter-spacing: .11em !important;
-}
-
-.nav-dropdown-menu a,
-.dropdown-menu a,
-.sub-menu a {
-  font-size: 13px !important;
-  letter-spacing: .09em !important;
 }
 
 .portfolio-summary-grid {
@@ -442,32 +422,6 @@ body.portfolio-page main > .hero:first-child h1 {
   letter-spacing: -0.045em !important;
 }
 
-/* Our Work project dropdown */
-body.portfolio-page .portfolio-dropdown-menu {
-  width: min(680px, calc(100vw - 40px));
-  min-width: 620px;
-  max-height: min(72vh, 680px);
-  overflow-y: auto;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0 22px;
-  overscroll-behavior: contain;
-}
-body.portfolio-page .portfolio-dropdown-menu a {
-  white-space: normal;
-  line-height: 1.35;
-  padding: 13px 0;
-}
-body.portfolio-page .portfolio-dropdown-menu a.is-active {
-  color: var(--ink) !important;
-  -webkit-text-fill-color: var(--ink) !important;
-  font-weight: 900;
-  background: rgba(79,79,79,.06);
-  border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 /* Same-file project sub-pages. The overview remains short; only the selected project is shown. */
 body.portfolio-page.portfolio-js-ready [data-portfolio-view] {
   display: none !important;
@@ -500,13 +454,6 @@ body.portfolio-page .portfolio-back-link:hover {
   color: var(--portfolio-cta-orange-hover);
 }
 
-@media (max-width: 1180px) {
-  body.portfolio-page .portfolio-dropdown-menu {
-    width: auto;
-    min-width: 0;
-    grid-template-columns: 1fr;
-  }
-}
 @media (max-width: 720px) {
   body.portfolio-page main > .hero:first-child h1 {
     font-size: clamp(40px, 12vw, 62px) !important;
@@ -1615,16 +1562,6 @@ body.portfolio-page .header-cta{display:none!important}
 body.portfolio-page .menu-toggle{display:none!important;margin-left:auto!important;border:0!important;background:transparent!important;width:45px!important;height:45px!important;padding:8px!important;cursor:pointer!important}
 body.portfolio-page .menu-toggle span{display:block!important;height:2px!important;background:#fff!important;margin:7px 0!important}
 
-/* Our Work submenu: stable hover bridge, clean project-only labels */
-body.portfolio-page .nav-dropdown{position:relative!important;display:flex!important;align-items:center!important;padding-bottom:18px!important;margin-bottom:-18px!important}
-body.portfolio-page .nav-dropdown::after{content:"";position:absolute;left:-22px;right:-22px;top:100%;height:24px}
-body.portfolio-page .portfolio-dropdown-menu{position:absolute!important;top:calc(100% + 4px)!important;left:50%!important;transform:translateX(-50%) translateY(8px)!important;width:690px!important;min-width:690px!important;padding:20px 26px!important;display:grid!important;grid-template-columns:1fr 1fr!important;column-gap:26px!important;background:#fffaf3!important;border:1px solid var(--line)!important;border-radius:0!important;box-shadow:0 22px 55px rgba(0,0,0,.18)!important;opacity:0!important;visibility:hidden!important;pointer-events:none!important;transition:.2s ease!important}
-body.portfolio-page .portfolio-dropdown:hover .portfolio-dropdown-menu,
-body.portfolio-page .portfolio-dropdown:focus-within .portfolio-dropdown-menu{opacity:1!important;visibility:visible!important;pointer-events:auto!important;transform:translateX(-50%) translateY(0)!important}
-body.portfolio-page .portfolio-dropdown-menu a{display:flex!important;align-items:center!important;min-height:54px!important;padding:10px 8px!important;color:var(--ink)!important;-webkit-text-fill-color:var(--ink)!important;text-shadow:none!important;font-size:.82rem!important;line-height:1.35!important;letter-spacing:.01em!important;text-transform:none!important;font-weight:650!important;border-bottom:1px solid var(--line)!important}
-body.portfolio-page .portfolio-dropdown-menu a:hover,
-body.portfolio-page .portfolio-dropdown-menu a.is-active{color:var(--orange)!important;-webkit-text-fill-color:var(--orange)!important}
-
 /* Hero: homepage visual language, without the former oversized dead space */
 body.portfolio-page main>.hero:first-child{position:relative!important;min-height:650px!important;height:auto!important;padding:112px 0 78px!important;display:flex!important;align-items:center!important;overflow:hidden!important;background-size:cover!important;background-position:center 42%!important;color:#fff!important}
 body.portfolio-page main>.hero:first-child::before{content:""!important;position:absolute!important;inset:0!important;display:block!important;background:linear-gradient(90deg,rgba(13,13,13,.92) 0%,rgba(13,13,13,.70) 44%,rgba(13,13,13,.34) 78%,rgba(13,13,13,.16) 100%)!important;z-index:0!important}
@@ -1720,10 +1657,6 @@ body.portfolio-page .sp-reveal.is-visible{opacity:1;transform:none}
   body.portfolio-page .main-nav>a,body.portfolio-page .nav-dropdown-trigger{color:var(--ink)!important;-webkit-text-fill-color:var(--ink)!important;text-shadow:none!important;padding:14px 0!important;border-bottom:1px solid var(--line)!important;width:100%!important}
   body.portfolio-page .main-nav .nav-cta{margin-top:15px!important;text-align:center!important;color:#fff!important;-webkit-text-fill-color:#fff!important;width:100%!important}
   body.portfolio-page .menu-toggle{display:block!important}
-  body.portfolio-page .portfolio-dropdown{padding:0!important;margin:0!important;display:block!important}
-  body.portfolio-page .portfolio-dropdown::after{display:none!important}
-  body.portfolio-page .portfolio-dropdown-menu{position:static!important;transform:none!important;width:100%!important;min-width:0!important;grid-template-columns:1fr!important;padding:8px 0 12px 14px!important;box-shadow:none!important;border:0!important;background:transparent!important;opacity:1!important;visibility:visible!important;pointer-events:auto!important;display:grid!important}
-  body.portfolio-page .portfolio-dropdown-menu a{min-height:0!important;padding:10px 0!important;font-size:.8rem!important}
   body.portfolio-page #projects .project-grid{grid-template-columns:repeat(2,1fr)!important;grid-auto-rows:360px!important}
   body.portfolio-page #projects .project-card:nth-child(n){grid-column:span 1!important;grid-row:span 1!important}
   body.portfolio-page .featured-grid{grid-template-columns:1fr!important;gap:36px!important}
