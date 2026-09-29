@@ -53,8 +53,26 @@
     });
   });
 
+  // Project addresses renamed on 2026-09-29; old shared links forward to the new ones.
+  const renamedProjects = {
+    'warm-wood-bathroom-remodel': 'greenwood-craftsman-whole-house-build',
+    'compact-dadu-project': 'view-ridge-dadu',
+    'residential-bathroom-upgrade': 'licton-springs-kitchen-bath-remodel',
+    'tile-fixture-bathroom-remodel': 'bitter-lake-bath-and-exterior',
+    'detailed-finish-bathroom-remodel': 'licton-springs-tudor-restoration',
+    'bathroom-construction-finish-project': 'seattle-accessible-shower-bathroom',
+    'greenwood-bathroom-remodel': 'greenwood-accessible-bath-laundry',
+    'exterior-whole-home-project': 'haller-lake-whole-house-interior'
+  };
+
   function resolveLocation() {
-    const raw = decodeURIComponent(window.location.hash.replace(/^#/, ''));
+    let raw = decodeURIComponent(window.location.hash.replace(/^#/, ''));
+    const prefix = raw.startsWith('gallery-') ? 'gallery-' : '';
+    const renamed = renamedProjects[raw.slice(prefix.length)];
+    if (renamed) {
+      raw = prefix + renamed;
+      history.replaceState(null, '', '#' + raw);
+    }
     if (!raw || raw === 'overview') return { view: 'overview', anchor: 'overview' };
     if (raw === 'projects') return { view: 'overview', anchor: 'projects' };
     if (raw.startsWith('gallery-')) {

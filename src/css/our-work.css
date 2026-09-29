@@ -995,19 +995,19 @@ body.portfolio-page .primary-story-image img {
   }
 }
 
-body.portfolio-page #warm-wood-bathroom-remodel .featured-grid {
+body.portfolio-page #greenwood-craftsman-whole-house-build .featured-grid {
   align-items: center !important;
   gap: clamp(28px, 4vw, 58px) !important;
 }
-body.portfolio-page #warm-wood-bathroom-remodel .featured-copy {
+body.portfolio-page #greenwood-craftsman-whole-house-build .featured-copy {
   max-width: 760px !important;
 }
-body.portfolio-page #warm-wood-bathroom-remodel .featured-copy h2 {
+body.portfolio-page #greenwood-craftsman-whole-house-build .featured-copy h2 {
   font-size: clamp(38px, 4.2vw, 68px) !important;
   line-height: 1.02 !important;
   margin-bottom: 18px !important;
 }
-body.portfolio-page #warm-wood-bathroom-remodel .featured-copy .project-narrative-paragraph {
+body.portfolio-page #greenwood-craftsman-whole-house-build .featured-copy .project-narrative-paragraph {
   font-size: 16.5px !important;
   line-height: 1.72 !important;
   margin-bottom: 14px !important;
@@ -1193,42 +1193,42 @@ body.portfolio-page .compact-renovation-summary h3 {
   font-size: clamp(21px, 2vw, 30px) !important;
   font-weight: 600 !important;
 }
-body.portfolio-page #gallery-warm-wood-bathroom-remodel .section-head {
+body.portfolio-page #gallery-greenwood-craftsman-whole-house-build .section-head {
   align-items: start !important;
   margin-bottom: 30px !important;
 }
-body.portfolio-page #gallery-warm-wood-bathroom-remodel .section-head h2 {
+body.portfolio-page #gallery-greenwood-craftsman-whole-house-build .section-head h2 {
   font-size: clamp(34px, 4vw, 62px) !important;
 }
-body.portfolio-page #gallery-warm-wood-bathroom-remodel .gallery-grid {
+body.portfolio-page #gallery-greenwood-craftsman-whole-house-build .gallery-grid {
   display: grid !important;
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   gap: 14px !important;
 }
-body.portfolio-page #gallery-warm-wood-bathroom-remodel .gallery-item {
+body.portfolio-page #gallery-greenwood-craftsman-whole-house-build .gallery-item {
   border-radius: 18px !important;
 }
-body.portfolio-page #gallery-warm-wood-bathroom-remodel .gallery-item img {
+body.portfolio-page #gallery-greenwood-craftsman-whole-house-build .gallery-item img {
   height: 260px !important;
   object-fit: cover !important;
   object-position: center !important;
 }
-body.portfolio-page #gallery-warm-wood-bathroom-remodel .gallery-item.wide {
+body.portfolio-page #gallery-greenwood-craftsman-whole-house-build .gallery-item.wide {
   grid-column: span 2 !important;
 }
 @media (max-width: 980px) {
-  body.portfolio-page #gallery-warm-wood-bathroom-remodel .gallery-grid {
+  body.portfolio-page #gallery-greenwood-craftsman-whole-house-build .gallery-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 }
 @media (max-width: 640px) {
-  body.portfolio-page #gallery-warm-wood-bathroom-remodel .gallery-grid {
+  body.portfolio-page #gallery-greenwood-craftsman-whole-house-build .gallery-grid {
     grid-template-columns: 1fr !important;
   }
-  body.portfolio-page #gallery-warm-wood-bathroom-remodel .gallery-item.wide {
+  body.portfolio-page #gallery-greenwood-craftsman-whole-house-build .gallery-item.wide {
     grid-column: auto !important;
   }
-  body.portfolio-page #gallery-warm-wood-bathroom-remodel .gallery-item img {
+  body.portfolio-page #gallery-greenwood-craftsman-whole-house-build .gallery-item img {
     height: 230px !important;
   }
 }
@@ -1238,10 +1238,10 @@ body.portfolio-page #gallery-warm-wood-bathroom-remodel .gallery-item.wide {
 .gallery-grid--project2-progress{margin-top:10px}
 
 /* Project 6 spacing correction: match the previous featured project layout */
-body.portfolio-page #residential-bathroom-upgrade .compact-project-story {
+body.portfolio-page #licton-springs-kitchen-bath-remodel .compact-project-story {
   margin-top: clamp(42px, 5vw, 72px) !important;
 }
-body.portfolio-page #residential-bathroom-upgrade .compact-story-head {
+body.portfolio-page #licton-springs-kitchen-bath-remodel .compact-story-head {
   margin-bottom: clamp(26px, 3.5vw, 42px) !important;
 }
 
