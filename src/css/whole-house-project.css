@@ -1,0 +1,10 @@
+body.standalone-project .house-detail{padding-top:clamp(96px,12vw,156px)}
+body.standalone-project .featured-copy h1{font-size:clamp(2.4rem,5vw,4.8rem);line-height:1.08;margin:0 0 22px}
+body.standalone-project .house-detail .featured-image img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:12px}
+body.standalone-project .compact-story-copy h3{font-size:clamp(1.45rem,2vw,2rem);line-height:1.2;margin:0 0 12px}
+body.standalone-project .gallery-grid figure{margin:0}
+body.standalone-project .gallery-grid figcaption{padding:10px 4px 4px;color:#343434;font-size:.85rem;line-height:1.45}
+body.standalone-project .gallery-grid img{width:100%;height:auto;display:block}
+body.standalone-project .house-cta{text-align:center;background:#f3f0eb}
+body.standalone-project .house-cta p{max-width:670px;margin:12px auto 24px}
+@media(max-width:700px){body.standalone-project .house-detail{padding-top:96px}}

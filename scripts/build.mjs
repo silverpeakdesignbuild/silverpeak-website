@@ -31,6 +31,7 @@ const PAGES = [
   { dir: '',                     url: '/',                     priority: '1.0', changefreq: 'monthly' },
   { dir: 'services',             url: '/services/',            priority: '0.9', changefreq: 'monthly' },
   { dir: 'our-work',             url: '/our-work/',            priority: '0.9', changefreq: 'monthly' },
+  { dir: 'our-work/whole-house-project-renovation', url: '/our-work/whole-house-project-renovation/', priority: '0.8', changefreq: 'monthly' },
   { dir: 'about-us',             url: '/about-us/',            priority: '0.7', changefreq: 'yearly'  },
   { dir: 'start-project-review', url: '/start-project-review/',priority: '0.8', changefreq: 'yearly'  },
   { dir: 'contact-us',           url: '/contact-us/',          priority: '0.8', changefreq: 'yearly'  },
