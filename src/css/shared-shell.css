@@ -149,18 +149,11 @@ html body.sp-unified-shell .site-header .nav-dropdown:focus-within .nav-dropdown
   visibility:visible!important;
   pointer-events:auto!important;
 }
-html body.sp-unified-shell .site-header .service-dropdown .nav-dropdown-menu{
+/* Services and Our Work share one single-column list so the menus match. */
+html body.sp-unified-shell .site-header .service-dropdown .nav-dropdown-menu,
+html body.sp-unified-shell .site-header .portfolio-dropdown .nav-dropdown-menu{
   min-width:270px!important;
   max-height:min(72vh,520px)!important;
-  overflow-y:auto!important;
-}
-html body.sp-unified-shell .site-header .portfolio-dropdown .nav-dropdown-menu{
-  width:680px!important;
-  min-width:680px!important;
-  max-height:min(72vh,560px)!important;
-  display:grid!important;
-  grid-template-columns:1fr 1fr!important;
-  column-gap:18px!important;
   overflow-y:auto!important;
 }
 /* min-height:0 cancels the 51px (services.css) and 54px (our-work.css) rows. */
@@ -178,10 +171,6 @@ html body.sp-unified-shell .site-header .nav-dropdown-menu a{
   font-weight:650!important;
   line-height:1.3!important;
   white-space:nowrap!important;
-}
-html body.sp-unified-shell .site-header .portfolio-dropdown .nav-dropdown-menu a{
-  white-space:normal!important;
-  border-bottom:1px solid rgba(48,48,48,.1)!important;
 }
 html body.sp-unified-shell .site-header .nav-dropdown-menu a:hover,
 html body.sp-unified-shell .site-header .nav-dropdown-menu a.is-active{
