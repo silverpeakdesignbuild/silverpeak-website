@@ -2228,34 +2228,3 @@ footer{background:#1f1f1f;color:rgba(255,255,255,.66);padding:74px 0 24px}.foote
 
 /* Seattle bathroom photo stories */
 .accessible-feature-list{padding-top:10px;padding-bottom:52px}.accessible-feature-list>h2{margin:0 0 32px}.accessible-feature{display:grid;grid-template-columns:minmax(0,.55fr) minmax(0,1fr);align-items:center;gap:clamp(24px,5vw,80px);padding:32px 0;border-top:1px solid rgba(80,80,80,.16)}.accessible-feature:nth-of-type(even) .accessible-feature-photo{order:2}.accessible-feature-photo img{width:100%;height:min(65vw,540px);object-fit:contain;background:#eee9e1;border-radius:18px}.accessible-feature-copy h3{font-size:clamp(1.5rem,3vw,2.4rem);margin:0 0 12px}.accessible-feature-copy p{max-width:600px;font-size:17px;line-height:1.8}.accessible-gallery img{object-fit:contain;background:#eee9e1}.accessible-gallery figcaption{padding:12px 14px;font-size:14px;line-height:1.5;color:#333}@media(max-width:700px){.accessible-feature{grid-template-columns:1fr}.accessible-feature:nth-of-type(even) .accessible-feature-photo{order:0}.accessible-feature-photo img{height:480px}}
-
-/* Make the ninth and final project a deliberate closing feature. */
-@media (min-width:981px){
-  body.portfolio-page #projects .project-card:last-child{
-    grid-column:1 / -1!important;
-    background:#252525!important;
-  }
-  body.portfolio-page #projects .project-card:last-child>a{
-    position:absolute!important;
-    inset:0!important;
-    z-index:3!important;
-    cursor:pointer!important;
-  }
-  body.portfolio-page #projects .project-card:last-child img{
-    left:44%!important;
-    width:56%!important;
-    object-position:center 48%!important;
-  }
-  body.portfolio-page #projects .project-card:last-child::after{
-    background:linear-gradient(90deg,#252525 0%,#252525 36%,rgba(37,37,37,.85) 48%,rgba(37,37,37,.06) 72%)!important;
-  }
-  body.portfolio-page #projects .project-card:last-child .project-card-body{
-    left:clamp(36px,5vw,72px)!important;
-    bottom:50%!important;
-    transform:translateY(50%)!important;
-    width:min(41%,510px)!important;
-    max-width:none!important;
-  }
-  body.portfolio-page #projects .project-card:last-child h3,
-  body.portfolio-page #projects .project-card:last-child p{max-width:100%!important}
-}
