@@ -113,11 +113,15 @@ html body.sp-unified-shell .site-header .nav-dropdown-trigger::before{
   font-size:.62rem!important;
   opacity:.82!important;
 }
+/* display and width are pinned because services.css turned every dropdown into
+   a 640px two-column grid, so About Us opened as a wide box for three links. */
 html body.sp-unified-shell .site-header .nav-dropdown-menu{
   position:absolute!important;
   top:calc(100% - 2px)!important;
   left:50%!important;
   z-index:1250!important;
+  display:block!important;
+  width:auto!important;
   min-width:218px!important;
   padding:10px!important;
   transform:translate(-50%,8px)!important;
@@ -159,8 +163,10 @@ html body.sp-unified-shell .site-header .portfolio-dropdown .nav-dropdown-menu{
   column-gap:18px!important;
   overflow-y:auto!important;
 }
+/* min-height:0 cancels the 51px (services.css) and 54px (our-work.css) rows. */
 html body.sp-unified-shell .site-header .nav-dropdown-menu a{
   display:block!important;
+  min-height:0!important;
   padding:11px 13px!important;
   color:var(--sp-shell-ink)!important;
   -webkit-text-fill-color:var(--sp-shell-ink)!important;
@@ -320,6 +326,9 @@ html body.sp-unified-shell .faq-verify-link{
   text-underline-offset:3px!important;
 }
 
+/* Mobile-menu section toggle (added by shared-shell.js); desktop uses hover. */
+html body.sp-unified-shell .site-header .nav-submenu-toggle{display:none!important}
+
 @media(max-width:1180px){
   html body.sp-unified-shell .site-header{background:rgba(55,55,55,.94)!important}
   /* No blur here: backdrop-filter makes the header the containing block for
@@ -345,6 +354,11 @@ html body.sp-unified-shell .faq-verify-link{
     background:#2d2d2d!important;
   }
   html body.sp-unified-shell .site-header .main-nav.open{display:flex!important}
+  /* our-work.css never locked the page behind the open menu. */
+  html body.sp-unified-shell.menu-open{overflow:hidden!important}
+  /* Without this the column shrinks to fit the panel, and the CTA (whose
+     min-height is 0) was squashed to 25px instead of the list scrolling. */
+  html body.sp-unified-shell .site-header .main-nav>*{flex-shrink:0!important}
   html body.sp-unified-shell .site-header .main-nav>a,
   html body.sp-unified-shell .site-header .nav-dropdown-trigger{
     display:block!important;
@@ -353,9 +367,62 @@ html body.sp-unified-shell .faq-verify-link{
     border-bottom:1px solid rgba(255,255,255,.12)!important;
   }
   html body.sp-unified-shell .site-header .main-nav a::after{display:none!important}
-  html body.sp-unified-shell .site-header .nav-cta{width:100%!important;margin-top:15px!important;text-align:center!important}
+  /* Desktop marks the current page with an underline, hidden here. #ffb15a is
+     the orange the site already uses for text on dark (7.7:1 on #2d2d2d);
+     the brand #d16002 is only 3.5:1 at this size. */
+  html body.sp-unified-shell .site-header .main-nav>a[aria-current="page"]:not(.nav-cta),
+  html body.sp-unified-shell .site-header .nav-dropdown-trigger[aria-current="page"]{
+    color:#ffb15a!important;
+    -webkit-text-fill-color:#ffb15a!important;
+  }
+  html body.sp-unified-shell .site-header .main-nav>a.nav-cta{
+    display:flex!important;
+    width:100%!important;
+    min-height:44px!important;
+    margin-top:15px!important;
+    text-align:center!important;
+  }
   html body.sp-unified-shell .site-header .nav-dropdown{display:block!important;width:100%!important;margin-bottom:0!important;padding-bottom:0!important}
-  html body.sp-unified-shell .site-header .nav-dropdown-trigger::before{right:8px!important}
+  /* The section name keeps its link; the arrow beside it is a separate
+     button, so the CSS ▾ on the link stays hidden. */
+  html body.sp-unified-shell .site-header .nav-dropdown-trigger::before{display:none!important}
+  html body.sp-unified-shell .site-header .nav-dropdown.has-submenu-toggle{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) 48px!important;
+    align-items:stretch!important;
+  }
+  /* Stretched so its divider lines up with the 44px button's. */
+  html body.sp-unified-shell .site-header .nav-dropdown.has-submenu-toggle>.nav-dropdown-trigger{
+    display:flex!important;
+    align-items:center!important;
+  }
+  html body.sp-unified-shell .site-header .nav-dropdown.has-submenu-toggle>.nav-dropdown-menu{grid-column:1 / -1!important}
+  html body.sp-unified-shell .site-header .nav-submenu-toggle{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-height:44px!important;
+    padding:0!important;
+    background:transparent!important;
+    border:0!important;
+    border-bottom:1px solid rgba(255,255,255,.12)!important;
+    color:#fff!important;
+    cursor:pointer!important;
+  }
+  html body.sp-unified-shell .site-header .nav-submenu-toggle::before{
+    content:""!important;
+    width:9px!important;
+    height:9px!important;
+    border-right:2px solid currentColor!important;
+    border-bottom:2px solid currentColor!important;
+    transform:translateY(-2px) rotate(45deg)!important;
+    transition:transform .2s ease!important;
+  }
+  html body.sp-unified-shell .site-header .nav-dropdown.is-expanded>.nav-submenu-toggle::before{transform:translateY(2px) rotate(-135deg)!important}
+  html body.sp-unified-shell .site-header .nav-submenu-toggle:focus-visible{outline:2px solid #ffb15a!important;outline-offset:-2px!important}
+  /* Only once the script has added the button, so the links stay reachable
+     without JavaScript. */
+  html body.sp-unified-shell .site-header .nav-dropdown.has-submenu-toggle:not(.is-expanded)>.nav-dropdown-menu{display:none!important}
   html body.sp-unified-shell .site-header .nav-dropdown-menu,
   html body.sp-unified-shell .site-header .service-dropdown .nav-dropdown-menu,
   html body.sp-unified-shell .site-header .portfolio-dropdown .nav-dropdown-menu{
@@ -432,8 +499,11 @@ html body.sp-unified-shell .site-header .nav-wrap{
 
 /* Layout is desktop-only. Unscoped, these rules came after the max-width:1180px
    block at equal specificity and overrode it: the collapsed menu showed as a
-   strip under the header and the hamburger had no visible effect. */
-@media(min-width:1181px){
+   strip under the header and the hamburger had no visible effect.
+   "not ... (max-width:1180px)" rather than min-width:1181px: at fractional
+   zoom (Windows 125% scaling) the viewport can be 1180.3px, where neither
+   of those matched and our-work's nav drifted back to the centre. */
+@media not all and (max-width:1180px){
   /* our-work carried margin-right:auto as well, which centred the nav
      instead of right-aligning it — 164px adrift from every other page. */
   html body.sp-unified-shell .site-header .main-nav{
