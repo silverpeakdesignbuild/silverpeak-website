@@ -42,6 +42,29 @@
 
   const portfolioLinks = Array.from(document.querySelectorAll('[data-portfolio-target]'));
 
+  // With an odd number of cards showing, the last one spans the row so the grid has no empty cell.
+  // Its image gets a full-width sizes hint so the browser loads the largest file.
+  function fillLastRow() {
+    const cards = Array.from(document.querySelectorAll('.project-card'));
+    const visible = cards.filter((card) => !card.hidden);
+    cards.forEach((card) => {
+      card.classList.remove('spans-row');
+      const img = card.querySelector('img');
+      if (img && img.dataset.cardSizes) img.sizes = img.dataset.cardSizes;
+    });
+    if (visible.length % 2 === 1) {
+      const last = visible[visible.length - 1];
+      const img = last.querySelector('img');
+      last.classList.add('spans-row');
+      if (img) {
+        img.dataset.cardSizes = img.dataset.cardSizes || img.sizes;
+        img.sizes = '(max-width: 980px) 100vw, 1240px';
+      }
+    }
+  }
+
+  fillLastRow();
+
   document.querySelectorAll('.filter-btn').forEach((button) => {
     button.addEventListener('click', function () {
       const filter = button.dataset.filter;
@@ -50,6 +73,7 @@
       document.querySelectorAll('.project-card').forEach((card) => {
         card.hidden = filter !== 'all' && card.dataset.category !== filter;
       });
+      fillLastRow();
     });
   });
 

@@ -1848,6 +1848,10 @@ body.portfolio-page #projects .project-card:nth-child(n){
   grid-column:auto!important;
   grid-row:auto!important;
 }
+/* An odd last card fills its row instead of leaving an empty cell (set in our-work.js) */
+body.portfolio-page #projects .project-card.spans-row{
+  grid-column:1 / -1!important;
+}
 body.portfolio-page #projects .project-card{
   counter-increment:project-tile!important;
   min-height:460px!important;
