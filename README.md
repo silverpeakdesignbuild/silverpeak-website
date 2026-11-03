@@ -29,8 +29,14 @@ src/
   css/                     one stylesheet per page + shared-shell.css
   js/                      one script per page + shared-shell.js
   CNAME                    silverpeakdesignbuild.com
+  admin/                   /admin/ website editor (Decap CMS)
+content/
+  faqs.json                FAQs page wording, written by the website editor
+cms-auth/
+  worker.js                GitHub sign-in for the editor (Cloudflare Worker)
 scripts/
   build.mjs                minify, hash, generate sitemap/robots/redirects -> dist/
+  content.mjs              fills pages from content/*.json
   check.mjs                fail-the-build verification
   serve.mjs                local static server with Pages-style URL resolution
 ```
@@ -48,6 +54,16 @@ scripts/
 ## Adding or changing a page
 
 Edit the file in `src/`, then add it to the `PAGES` array in `scripts/build.mjs` so it lands in the sitemap. Run `npm run check` before pushing.
+
+## Website editor
+
+Pages listed in `CONTENT_FILES` (`scripts/content.mjs`) take their wording from `content/<page>.json`, so editors can change it at `/admin/` without touching HTML. Today that is the FAQs page.
+
+- In the page HTML, `data-cms="hero.title"` marks an element filled from that field, and `<!-- cms:faqs -->…<!-- /cms:faqs -->` marks a list rebuilt from the file. **Change that wording in the JSON file, not the HTML**: the build overwrites it.
+- A missing or empty field fails the build, so a bad edit never publishes a blank page.
+- Editors sign in with their own GitHub account (repo collaborator). Saves are drafts; **Publish** commits to `main` and redeploys.
+- To make another page editable: move its wording into `content/<page>.json`, mark the HTML, add the page to `CONTENT_FILES`, and add its fields to `src/admin/config.yml`. Then confirm the built page is byte-identical to before.
+- Sign-in setup (one time): [cms-auth/README.md](cms-auth/README.md).
 
 ## Images
 

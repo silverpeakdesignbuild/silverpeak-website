@@ -5,6 +5,7 @@ import path from 'node:path';
 import { minify as minifyHtml } from 'html-minifier-terser';
 import CleanCSS from 'clean-css';
 import { minify as minifyJs } from 'terser';
+import { applyContent } from './content.mjs';
 
 const ROOT   = path.resolve(import.meta.dirname, '..');
 const SRC    = path.join(ROOT, 'src');
@@ -137,6 +138,7 @@ async function build() {
     if (!existsSync(srcFile)) { console.warn(`  ! missing ${srcFile}`); continue; }
     let html = await readFile(srcFile, 'utf8');
     bytesIn += Buffer.byteLength(html);
+    html = await applyContent(ROOT, dir, html);
     for (const [from, to] of assetRename) html = html.split(`"${from}"`).join(`"${to}"`);
     html = applyRobots(html);
     html = await minifyHtml(html, {
@@ -167,6 +169,12 @@ async function build() {
   }
   log(`redirects: ${Object.keys(REDIRECTS).length} legacy URLs stubbed`);
 
+  /* 4b. website editor (Decap CMS) — copied as is, never minified or indexed */
+  if (existsSync(path.join(SRC, 'admin'))) {
+    await cp(path.join(SRC, 'admin'), path.join(DIST, 'admin'), { recursive: true });
+    log('admin: editor copied to /admin/');
+  }
+
   /* 5. sitemap + robots --------------------------------------------------- */
   const today = new Date().toISOString().slice(0, 10);
   await writeFile(path.join(DIST, 'sitemap.xml'),
@@ -182,7 +190,7 @@ ${PAGES.map(p => `  <url>
 `);
   await writeFile(path.join(DIST, 'robots.txt'), PREVIEW
     ? 'User-agent: *\nDisallow: /\n'
-    : `User-agent: *\nAllow: /\n\nSitemap: ${ORIGIN}${BASE}/sitemap.xml\n`);
+    : `User-agent: *\nAllow: /\nDisallow: /admin/\n\nSitemap: ${ORIGIN}${BASE}/sitemap.xml\n`);
   log(`sitemap: ${PAGES.length} urls   robots: ${PREVIEW ? 'Disallow /' : 'Allow /'}`);
 
   /* 6. 404, CNAME, .nojekyll ---------------------------------------------- */

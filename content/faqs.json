@@ -1,0 +1,98 @@
+{
+  "hero": {
+    "eyebrow": "Planning & Process",
+    "title": "Frequently Asked Questions",
+    "lead": "Start with the questions that matter most on substantial residential projects: project fit, location, scope, budget, permitting, existing conditions, and the path from early review to construction."
+  },
+  "intro": {
+    "eyebrow": "Helpful Answers",
+    "title": "Plan with fewer unknowns.",
+    "text": "These answers go deeper than the short FAQ section on the homepage so homeowners can better understand the decisions behind a major renovation."
+  },
+  "faqs": [
+    {
+      "question": "Is Silver Peak Design Build a licensed and bonded contractor?",
+      "answer": "Yes. Silver Peak Design & Build’s contractor registration can be verified directly through Washington State Labor & Industries. [View Silver Peak’s official L&I contractor record](https://secure.lni.wa.gov/verify/Detail.aspx?UBI=603006436&LIC=SILVEPC907LT&SAW=)."
+    },
+    {
+      "question": "What types of projects are the best fit for Silver Peak?",
+      "answer": "We take on whole-house builds and rebuilds, additions, ADUs and DADUs, basement remodels, kitchens, bathrooms, exterior porches, damage restoration, and custom carpentry and tile work when the location, scope, schedule, budget, and overall fit are right."
+    },
+    {
+      "question": "What happens during the initial project review?",
+      "answer": "The project review comes before any on-site technical assessment. We review the property location, project type, goals, approximate scope, budget direction, timing, known conditions, and overall working fit. If the project appears aligned, we continue the conversation and determine whether an in-person technical site assessment is the right next step."
+    },
+    {
+      "question": "When should I schedule a technical site assessment?",
+      "answer": "A technical site assessment comes after the initial project-fit review. Once the project looks aligned, the assessment can focus on existing conditions, access, structure, trees, side sewer considerations, drainage, electrical capacity, permitting needs, and other conditions that may affect design or construction. The goal is to identify major constraints early, before design decisions become expensive to change."
+    },
+    {
+      "question": "Why design-build?",
+      "answer": "Design-build keeps design planning and construction thinking connected from the beginning. Instead of developing a concept in isolation and pricing it much later, the project can be reviewed through both a design and buildability lens as it develops. For larger renovations, that helps coordinate architecture, structure, utilities, permitting, materials, phasing, budget, and construction logistics as one connected plan."
+    },
+    {
+      "question": "How do I know whether to renovate, add on, or rebuild?",
+      "answer": "That decision depends on the condition of the existing home, the amount of space you need, the layout, structural realities, zoning, budget, and how you want the property to function long term. Some homes have good bones and mainly need reconfiguration. Others need an addition. In older houses, hidden structural conditions can sometimes make a more extensive rebuild the clearer long-term solution."
+    },
+    {
+      "question": "What should I expect when renovating an older Seattle home?",
+      "answer": "Older homes often have layers of previous work that are not obvious from the surface. Framing, foundations, plumbing, electrical systems, drainage, insulation, old additions, or water damage can affect what is practical. We plan carefully around known conditions, but larger renovations should still carry realistic contingency because some issues only become visible after selective demolition or deeper investigation."
+    },
+    {
+      "question": "How do permits affect a whole house renovation or addition?",
+      "answer": "Permits can affect both design and schedule, especially when a project changes structure, footprint, living area, plumbing, electrical systems, stairs, windows, or the number and use of dwelling spaces. We prefer to identify likely permit and code issues early so the design can respond to them instead of discovering them after major decisions have already been made."
+    },
+    {
+      "question": "How do I build a DADU in Seattle?",
+      "answer": "A DADU begins with understanding whether the property can support the project. Lot configuration, access, trees, setbacks, utilities, sewer, electrical capacity, drainage, construction staging, design goals, and budget all matter. A project review and technical assessment help determine feasibility before the design is advanced too far."
+    },
+    {
+      "question": "Should I build an ADU or DADU?",
+      "answer": "An ADU is usually within or attached to the primary home, while a DADU is a separate structure. The better option depends on privacy goals, available lot area, basement conditions, access, zoning, utility routing, construction cost, and how you expect the space to be used. In some whole-house projects, planning the ADU at the same time can create efficiencies because other structural or utility work is already underway."
+    },
+    {
+      "question": "Can a basement remodel become an ADU?",
+      "answer": "In many homes, a basement can be evaluated for an ADU, but feasibility depends on ceiling height, safe egress, stairs, moisture, drainage, utilities, heating and ventilation, fire separation, access, and code requirements. Even when an ADU is not the final goal, addressing these conditions during a basement remodel can improve comfort, durability, and long-term flexibility."
+    },
+    {
+      "question": "What is included in kitchen design and remodeling?",
+      "answer": "A well-planned kitchen considers much more than finishes. We look at circulation, work zones, appliance placement, cabinetry, storage, lighting, ventilation, islands, electrical needs, plumbing, sight lines, and how the kitchen connects to adjacent rooms. In a larger renovation, kitchen decisions may also tie into structural changes, windows, dining areas, and the overall main-floor layout."
+    },
+    {
+      "question": "What should I plan for in a bathroom remodel?",
+      "answer": "Bathroom remodeling should address layout, waterproofing, ventilation, lighting, storage, tile assemblies, fixtures, plumbing locations, accessibility, and durable materials. If the bathroom is part of a larger renovation, it is also worth considering whether walls, door locations, nearby closets, or adjacent rooms should change at the same time."
+    },
+    {
+      "question": "What bathrooms will be used during the remodel?",
+      "answer": "If your home has only one bathroom, we may be able to build a temporary bathroom in an unfinished basement or another part of the home. We discuss bathroom access, temporary services, and the construction sequence during planning to help determine whether you can continue living in the home during a major renovation."
+    },
+    {
+      "question": "Can I live in my home during a major renovation?",
+      "answer": "Sometimes, but it depends on the scope. A contained kitchen or bathroom project may allow partial occupancy, while a whole-house renovation, structural rebuild, major addition connection, or extensive utility shutdown may make living in the home impractical. We discuss access, dust control, temporary services, safety, sequencing, and realistic disruption during planning so expectations are clear before construction begins."
+    },
+    {
+      "question": "How should I think about budget for a major renovation?",
+      "answer": "Start with a realistic range rather than a single wish-list number. Larger renovations include design, permitting, site conditions, structural work, utilities, finishes, labor, logistics, and contingency. Sharing a budget direction early helps the team determine whether the scope is aligned and where tradeoffs may be needed before a large amount of design time is spent. [Need help figuring out a realistic budget for your project?](/start-project-review/)"
+    },
+    {
+      "question": "How long does a major renovation take?",
+      "answer": "There is no single timeline because permitting, design complexity, structural scope, material lead times, site access, and project size all matter. A whole-house project typically includes a significant preconstruction period before physical work begins. During the project review, we can discuss your target timing and whether it is realistic for the scope you are considering."
+    },
+    {
+      "question": "How do you handle changes once construction starts?",
+      "answer": "Good preconstruction reduces avoidable changes, but larger renovations can still uncover existing conditions or owner decisions that affect the work. When a change is necessary, it should be documented clearly in a change order with the scope, cost, and schedule impact before the work proceeds whenever possible. Clear communication is especially important on projects where one change can affect several trades."
+    },
+    {
+      "question": "Which areas does Silver Peak serve?",
+      "answer": "Silver Peak serves North Seattle and Eastside communities north of I-90. Our primary northern focus includes North Seattle, Bothell, Mill Creek, and Woodinville. We also consider select projects in Redmond and Kirkland when the location, scope, budget, timing, and overall fit make sense. On the Eastside, we prefer projects north of SR 520 when possible. If your project is outside our normal service area and may be a good fit, [fill out our project-review form](/start-project-review/) and we will consider it."
+    },
+    {
+      "question": "What information should I send when I am ready to start?",
+      "answer": "The most helpful starting information is the project address, the type of work you are considering, what is not working today, what you want the home to become, your approximate budget range, ideal timing, and any plans, photos, reports, or known property issues you already have. You do not need every answer. The purpose of the project review is to organize the important first questions and determine the best next step."
+    }
+  ],
+  "cta": {
+    "title": "Have a project that needs a closer look?",
+    "text": "Share the location, scope, budget direction, and what you want to build. We will review the fit before recommending the next step."
+  }
+}

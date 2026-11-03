@@ -1,0 +1,77 @@
+# Decap CMS settings for the Silver Peak website editor (/admin/).
+# Editors sign in with GitHub. Saved changes wait as drafts until someone
+# clicks Publish, which commits to main and redeploys the site.
+
+backend:
+  name: github
+  repo: silverpeakdesignbuild/silverpeak-website
+  branch: main
+  # Sign-in helper: the Cloudflare Worker in cms-auth/, on the silverpeakdesignbuild Cloudflare account.
+  base_url: https://silverpeak-cms-auth.polished-flower-19e3.workers.dev
+  auth_scope: public_repo
+  squash_merges: true
+  commit_messages:
+    create: "Add {{collection}} “{{slug}}” (website editor)"
+    update: "Update {{collection}} “{{slug}}” (website editor)"
+    delete: "Delete {{collection}} “{{slug}}” (website editor)"
+    uploadMedia: "Upload “{{path}}” (website editor)"
+    deleteMedia: "Delete “{{path}}” (website editor)"
+
+# On localhost, `npx decap-server` lets the editor work on local files without signing in.
+local_backend: true
+
+publish_mode: editorial_workflow
+
+site_url: https://silverpeakdesignbuild.github.io/silverpeak-website/
+display_url: https://silverpeakdesignbuild.github.io/silverpeak-website/
+media_folder: src/assets
+public_folder: /assets
+
+collections:
+  - name: pages
+    label: Pages
+    label_singular: Page
+    description: "Pick a page to change its wording. Layout and photos stay as they are."
+    editor:
+      preview: false
+    files:
+      - name: faqs
+        label: FAQs page
+        file: content/faqs.json
+        fields:
+          - label: Top of page
+            name: hero
+            widget: object
+            fields:
+              - { label: Small label above the title, name: eyebrow, widget: string }
+              - { label: Page title, name: title, widget: string }
+              - { label: Intro sentence, name: lead, widget: text }
+          - label: Left-hand column
+            name: intro
+            widget: object
+            fields:
+              - { label: Small label, name: eyebrow, widget: string }
+              - { label: Heading, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+          - label: Questions
+            name: faqs
+            widget: list
+            summary: "{{fields.question}}"
+            collapsed: true
+            add_to_top: false
+            hint: "Drag to reorder. Use “Add Questions” at the bottom for a new one."
+            fields:
+              - { label: Question, name: question, widget: string }
+              - label: Answer
+                name: answer
+                widget: markdown
+                modes: [rich_text]
+                buttons: [bold, italic, link]
+                editor_components: []
+                hint: "To add a link, select the words and click the link button."
+          - label: Orange box at the bottom
+            name: cta
+            widget: object
+            fields:
+              - { label: Heading, name: title, widget: string }
+              - { label: Text, name: text, widget: text }

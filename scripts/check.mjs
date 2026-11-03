@@ -63,7 +63,7 @@ for (const f of html) {
         errors.push(`${rel}: dead srcset entry -> ${url}`);
     }
   }
-  if (rel.endsWith('/index.html') || rel === '/index.html') {
+  if ((rel.endsWith('/index.html') || rel === '/index.html') && !rel.startsWith('/admin/')) {
     const canon = [...src.matchAll(/rel="canonical"/g)].length;
     if (canon === 0) warnings.push(`${rel}: no canonical`);
     if (canon > 1)  errors.push(`${rel}: ${canon} canonical tags`);
