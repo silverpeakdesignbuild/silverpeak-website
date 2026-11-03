@@ -1,0 +1,81 @@
+{
+  "part1": {
+    "label": "Home Additions",
+    "title": "Additions That Feel Like Part of the Original Home.",
+    "text": "Home additions are planned around structure, site access, permits, utilities, natural light, circulation, budget, and how new square footage connects to the existing home and the larger whole-house plan.",
+    "button1": "Start Project Review",
+    "button2": "View Related Work"
+  },
+  "part2": {
+    "part1": {
+      "label": "What We Plan",
+      "heading": "Built With Clear Steps.",
+      "item1": "New bedrooms, family rooms, offices, bathrooms, and expanded living areas",
+      "item2": "Foundation, framing, roofline, structural connection, and weather protection",
+      "item3": "Access, circulation, windows, natural light, utilities, and finish continuity",
+      "item4": "Permit, zoning, budget, schedule, and construction sequencing"
+    },
+    "part2": {
+      "label": "Project Context",
+      "heading": "Designed for North Seattle & Eastside Homes.",
+      "text1": "A successful addition should feel like a natural part of the original home while adding useful square footage, better circulation, and lasting value.",
+      "text2": "Our design-build approach keeps planning and construction connected, so homeowners can make clearer decisions about scope, materials, layout, budget, and timing.",
+      "subheading": "How Silver Peak Handles the Project",
+      "text3": "Silver Peak studies how the new space will connect to the existing foundation, roof, structure, utilities, circulation, and exterior. Design and construction stay with one team so the addition performs properly, feels intentional, and looks like it has always belonged to the home.",
+      "short1": "Project Planning",
+      "short2": "Existing Conditions",
+      "short3": "Permits",
+      "short4": "Buildability",
+      "short5": "Material Selection",
+      "short6": "Construction Coordination"
+    }
+  },
+  "part3": {
+    "label": "Silver Peak Process",
+    "heading": "Project Fit Before the Site Visit.",
+    "part1": {
+      "subheading": "Project Review",
+      "text": "We first review location, project type, goals, budget direction, timing, and overall working fit."
+    },
+    "part2": {
+      "subheading": "Technical Site Assessment",
+      "text": "For qualified projects, we review access, layout, existing conditions, utilities, and project constraints on site."
+    },
+    "part3": {
+      "subheading": "Planning",
+      "text": "We align scope, materials, permit needs, schedule, and construction strategy."
+    },
+    "part4": {
+      "subheading": "Build",
+      "text": "We execute with steady communication, clean detail work, and quality control."
+    }
+  },
+  "part4": {
+    "label": "Additions FAQ",
+    "heading": "Common Questions.",
+    "part1": {
+      "question": "What types of home additions does Silver Peak plan?",
+      "answer": "Additions may create bedrooms, bathrooms, family rooms, offices, expanded kitchens, mudrooms, or other connected living areas."
+    },
+    "part2": {
+      "question": "What should be reviewed before designing an addition?",
+      "answer": "Site constraints, zoning, setbacks, structure, access, utilities, rooflines, natural light, budget, and permit requirements should be reviewed."
+    },
+    "part3": {
+      "question": "Can an addition match the existing home?",
+      "answer": "Yes. Materials, proportions, windows, trim, rooflines, and interior transitions can be planned to support visual continuity."
+    },
+    "part4": {
+      "question": "Do Seattle additions require permits?",
+      "answer": "Yes. Additions generally require structural, zoning, energy, and building permit review."
+    },
+    "part5": {
+      "question": "Can we remain in the home during construction?",
+      "answer": "That depends on access, utilities, safety, dust control, scope, and sequencing. It should be discussed during planning."
+    },
+    "part6": {
+      "question": "Where does Silver Peak build additions?",
+      "answer": "Silver Peak serves North Seattle and Eastside communities north of I-90. Our primary northern focus includes North Seattle, Bothell, Mill Creek, and Woodinville. We also consider select projects in Redmond and Kirkland when the location, scope, budget, timing, and overall fit make sense. On the Eastside, we prefer projects north of SR 520 when possible."
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "part1": {
+    "label": "Whole House Builds & Rebuilds",
+    "title": "Whole-House Builds & Rebuilds With One Connected Plan.",
+    "text": "Silver Peak coordinates substantial whole-home renovations and rebuilds around layout, structure, utilities, permits, energy performance, additions, storage, exterior conditions, and how every space works together.",
+    "button1": "Start Project Review",
+    "button2": "View Related Work"
+  },
+  "part2": {
+    "part1": {
+      "label": "What We Plan",
+      "heading": "Built With Clear Steps.",
+      "item1": "Whole-home layout, circulation, structure, and phased construction planning",
+      "item2": "Kitchen, bathroom, basement, ADU, storage, and outdoor-space coordination",
+      "item3": "Electrical, plumbing, lighting, energy, and material planning across the property",
+      "item4": "Permit-aware sequencing that keeps design and construction connected"
+    },
+    "part2": {
+      "label": "Project Context",
+      "heading": "Designed for North Seattle & Eastside Homes.",
+      "text1": "Whole-house remodeling is most successful when rooms, systems, materials, and construction phases are planned as one coordinated project rather than as disconnected updates.",
+      "text2": "Our design-build approach keeps planning and construction connected, so homeowners can make clearer decisions about scope, materials, layout, budget, and timing.",
+      "subheading": "How Silver Peak Handles the Project",
+      "text3": "Silver Peak treats the property as one connected system, not a collection of separate rooms. The team coordinates layout, structure, utilities, permits, finishes, and outdoor connections—and can phase a major build when needed so each stage supports the final whole-house plan.",
+      "short1": "Project Planning",
+      "short2": "Existing Conditions",
+      "short3": "Permits",
+      "short4": "Buildability",
+      "short5": "Material Selection",
+      "short6": "Construction Coordination"
+    }
+  },
+  "part3": {
+    "label": "Silver Peak Process",
+    "heading": "Project Fit Before the Site Visit.",
+    "part1": {
+      "subheading": "Project Review",
+      "text": "We first review location, project type, goals, budget direction, timing, and overall working fit."
+    },
+    "part2": {
+      "subheading": "Technical Site Assessment",
+      "text": "For qualified projects, we review access, layout, existing conditions, utilities, and project constraints on site."
+    },
+    "part3": {
+      "subheading": "Planning",
+      "text": "We align scope, materials, permit needs, schedule, and construction strategy."
+    },
+    "part4": {
+      "subheading": "Build",
+      "text": "We execute with steady communication, clean detail work, and quality control."
+    }
+  },
+  "part4": {
+    "label": "Whole House Builds & Rebuilds FAQ",
+    "heading": "Common Questions.",
+    "part1": {
+      "question": "What is included in whole-house remodeling?",
+      "answer": "The scope may include layout changes, kitchens, bathrooms, basements, additions, ADUs, storage, exterior work, systems, and finish coordination."
+    },
+    "part2": {
+      "question": "Can the project be completed in phases?",
+      "answer": "Yes. Phasing can be considered during planning so priorities, permits, budget, and household needs remain clear."
+    },
+    "part3": {
+      "question": "Do whole-house remodels require permits?",
+      "answer": "Most major renovations require permits when structural, electrical, plumbing, mechanical, or use changes are involved."
+    },
+    "part4": {
+      "question": "Can Silver Peak preserve the character of an older Seattle home?",
+      "answer": "Yes. Planning can respect Craftsman, Tudor, and other existing architectural details while improving function and performance."
+    },
+    "part5": {
+      "question": "How does design-build help a large renovation?",
+      "answer": "Keeping design, site review, scope, materials, permits, and construction connected reduces gaps and supports clearer decisions."
+    },
+    "part6": {
+      "question": "Where does Silver Peak complete whole-house projects?",
+      "answer": "Silver Peak serves North Seattle and Eastside communities north of I-90. Our primary northern focus includes North Seattle, Bothell, Mill Creek, and Woodinville. We also consider select projects in Redmond and Kirkland when the location, scope, budget, timing, and overall fit make sense. On the Eastside, we prefer projects north of SR 520 when possible."
+    }
+  }
+}

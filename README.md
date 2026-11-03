@@ -30,13 +30,15 @@ src/
   js/                      one script per page + shared-shell.js
   CNAME                    silverpeakdesignbuild.com
   admin/                   /admin/ website editor (Decap CMS)
-content/
-  faqs.json                FAQs page wording, written by the website editor
+content/                   page wording, written by the website editor
+  <page>.json              one file per page
+  services/, our-work/     one file per tab or project
 cms-auth/
   worker.js                GitHub sign-in for the editor (Cloudflare Worker)
 scripts/
   build.mjs                minify, hash, generate sitemap/robots/redirects -> dist/
   content.mjs              fills pages from content/*.json
+  cms-extract.py           makes a page's wording editable (one-time, per page)
   check.mjs                fail-the-build verification
   serve.mjs                local static server with Pages-style URL resolution
 ```
@@ -57,12 +59,13 @@ Edit the file in `src/`, then add it to the `PAGES` array in `scripts/build.mjs`
 
 ## Website editor
 
-Pages listed in `CONTENT_FILES` (`scripts/content.mjs`) take their wording from `content/<page>.json`, so editors can change it at `/admin/` without touching HTML. Today that is the FAQs page.
+Every page's wording lives in `content/`, so editors can change it at `/admin/` without touching HTML. `CONTENT_FILES` in `scripts/content.mjs` maps each page to its file. Services and Our Work are split into one file per tab or project, under `content/services/` and `content/our-work/`.
 
-- In the page HTML, `data-cms="hero.title"` marks an element filled from that field, and `<!-- cms:faqs -->…<!-- /cms:faqs -->` marks a list rebuilt from the file. **Change that wording in the JSON file, not the HTML**: the build overwrites it.
+- **Change wording in the JSON file, not the HTML.** The build overwrites it. In the page HTML, `data-cms="part2.heading"` marks an element filled from that field. `data-cms-rich` marks one that allows bold, italics, links and line breaks, written as markdown. `<!-- cms:faqs -->…<!-- /cms:faqs -->` marks the FAQs list.
+- These stay in the HTML: photos and alt text, link addresses, email and phone links, page titles and descriptions, and the site header and footer.
 - A missing or empty field fails the build, so a bad edit never publishes a blank page.
 - Editors sign in with their own GitHub account (repo collaborator). Saves are drafts; **Publish** commits to `main` and redeploys.
-- To make another page editable: move its wording into `content/<page>.json`, mark the HTML, add the page to `CONTENT_FILES`, and add its fields to `src/admin/config.yml`. Then confirm the built page is byte-identical to before.
+- New page or new section: run `python scripts/cms-extract.py <page>` on the HTML before it has any markers. It marks the wording, writes the JSON, and writes the editor fields into `src/admin/config.yml`. Then add the page to `CONTENT_FILES` and confirm the built page is unchanged. To add a section to a page that already has markers, add the field to its JSON, mark the element, and add the field in `config.yml` by hand.
 - Sign-in setup (one time): [cms-auth/README.md](cms-auth/README.md).
 
 ## Images

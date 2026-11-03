@@ -1,0 +1,97 @@
+{
+  "part1": {
+    "label": "Exterior Remodeling",
+    "title": "Exterior Work That Protects and Restores the Home.",
+    "text": "Exterior work can include siding, trim, windows, doors, entries, rot repair, painting, weather protection, and structural repairs that protect the home and support a larger renovation or restoration plan.",
+    "button1": "Start Project Review",
+    "button2": "View Related Work"
+  },
+  "part2": {
+    "part1": {
+      "label": "What We Plan",
+      "heading": "Built With Clear Steps.",
+      "item1": "Siding rot repair, exterior transitions, entries, and exterior painting",
+      "item2": "Window, door, trim, and custom curved-detail coordination",
+      "item3": "Brick cleaning and tuckpointing, stucco, gable repair, drainage, and weather protection",
+      "item4": "Porches, entries, landscape transitions, curb appeal, solar, and EV-ready improvements"
+    },
+    "part2": {
+      "label": "Project Context",
+      "heading": "Designed for North Seattle & Eastside Homes.",
+      "text1": "Seattle exterior work requires close attention to moisture, drainage, mortar, stucco, wood deterioration, material performance, and details that respect Craftsman and Tudor architecture.",
+      "text2": "Our design-build approach keeps planning and construction connected, so homeowners can make clearer decisions about scope, materials, layout, budget, and timing.",
+      "subheading": "How Silver Peak Handles the Project",
+      "text3": "Silver Peak looks at the exterior as the home's protective system. The team reviews siding, trim, openings, entries, drainage, weather exposure, and hidden rot or structural damage, then coordinates repairs and finish work so the result protects the home and fits the larger property.",
+      "short1": "Project Planning",
+      "short2": "Existing Conditions",
+      "short3": "Permits",
+      "short4": "Buildability",
+      "short5": "Material Selection",
+      "short6": "Construction Coordination"
+    }
+  },
+  "part3": {
+    "label": "Silver Peak Process",
+    "heading": "Project Fit Before the Site Visit.",
+    "part1": {
+      "subheading": "Project Review",
+      "text": "We first review location, project type, goals, budget direction, timing, and overall working fit."
+    },
+    "part2": {
+      "subheading": "Technical Site Assessment",
+      "text": "For qualified projects, we review access, layout, existing conditions, utilities, and project constraints on site."
+    },
+    "part3": {
+      "subheading": "Planning",
+      "text": "We align scope, materials, permit needs, schedule, and construction strategy."
+    },
+    "part4": {
+      "subheading": "Build",
+      "text": "We execute with steady communication, clean detail work, and quality control."
+    }
+  },
+  "part4": {
+    "label": "Exteriors FAQ",
+    "heading": "Common Questions.",
+    "part1": {
+      "question": "What exterior remodeling services do you offer?",
+      "answer": "Exterior work may include siding, entries, transitions, windows, doors, porch updates, and weather-aware improvements."
+    },
+    "part2": {
+      "question": "Why is exterior remodeling important in Seattle?",
+      "answer": "Seattle homes need durable exterior details because rain, drainage, moisture, and material performance affect long-term value."
+    },
+    "part3": {
+      "question": "Can you update an entry area?",
+      "answer": "Yes. Entry upgrades can improve curb appeal, access, weather protection, and the first impression of the home."
+    },
+    "part4": {
+      "question": "Do exterior projects require permits?",
+      "answer": "Permit needs depend on structural work, window and door changes, siding scope, porches, stairs, and other construction details."
+    },
+    "part5": {
+      "question": "Can exterior work improve energy efficiency?",
+      "answer": "Yes. Windows, doors, insulation coordination, and better exterior assemblies can support energy efficiency."
+    },
+    "part6": {
+      "question": "Can you match exterior updates to an older home?",
+      "answer": "Yes. We plan exterior updates with respect for the home’s style, proportions, materials, and neighborhood character."
+    },
+    "part7": {
+      "question": "What should I review before exterior work begins?",
+      "answer": "Review drainage, access, siding condition, window condition, entry details, weather exposure, and project priorities."
+    },
+    "part8": {
+      "question": "Can exterior work connect to outdoor living?",
+      "answer": "Yes. Porches, entries, and carefully planned transitions can improve how indoor and outdoor areas work together."
+    },
+    "part9": {
+      "question": "What materials work best for Seattle exteriors?",
+      "answer": "Materials should be durable, weather-resistant, properly installed, and suited to the style and exposure of the home."
+    },
+    "part10": {
+      "question": "Where does Silver Peak provide exterior remodeling?",
+      "answer": "Silver Peak serves North Seattle and Eastside communities north of I-90. Our primary northern focus includes North Seattle, Bothell, Mill Creek, and Woodinville. We also consider select projects in Redmond and Kirkland when the location, scope, budget, timing, and overall fit make sense. On the Eastside, we prefer projects north of SR 520 when possible."
+    }
+  }
+}

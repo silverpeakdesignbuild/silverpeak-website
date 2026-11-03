@@ -1,0 +1,97 @@
+{
+  "part1": {
+    "label": "Bathroom Remodeling",
+    "title": "Bathroom Remodeling With Detail and Durability.",
+    "text": "Bathrooms combine waterproofing, ventilation, storage, lighting, accessibility, tile, fixtures, and practical daily use. These smaller scopes also show the level of finish Silver Peak brings to larger projects.",
+    "button1": "Start Project Review",
+    "button2": "View Related Work"
+  },
+  "part2": {
+    "part1": {
+      "label": "What We Plan",
+      "heading": "Built With Clear Steps.",
+      "item1": "Full bath, three-quarter bath, and compact layout planning",
+      "item2": "Walk-in showers, benches, support rails, and long-term accessibility",
+      "item3": "Custom tile, waterproofing, niches, lighting, ventilation, and glass coordination",
+      "item4": "Custom vanities, medicine cabinets, built-in storage, and laundry integration"
+    },
+    "part2": {
+      "label": "Project Context",
+      "heading": "Designed for North Seattle & Eastside Homes.",
+      "text1": "Silver Peak’s completed projects show how a small bathroom can become a detailed, highly functional space through thoughtful tile, custom cabinetry, better storage, and carefully integrated comfort features.",
+      "text2": "Our design-build approach keeps planning and construction connected, so homeowners can make clearer decisions about scope, materials, layout, budget, and timing.",
+      "subheading": "How Silver Peak Handles the Project",
+      "text3": "Silver Peak gives bathrooms the same planning discipline used on larger projects. The team coordinates layout, plumbing, ventilation, waterproofing, tile, lighting, storage, accessibility, and glass so the room is comfortable, durable, and carefully finished.",
+      "short1": "Project Planning",
+      "short2": "Existing Conditions",
+      "short3": "Permits",
+      "short4": "Buildability",
+      "short5": "Material Selection",
+      "short6": "Construction Coordination"
+    }
+  },
+  "part3": {
+    "label": "Silver Peak Process",
+    "heading": "Project Fit Before the Site Visit.",
+    "part1": {
+      "subheading": "Project Review",
+      "text": "We first review location, project type, goals, budget direction, timing, and overall working fit."
+    },
+    "part2": {
+      "subheading": "Technical Site Assessment",
+      "text": "For qualified projects, we review access, layout, existing conditions, utilities, and project constraints on site."
+    },
+    "part3": {
+      "subheading": "Planning",
+      "text": "We align scope, materials, permit needs, schedule, and construction strategy."
+    },
+    "part4": {
+      "subheading": "Build",
+      "text": "We execute with steady communication, clean detail work, and quality control."
+    }
+  },
+  "part4": {
+    "label": "Bathrooms FAQ",
+    "heading": "Common Questions.",
+    "part1": {
+      "question": "What makes a bathroom remodel more functional?",
+      "answer": "Better storage, improved lighting, upgraded ventilation, durable tile, and a layout that supports daily routines all improve function."
+    },
+    "part2": {
+      "question": "Can Silver Peak build curbless showers?",
+      "answer": "Yes. Curbless shower design can support accessibility, comfort, and a cleaner spa style bathroom feel."
+    },
+    "part3": {
+      "question": "What are common bathroom accessibility features?",
+      "answer": "Curbless showers, grab bar blocking, slip-resistant tile, wider clearances, better lighting, and comfort-height fixtures can improve access."
+    },
+    "part4": {
+      "question": "Do bathroom remodels require permits?",
+      "answer": "Permit needs depend on plumbing, electrical, structural work, ventilation, and the overall scope of the remodel."
+    },
+    "part5": {
+      "question": "Can you help create a spa style bathroom?",
+      "answer": "Yes. Spa style bathroom remodeling may include tile upgrades, lighting, glass, fixtures, storage, and calming natural finishes."
+    },
+    "part6": {
+      "question": "How do I choose bathroom tile?",
+      "answer": "Choose tile based on durability, slip resistance, maintenance, color, scale, waterproofing needs, and the overall design style."
+    },
+    "part7": {
+      "question": "Can you remodel a small bathroom?",
+      "answer": "Yes. Small bathrooms benefit from smart storage, improved layout, wall-mounted fixtures, and better lighting."
+    },
+    "part8": {
+      "question": "What should I know before changing a shower?",
+      "answer": "Shower changes may affect plumbing, waterproofing, slope, tile layout, glass, accessibility, and fixture placement."
+    },
+    "part9": {
+      "question": "Can bathroom remodeling improve home value?",
+      "answer": "A well-planned bathroom remodel can improve comfort, safety, function, and resale appeal."
+    },
+    "part10": {
+      "question": "What service area do you cover for bathroom remodeling?",
+      "answer": "Silver Peak serves North Seattle and Eastside communities north of I-90. Our primary northern focus includes North Seattle, Bothell, Mill Creek, and Woodinville. We also consider select projects in Redmond and Kirkland when the location, scope, budget, timing, and overall fit make sense. On the Eastside, we prefer projects north of SR 520 when possible."
+    }
+  }
+}

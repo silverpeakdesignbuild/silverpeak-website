@@ -1,0 +1,66 @@
+{
+  "part1": {
+    "button1": "← Back to All Projects",
+    "label1": "Whole House Renovation",
+    "title": "Whole House Project Renovation",
+    "text1": "This renovation brought the kitchen, living spaces, bathrooms, and outdoor areas together. The sage green cabinets and warm wood details give the main floor its character, while large windows keep the rooms bright. Outside, the covered patio adds another comfortable place to spend time with family and friends.",
+    "short1": "Project",
+    "short2": "Whole House Project Renovation",
+    "short3": "Category",
+    "short4": "Whole House Renovation",
+    "button2": "Start Project Review",
+    "button3": "View Project Gallery",
+    "label2": "Project Details",
+    "text2": "A closer look at the connected main floor, the kitchen, the covered patio, and the bathroom finishes.",
+    "part1": {
+      "text1": "Living area and kitchen",
+      "subheading": "Living area and kitchen",
+      "text2": "The brick fireplace gives the living room a unique focal point. From here, you can see right into the kitchen and across the walnut island, which helps the main floor feel connected."
+    },
+    "part2": {
+      "text1": "Kitchen layout",
+      "subheading": "Kitchen layout",
+      "text2": "The sage green cabinets give the kitchen personality, and the walnut island adds a warm place to gather. The custom-built bay window over the sink, with the countertop flowing into it as a ledge for plants, brings in daylight and a view of the trees. It is a kitchen that feels useful for everyday cooking as well as time together."
+    },
+    "part3": {
+      "text1": "Covered outdoor space",
+      "subheading": "Covered outdoor space",
+      "text2": "The covered patio extends the living space outdoors. Wood posts, a brick fireplace, and the paved floor give it a solid, comfortable feel. This lit outdoor space is perfect for fall and winter gatherings."
+    },
+    "part4": {
+      "text1": "Kitchen details",
+      "subheading": "Kitchen details",
+      "text2": "Sage green cabinets frame the cooking area along the range wall, and the light tile keeps the wall clean and sleek. The nearby window brings daylight to the prep space."
+    },
+    "part5": {
+      "text1": "Bathroom details",
+      "subheading": "Bathroom details",
+      "text2": "The hickory vanity brings the same warm tone into the bathroom that you see elsewhere in the house. A smart mirror helps the room feel open, and the high window adds daylight while keeping the space private."
+    }
+  },
+  "project_gallery": {
+    "label": "Project Gallery",
+    "heading": "Whole House Project Renovation",
+    "text": "The exterior, kitchen, living areas, bedrooms, bathrooms, stairs, and covered patio.",
+    "caption1": "Double vanity with wood cabinetry and dark tile floor",
+    "caption2": "Walk-in shower with wood-look wall tile and pebble floor",
+    "caption3": "Bathroom vanity with wood cabinetry and high window",
+    "caption4": "Bedroom with a large window facing the trees and built-in storage",
+    "caption5": "Bathroom vanity and open shelves beside the shower",
+    "caption6": "Hallway with painted doors and a view into adjoining rooms",
+    "caption7": "Kitchen range wall with sage green cabinets and wooded views",
+    "caption8": "Living room with large windows and wood flooring",
+    "caption9": "Living area with brick fireplace and adjoining kitchen",
+    "caption10": "Kitchen cabinetry, wood panel detail, and pendant lights",
+    "caption11": "Wood stairway connecting the kitchen and living area",
+    "caption12": "Kitchen sink and large windows overlooking the trees",
+    "caption13": "Kitchen sink wall with pendant lights and wooded views",
+    "caption14": "Covered patio with brick fireplace and seating area",
+    "caption15": "Exterior view of the renovated house and covered patio"
+  },
+  "part3": {
+    "heading": "Planning a major renovation?",
+    "text": "Tell us what you want to change, where the project is, and what you have in mind for the budget. We will review the fit before scheduling a site visit.",
+    "button": "Start Project Review"
+  }
+}

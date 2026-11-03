@@ -1,0 +1,97 @@
+{
+  "part1": {
+    "label": "Basement Remodels",
+    "title": "Basement Remodels That Feel Like Finished Living Space.",
+    "text": "Basements can become family rooms, bedrooms, guest suites, offices, storage, or ADUs when moisture, egress, ceiling height, utilities, access, lighting, and finish quality are planned together.",
+    "button1": "Start Project Review",
+    "button2": "View Related Work"
+  },
+  "part2": {
+    "part1": {
+      "label": "What We Plan",
+      "heading": "Built With Clear Steps.",
+      "item1": "Family rooms, guest suites, home offices, laundry zones, and basement ADUs",
+      "item2": "Moisture, egress, ceiling height, plumbing, electrical, ventilation, and insulation review",
+      "item3": "Built-in storage, lighting, durable flooring, and better circulation",
+      "item4": "Permit-aware construction planning for older Seattle homes"
+    },
+    "part2": {
+      "label": "Project Context",
+      "heading": "Designed for North Seattle & Eastside Homes.",
+      "text1": "A well-planned basement remodel can add useful living space while improving light, storage, comfort, moisture performance, and long-term property value.",
+      "text2": "Our design-build approach keeps planning and construction connected, so homeowners can make clearer decisions about scope, materials, layout, budget, and timing.",
+      "subheading": "How Silver Peak Handles the Project",
+      "text3": "Silver Peak evaluates the lower level before finalizing the design, including moisture, structure, ceiling height, egress, plumbing, electrical service, and possible ADU requirements. The plan then connects those technical needs with comfortable rooms, storage, natural light, and durable materials.",
+      "short1": "Project Planning",
+      "short2": "Existing Conditions",
+      "short3": "Permits",
+      "short4": "Buildability",
+      "short5": "Material Selection",
+      "short6": "Construction Coordination"
+    }
+  },
+  "part3": {
+    "label": "Silver Peak Process",
+    "heading": "Project Fit Before the Site Visit.",
+    "part1": {
+      "subheading": "Project Review",
+      "text": "We first review location, project type, goals, budget direction, timing, and overall working fit."
+    },
+    "part2": {
+      "subheading": "Technical Site Assessment",
+      "text": "For qualified projects, we review access, layout, existing conditions, utilities, and project constraints on site."
+    },
+    "part3": {
+      "subheading": "Planning",
+      "text": "We align scope, materials, permit needs, schedule, and construction strategy."
+    },
+    "part4": {
+      "subheading": "Build",
+      "text": "We execute with steady communication, clean detail work, and quality control."
+    }
+  },
+  "part4": {
+    "label": "Basements FAQ",
+    "heading": "Common Questions.",
+    "part1": {
+      "question": "What can a basement remodel become?",
+      "answer": "A basement can become a guest suite, family room, home office, laundry area, storage zone, bedroom, or flexible living space."
+    },
+    "part2": {
+      "question": "What should be checked before remodeling a basement?",
+      "answer": "Moisture, ceiling height, access, structure, plumbing, electrical, insulation, lighting, and ventilation should be reviewed."
+    },
+    "part3": {
+      "question": "Can Silver Peak add a bathroom to a basement?",
+      "answer": "Yes, depending on plumbing access, drainage, permitting, layout, and existing site conditions."
+    },
+    "part4": {
+      "question": "Do basement remodels require permits?",
+      "answer": "Many basement remodels need permits when they include electrical, plumbing, structural, egress, or major layout changes."
+    },
+    "part5": {
+      "question": "How can a basement feel less dark?",
+      "answer": "Lighting design, lighter finishes, reflective surfaces, windows, glass doors, and better layout can make the space brighter."
+    },
+    "part6": {
+      "question": "Can basement remodeling improve storage?",
+      "answer": "Yes. Built-ins, closets, under-stair storage, laundry organization, and cabinetry can help the basement work better."
+    },
+    "part7": {
+      "question": "Can a basement be used as a guest suite?",
+      "answer": "Often yes, but bedroom and guest-suite planning may require egress, code review, ventilation, and proper layout."
+    },
+    "part8": {
+      "question": "What flooring works well in basements?",
+      "answer": "Flooring should be selected based on moisture conditions, durability, comfort, maintenance, and the intended use of the space."
+    },
+    "part9": {
+      "question": "Can a basement remodel improve home value?",
+      "answer": "A finished basement can add usable space and improve long-term property value when planned correctly."
+    },
+    "part10": {
+      "question": "Where does Silver Peak do basement remodels?",
+      "answer": "Silver Peak serves North Seattle and Eastside communities north of I-90. Our primary northern focus includes North Seattle, Bothell, Mill Creek, and Woodinville. We also consider select projects in Redmond and Kirkland when the location, scope, budget, timing, and overall fit make sense. On the Eastside, we prefer projects north of SR 520 when possible."
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "part1": {
+    "label": "Contact Silver Peak",
+    "title": "Let’s Talk About Your Project",
+    "text": "New substantial residential projects begin with a Project Review. For general questions, existing-project communication, trade partners, or careers, you can contact the team directly.",
+    "button1": "Start Project Review",
+    "button2": "View Our Work"
+  },
+  "part2": {
+    "label": "New Project?",
+    "heading": "New Projects Start With a Project Review.",
+    "text": "For a new whole-house build or rebuild, addition, DADU, ADU, basement remodel, or other substantial residential project, the Project Review helps us understand location, scope, goals, budget direction, timing, and overall fit before any site visit is scheduled.",
+    "button": "Go to Project Review"
+  },
+  "part3": {
+    "part1": {
+      "text1": "Silver Peak Design Build",
+      "heading": "General Questions & Existing Projects.",
+      "text2": "For detailed project qualification, use the Start Project Review page. For general questions, existing-project communication, or anything else, contact us here.",
+      "short1": "Phone",
+      "short2": "Email",
+      "short3": "Office",
+      "short4": "7511 Greenwood Ave N\\\nSeattle, WA 98103",
+      "short5": "Project Focus",
+      "short6": "North Seattle + select northern and Eastside communities"
+    },
+    "label": "Free Estimate Request",
+    "heading": "Request a free project estimate.",
+    "text1": "Tell us about your home and what you would like to build or remodel. Silver Peak will review the information and follow up about the best next step for your project.",
+    "text2": "Information submitted through this form is used to respond to your inquiry and evaluate your project. Review our [Privacy Policy](/privacy-policy/)."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "part1": {
+    "label": "Project Fit First",
+    "title": "Start Your Project Review",
+    "text": "Share the essentials first: location, project type, goals, budget direction, timing, and known conditions. We review project fit before recommending a technical site assessment or design next step.",
+    "button1": "Start Project Review",
+    "button2": "Contact Us"
+  },
+  "part2": {
+    "label": "How It Works",
+    "heading": "A clearer first step for substantial residential projects.",
+    "text1": "The review is designed to make the first conversation more useful and avoid scheduling a site visit before the basic project fit is understood.",
+    "subheading1": "Share the project",
+    "text2": "Tell us the location, scope, goals, budget direction, and timing.",
+    "subheading2": "We review fit",
+    "text3": "We look at geography, project type, scale, budget direction, timing, available information, and overall working fit.",
+    "subheading3": "Initial conversation",
+    "text4": "If it looks aligned, we clarify goals, constraints, and what information is still needed.",
+    "subheading4": "Technical next step",
+    "text5": "When appropriate, we move into a site assessment, feasibility work, or design planning."
+  },
+  "part3": {
+    "part1": {
+      "text1": "What We Look For",
+      "heading": "Is the project a good fit?",
+      "text2": "Silver Peak specializes in substantial residential projects where design decisions, existing conditions, permitting, and construction need to be coordinated carefully. Priority projects are whole-house builds and rebuilds, additions, DADUs and ADUs, and basement remodels; select kitchens, bathrooms, exteriors, porches, restoration, carpentry, and tile work follow when the fit is right.",
+      "short1": "Whole house renovations, additions, rebuilds, ADUs, DADUs, and major basement projects",
+      "short2": "North Seattle and select northern / Eastside communities",
+      "short3": "A realistic budget direction that matches the intended scope",
+      "short4": "Homeowners who value planning, communication, craftsmanship, and a coordinated process"
+    },
+    "label": "Project Details",
+    "heading": "Tell us what you are planning.",
+    "text": "You do not need every answer. Share what you know now and we can identify the next questions together."
+  },
+  "part4": {
+    "label": "Local Focus",
+    "heading": "North Seattle & Eastside, generally north of I-90.",
+    "text": "Silver Peak serves North Seattle and Eastside communities north of I-90. Our primary northern focus includes North Seattle, Bothell, Mill Creek, and Woodinville. We also consider select projects in Redmond and Kirkland when the location, scope, budget, timing, and overall fit make sense. On the Eastside, we prefer projects north of SR 520 when possible.",
+    "short1": "Greenwood",
+    "short2": "Phinney Ridge",
+    "short3": "Ballard",
+    "short4": "Bothell",
+    "short5": "Woodinville",
+    "short6": "Kirkland",
+    "short7": "Redmond"
+  }
+}

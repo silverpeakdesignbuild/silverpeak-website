@@ -1,0 +1,33 @@
+{
+  "bitter_lake_bath_and_exterior": {
+    "button1": "← Back to All Projects",
+    "label1": "Bathroom Remodel + Exterior Repairs",
+    "heading": "Bathroom Remodel, Siding Rot Repair, and Exterior Painting in Bitter Lake",
+    "text1": "This Bitter Lake project combined a vivid full-bath renovation with siding rot repair and exterior painting. Silver Peak coordinated the detailed bathroom finish work and weather-related exterior repairs as one project.",
+    "text2": "The homeowner, an art teacher, wanted a colorful and bright full bath. Turquoise tile, black fixtures, clean white surfaces, and carefully coordinated details bring that vision to life. Outside, the work included repairing rotted siding and painting the home.",
+    "short1": "Project",
+    "short2": "Bathroom Remodel, Siding Rot Repair, and Exterior Painting in Bitter Lake",
+    "short3": "Category",
+    "short4": "Bathroom Remodel, Siding Rot Repair, and Exterior Painting",
+    "short5": "Location",
+    "short6": "Bitter Lake, Seattle, Washington",
+    "button2": "Start Project Review",
+    "button3": "View Project Gallery",
+    "label2": "Project Details",
+    "part1": {
+      "text1": "Shower design",
+      "small_heading": "A sleek shower shaped by the homeowner’s vision",
+      "text2": "The shower was built around the homeowner’s vision of a sleek, colorful tile wall, with wood-look tile niches and sharp, contrasting black hardware. The niches match the flooring, which ties the whole room together no matter where you look."
+    },
+    "part2": {
+      "text1": "Vanity area",
+      "small_heading": "Smart mirror, medicine cabinet, and vanity",
+      "text2": "The vanity pairs a dark counter and white cabinet with an under-mount sink and black hardware. Above it, the smart mirror is also a medicine cabinet: the wall behind it was reframed to make full use of the available space."
+    }
+  },
+  "gallery_bitter_lake_bath_and_exterior": {
+    "label": "Project Gallery",
+    "heading": "Bathroom Remodel, Siding Rot Repair, and Exterior Painting in Bitter Lake",
+    "text": "The tub-shower, tile work, vanity, black fixtures, storage niches, and finish details from the Bitter Lake bathroom."
+  }
+}

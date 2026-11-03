@@ -1,0 +1,74 @@
+{
+  "overview": {
+    "label": "Silver Peak Our Work",
+    "title": "Major Residential Projects, Built With Detail.",
+    "text": "Explore Silver Peak Portfolio, beginning with whole-house builds and major renovations through focused remodeling projects.",
+    "button1": "View Projects",
+    "button2": "Start Project Review"
+  },
+  "projects": {
+    "label": "Project Categories",
+    "heading": "Browse from major projects to focused renovations.",
+    "text": "Browse completed Seattle work by project type and neighborhood. Each project highlights the practical ideas, custom details, and architectural character that shaped the finished result.",
+    "button1": "Show All",
+    "button2": "Whole House",
+    "button3": "DADU & ADU",
+    "button4": "Kitchens",
+    "button5": "Bathrooms",
+    "button6": "Exteriors",
+    "part1": {
+      "subheading": "Modern Craftsman Whole House Build in Greenwood",
+      "text": "A 100-year-old Greenwood Craftsman rebuilt as a modern Craftsman with solar, an EV charger, an open main level, a custom kitchen, basement ADU, primary suite, custom shed, and landscaped outdoor living areas.",
+      "short1": "Greenwood, Seattle",
+      "short2": "Modern Craftsman Whole House Build"
+    },
+    "part2": {
+      "subheading": "Whole House Project Renovation",
+      "text": "A full-home renovation with a connected kitchen and living area, updated bathrooms, and a covered outdoor gathering space.",
+      "short1": "Whole House",
+      "short2": "Kitchen · Baths · Outdoor Living"
+    },
+    "part3": {
+      "subheading": "DADU Project in View Ridge with Butterfly Roof",
+      "text": "A View Ridge backyard DADU with a deck and shed, an efficient kitchen, natural light, open shelving, under-stair storage, and custom vertical and horizontal Murphy beds.",
+      "short1": "View Ridge",
+      "short2": "ADU and DADU"
+    },
+    "part4": {
+      "subheading": "Kitchen and Bathroom Remodel in Licton Springs",
+      "text": "A Licton Springs kitchen and bathroom remodel with blue cabinetry, warm wood accents, open shelving, a custom oak table and built-in bench, an expanded bath, and hallway-integrated storage.",
+      "short1": "Licton Springs",
+      "short2": "Kitchen + Bath Remodel"
+    },
+    "part5": {
+      "subheading": "Bathroom Remodel, Siding Rot Repair, and Exterior Painting in Bitter Lake",
+      "text": "A bright Bitter Lake full-bath remodel with turquoise tile and black fixtures, paired with siding rot repair and exterior painting.",
+      "short1": "Bitter Lake",
+      "short2": "Bathroom + Exterior Repairs"
+    },
+    "part6": {
+      "subheading": "Tudor Exterior Restoration and Bathroom/Laundry Renovation in Licton Springs",
+      "text": "A Licton Springs Tudor restoration with cleaned and re-tuckpointed brick, rebuilt stucco and curved trim, repaired gables, a renewed laundry entry, and bathroom/laundry improvements.",
+      "short1": "Licton Springs",
+      "short2": "Exterior + Bath/Laundry Renovation"
+    },
+    "part7": {
+      "subheading": "Accessible Shower Bathroom Remodel in Seattle",
+      "text": "A refreshed Seattle bathroom with a tiled shower, double wood vanity, natural light, and practical details for daily use.",
+      "short1": "Seattle",
+      "short2": "Bathroom Remodel"
+    },
+    "part8": {
+      "subheading": "Accessible ADA compliant Bathroom and Laundry Renovation in Greenwood",
+      "text": "An accessible ADA compliant Greenwood bathroom and laundry renovation with a curbless shower, a custom wheelchair-accessible vanity, two pocket doors, built-in shelving, warm wood storage, and integrated laundry function.",
+      "short1": "Greenwood",
+      "short2": "Bathroom and Laundry"
+    },
+    "part9": {
+      "subheading": "Whole House Interior Remodel in Haller Lake",
+      "text": "A Haller Lake whole-house interior remodel with skylit living areas, hardwood details, two custom bathrooms, built-in medicine storage, accessibility features, and a renewed front entry.",
+      "short1": "Haller Lake",
+      "short2": "Whole House Interior Remodel"
+    }
+  }
+}

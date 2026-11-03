@@ -1,0 +1,59 @@
+{
+  "part1": {
+    "label": "Insights From the Field",
+    "title": "Silver Peak Journal",
+    "text": "Planning notes, construction lessons, and design-build guidance organized the same way Silver Peak approaches its work: whole-house projects and additions first, then DADUs, ADUs, basements, and more focused renovations.",
+    "button1": "Start Project Review",
+    "button2": "Explore Services"
+  },
+  "part2": {
+    "label": "Featured Article",
+    "heading": "Whole House Renovation in North Seattle: Planning Beyond One Room",
+    "text": "A major renovation works best when the home is treated as one connected system instead of a collection of separate rooms. Here is what to consider before design begins.",
+    "button": "Read Article"
+  },
+  "part3": {
+    "label": "More Topics",
+    "heading": "More planning guides, from major projects to focused remodels.",
+    "text": "Explore practical guidance for planning additions, DADUs and ADUs, basement remodels, and other substantial residential projects.",
+    "part1": {
+      "short1": "Older Homes",
+      "subheading": "Planning a Home Addition in North Seattle",
+      "text": "How structure, rooflines, utilities, permits, circulation, natural light, and the existing home should be evaluated before new square footage is added.",
+      "short2": "Article coming soon"
+    },
+    "part2": {
+      "short1": "Basements & ADUs",
+      "subheading": "DADU & ADU Feasibility: What to Review First",
+      "text": "A practical look at zoning, access, utilities, sewer, trees, privacy, construction logistics, and long-term use before design advances.",
+      "short2": "Article coming soon"
+    },
+    "part3": {
+      "short1": "Kitchen Planning",
+      "subheading": "Basement Remodels That Feel Like Finished Living Space",
+      "text": "Key questions around moisture, egress, ceiling height, utilities, lighting, storage, and whether the lower level should also be evaluated for an ADU.",
+      "short2": "Article coming soon"
+    }
+  },
+  "whole_house_renovation": {
+    "label": "Whole House Renovation",
+    "heading1": "Planning Beyond One Room",
+    "text1": "A **whole house renovation in North Seattle** is more than updating a kitchen or bathroom. It is an opportunity to look at how the entire home works and decide what needs to change for the next chapter of your life. Silver Peak approaches larger renovations by looking at the complete property, including layout, structure, building systems, exterior conditions, natural light, storage, and opportunities for an addition or ADU.",
+    "heading2": "Look at the Whole Home First",
+    "text2": "One of the challenges with remodeling room by room is that decisions often affect other parts of the house. Opening a kitchen may require structural changes. A new addition can completely change the flow of the main floor. Finishing a basement could create an opportunity for an ADU. Planning these improvements together helps create a home that feels intentional rather than pieced together over time.",
+    "heading3": "Older Seattle Homes Can Reveal Surprises",
+    "text3": "North Seattle is full of older homes with character, especially in neighborhoods like Greenwood, Ballard, and Phinney Ridge. That character is often worth preserving, but older homes can also come with aging electrical systems, plumbing, framing issues, foundation concerns, previous additions, or hidden damage. A whole-house plan gives the team room to evaluate those conditions in context instead of treating each room as a separate project.",
+    "heading4": "Remodel, Add On, or Rebuild?",
+    "text4": "Not every home needs the same solution. Some homes already have enough space but need a better layout and updated systems. Others need additional square footage. In some older homes, existing structural conditions may make a larger rebuild the better long-term choice. A good renovation plan starts by understanding the property before deciding how much work it needs.",
+    "heading5": "Why Design-Build Helps With Larger Renovations",
+    "text5": "Whole-house projects involve connected decisions. Architecture affects structure. Structure affects cost. Plumbing and electrical systems influence layouts. Windows affect both the interior and exterior. A design-build approach keeps those conversations together so the project can be evaluated from both a design and construction perspective earlier in the process.",
+    "heading6": "Where Silver Peak Works",
+    "text6": "Silver Peak serves North Seattle and Eastside communities north of I-90. Our primary northern focus includes North Seattle, Bothell, Mill Creek, and Woodinville. We also consider select projects in Redmond and Kirkland when the location, scope, budget, timing, and overall fit make sense. On the Eastside, we prefer projects north of SR 520 when possible.",
+    "text7": "If you are considering a major project, review Silver Peak's [services](/services/), see examples in [Our Work](/our-work/), or [start a project review](/start-project-review/)."
+  },
+  "part5": {
+    "heading": "Planning something substantial?",
+    "text": "Tell us what you want the property to become. We will review the location, scope, budget direction, and timing before deciding the next step.",
+    "button": "Start Project Review"
+  }
+}

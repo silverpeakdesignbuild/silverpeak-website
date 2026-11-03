@@ -1,0 +1,97 @@
+{
+  "part1": {
+    "label": "Kitchen Remodeling",
+    "title": "Kitchen Remodeling With Whole-Home Thinking.",
+    "text": "Kitchens are planned around workflow, storage, lighting, appliance placement, cabinetry, natural light, and how the room connects to the rest of the main floor. Standalone kitchen projects are considered when scope, schedule, location, and fit align.",
+    "button1": "Start Project Review",
+    "button2": "View Related Work"
+  },
+  "part2": {
+    "part1": {
+      "label": "What We Plan",
+      "heading": "Built With Clear Steps.",
+      "item1": "Open-concept layout and daily workflow planning",
+      "item2": "Custom cabinetry, breakfast bars, pantry storage, and appliance garages",
+      "item3": "Under-cabinet lighting and outlets, appliance placement, and island planning",
+      "item4": "Quartz details, custom tile, natural wood, open shelving, and clean finish work"
+    },
+    "part2": {
+      "label": "Project Context",
+      "heading": "Designed for North Seattle & Eastside Homes.",
+      "text1": "Designed for Seattle homeowners who want a kitchen that works better without losing the character of the home. Silver Peak emphasizes storage, natural light, uncluttered counters, and details that support everyday routines.",
+      "text2": "Our design-build approach keeps planning and construction connected, so homeowners can make clearer decisions about scope, materials, layout, budget, and timing.",
+      "subheading": "How Silver Peak Handles the Project",
+      "text3": "Silver Peak plans around how the homeowner cooks and moves through the room, then coordinates cabinetry, storage, appliance clearances, lighting, windows or skylights, and custom details. A permitted full-gut kitchen commonly takes about four to five months, depending on scope, materials, inspections, and site conditions.",
+      "short1": "Project Planning",
+      "short2": "Existing Conditions",
+      "short3": "Permits",
+      "short4": "Buildability",
+      "short5": "Material Selection",
+      "short6": "Construction Coordination"
+    }
+  },
+  "part3": {
+    "label": "Silver Peak Process",
+    "heading": "Project Fit Before the Site Visit.",
+    "part1": {
+      "subheading": "Project Review",
+      "text": "We first review location, project type, goals, budget direction, timing, and overall working fit."
+    },
+    "part2": {
+      "subheading": "Technical Site Assessment",
+      "text": "For qualified projects, we review access, layout, existing conditions, utilities, and project constraints on site."
+    },
+    "part3": {
+      "subheading": "Planning",
+      "text": "We align scope, materials, permit needs, schedule, and construction strategy."
+    },
+    "part4": {
+      "subheading": "Build",
+      "text": "We execute with steady communication, clean detail work, and quality control."
+    }
+  },
+  "part4": {
+    "label": "Kitchens FAQ",
+    "heading": "Common Questions.",
+    "part1": {
+      "question": "What should I plan first for a kitchen remodel?",
+      "answer": "Start with the layout, storage needs, appliance locations, lighting, and how your household uses the kitchen every day."
+    },
+    "part2": {
+      "question": "Can Silver Peak help improve kitchen workflow?",
+      "answer": "Yes. We review traffic flow, prep space, storage zones, island placement, and appliance access so the kitchen works better for daily use."
+    },
+    "part3": {
+      "question": "What kitchen upgrades add the most function?",
+      "answer": "Cabinet storage, pantry planning, lighting, durable counters, better appliance placement, and a more open workflow can make a big difference."
+    },
+    "part4": {
+      "question": "Do kitchen remodels require permits in Seattle?",
+      "answer": "Some kitchen remodels may require permits, especially when electrical, plumbing, structural, or layout changes are involved."
+    },
+    "part5": {
+      "question": "Can you help with natural materials and finishes?",
+      "answer": "Yes. We help homeowners choose natural materials, durable finishes, cabinet details, tile, counters, and wood accents that fit the home."
+    },
+    "part6": {
+      "question": "How long does a kitchen remodel take?",
+      "answer": "The timeline depends on scope, permits, materials, inspections, and the level of construction involved."
+    },
+    "part7": {
+      "question": "Can you remodel older Seattle kitchens?",
+      "answer": "Yes. Older homes often need careful planning around existing walls, utilities, flooring, ventilation, and storage limitations."
+    },
+    "part8": {
+      "question": "Do you help with lighting design?",
+      "answer": "Yes. Kitchen lighting may include task lighting, pendant lights, under-cabinet lighting, and general room lighting."
+    },
+    "part9": {
+      "question": "Can a kitchen remodel improve resale value?",
+      "answer": "A functional kitchen remodel can improve comfort, usability, and long-term property value when planned well."
+    },
+    "part10": {
+      "question": "What areas do you serve for kitchen remodeling?",
+      "answer": "Silver Peak serves North Seattle and Eastside communities north of I-90. Our primary northern focus includes North Seattle, Bothell, Mill Creek, and Woodinville. We also consider select projects in Redmond and Kirkland when the location, scope, budget, timing, and overall fit make sense. On the Eastside, we prefer projects north of SR 520 when possible."
+    }
+  }
+}

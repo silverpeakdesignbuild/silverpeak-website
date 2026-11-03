@@ -1,4 +1,4 @@
-import { readFile } from 'node:fs/promises';
+import { readFile, readdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 
@@ -18,7 +18,16 @@ import path from 'node:path';
  * ------------------------------------------------------------------------ */
 
 export const CONTENT_FILES = {
+  '': 'content/home.json',
+  services: 'content/services/',
+  'our-work': 'content/our-work/',
+  'our-work/whole-house-project-renovation': 'content/whole-house-project.json',
+  'about-us': 'content/about-us.json',
+  'start-project-review': 'content/start-project-review.json',
+  'contact-us': 'content/contact-us.json',
   faqs: 'content/faqs.json',
+  blogs: 'content/blogs.json',
+  'privacy-policy': 'content/privacy-policy.json',
 };
 
 const escapeHtml = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -53,18 +62,20 @@ function inlineMarkdown(md, linkClass) {
   return s.replace(/\u0000(\d+)\u0000/g, (_, i) => slots[i]);
 }
 
+/** One paragraph of markdown -> inline HTML. A line ending in "\" or two spaces is a hard break; any other newline is a space. */
+const paragraphMarkdown = (para, linkClass) => para.split('\n').map((line, i, lines) => {
+  const text = inlineMarkdown(line.trim().replace(/\\$/, ''), linkClass);
+  const last = i === lines.length - 1;
+  return last ? text : text + (/(\\|\s{2,})$/.test(line) ? '<br>' : ' ');
+}).join('');
+
 /** Paragraphs separated by blank lines -> <p> blocks. */
-function blockMarkdown(md, linkClass) {
-  return md.trim().split(/\n\s*\n/).map((para) => {
-    // A line ending in "\" or two spaces is a hard break; any other newline is a space.
-    const html = para.split('\n').map((line, i, lines) => {
-      const text = inlineMarkdown(line.trim().replace(/\\$/, ''), linkClass);
-      const last = i === lines.length - 1;
-      return last ? text : text + (/(\\|\s{2,})$/.test(line) ? '<br>' : ' ');
-    }).join('');
-    return `<p>${html}</p>`;
-  }).join('');
-}
+const blockMarkdown = (md, linkClass) =>
+  md.trim().split(/\n\s*\n/).map((para) => `<p>${paragraphMarkdown(para, linkClass)}</p>`).join('');
+
+/** Rich text inside one element (a heading, paragraph or list item): extra paragraphs become line breaks. */
+const richMarkdown = (md, linkClass) =>
+  md.trim().split(/\n\s*\n/).map((para) => paragraphMarkdown(para, linkClass)).join('<br>');
 
 /** Plain text of rendered HTML, for structured data. */
 const plainText = (html) => html.replace(/<br>/g, ' ').replace(/<\/p><p>/g, ' ').replace(/<[^>]+>/g, '')
@@ -83,21 +94,48 @@ function field(data, key, file) {
   return value;
 }
 
+async function readJson(root, file) {
+  if (!existsSync(path.join(root, file))) throw new Error(`missing ${file}`);
+  try {
+    return JSON.parse(await readFile(path.join(root, file), 'utf8'));
+  } catch (e) {
+    throw new Error(`${file}: ${e.message}`);
+  }
+}
+
 /** Fill one page's editable wording. Returns html unchanged for pages without a content file. */
 export async function applyContent(root, dir, html) {
-  const file = CONTENT_FILES[dir];
-  if (!file) return html;
-  if (!existsSync(path.join(root, file))) throw new Error(`missing ${file}`);
-  const data = JSON.parse(await readFile(path.join(root, file), 'utf8'));
+  const source = CONTENT_FILES[dir];
+  if (!source) return html;
+  // One file, or a folder (ending in "/") for a page split into several files;
+  // a folder's files are read as data[<file name without .json>].
+  let data = {};
+  if (!source.endsWith('/')) data = await readJson(root, source);
+  else {
+    if (!existsSync(path.join(root, source))) throw new Error(`missing ${source}`);
+    for (const name of (await readdir(path.join(root, source))).filter((n) => n.endsWith('.json')).sort())
+      data[name.slice(0, -5)] = await readJson(root, source + name);
+  }
+  const file = source;
 
   let fields = 0;
   html = html.replace(/<(\w+)([^>]*?)\sdata-cms="([^"]+)"([^>]*)>([\s\S]*?)<\/\1>/g, (_, tag, before, key, after) => {
     fields++;
-    return `<${tag}${before}${after}>${escapeHtml(field(data, key, file).trim())}</${tag}>`;
+    const value = field(data, key, file);
+    if (typeof value !== 'string') throw new Error(`${file}: "${key}" is not text`);
+    const rich = /\sdata-cms-rich="([^"]*)"/.exec(before + after);
+    const attrs = (before + after).replace(/\sdata-cms-rich="[^"]*"/, '');
+    let inner;
+    try {
+      inner = rich ? richMarkdown(value, rich[1]) : escapeHtml(value.trim());
+    } catch (e) {
+      throw new Error(`${file}: "${key}": ${e.message}`);
+    }
+    return `<${tag}${attrs}>${inner}</${tag}>`;
   });
 
   for (const [name, render] of Object.entries(LISTS)) {
-    if (!(name in data)) continue;
+    if (dir !== name) continue;
     const re = new RegExp(`<!-- cms:${name} -->[\\s\\S]*?<!-- /cms:${name} -->`);
     if (!re.test(html)) throw new Error(`${dir}: no <!-- cms:${name} --> region for ${file}`);
     const items = field(data, name, file);
@@ -108,7 +146,7 @@ export async function applyContent(root, dir, html) {
     fields++;
   }
 
-  if (data.faqs) html = html.replace(/(<script type="application\/ld\+json">)([\s\S]*?)(<\/script>)/g, (all, open, json, close) => {
+  if (dir === 'faqs') html = html.replace(/(<script type="application\/ld\+json">)([\s\S]*?)(<\/script>)/g, (all, open, json, close) => {
     const graph = JSON.parse(json);
     const page = (graph['@graph'] || [graph]).find((n) => n['@type'] === 'FAQPage');
     if (!page) return all;

@@ -1,0 +1,34 @@
+{
+  "seattle_accessible_shower_bathroom": {
+    "button1": "← Back to All Projects",
+    "label": "Bathroom Remodel",
+    "heading1": "Accessible Shower Bathroom Remodel in Seattle",
+    "text1": "This bathroom was designed to work well every day and feel good to walk into. The shower, double wood vanity, and small patterned floor tile give the room a useful layout with a little warmth. Natural light from the window helps keep it open and bright. Each area has a clear purpose, so the room feels comfortable without being crowded.",
+    "short1": "Project",
+    "short2": "Accessible Shower Bathroom Remodel in Seattle",
+    "short3": "Category",
+    "short4": "Bathroom Remodel",
+    "short5": "Location",
+    "short6": "Seattle, Washington",
+    "button2": "Start Project Review",
+    "button3": "View Project Gallery",
+    "heading2": "More from this bathroom",
+    "subheading1": "The double vanity",
+    "text2": "The warm wood vanity gives the room character and a natural finish. Two sinks give people room to get ready at the same time, and the small patterned floor tile adds detail without competing with the wood.",
+    "subheading2": "A bright shower",
+    "text3": "The large tile gives the shower a clean, quiet look. Two sides are glass from top to bottom, the clear shower wall and the window, so daylight fills the space."
+  },
+  "gallery_seattle_accessible_shower_bathroom": {
+    "label": "Project Gallery",
+    "heading": "Accessible Shower Bathroom Remodel in Seattle",
+    "text": "See the finished shower, vanity, tile, and details from around the room.",
+    "caption1": "The whole bathroom, from the shower to the double vanity",
+    "caption2": "Warm wood double vanity with patterned floor tile",
+    "caption3": "Large-tile shower with clear glass",
+    "caption4": "Vanity and shower layout",
+    "caption5": "Toilet in its own corner",
+    "caption6": "Second sink, mirror, and lighting",
+    "caption7": "Full-length mirror corner",
+    "caption8": "Shower window with natural light"
+  }
+}

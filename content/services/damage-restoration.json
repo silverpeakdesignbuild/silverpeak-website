@@ -1,0 +1,97 @@
+{
+  "part1": {
+    "label": "Damage Restoration",
+    "title": "Damage Restoration With Careful Rebuild Planning.",
+    "text": "Water damage, rot, and related repairs begin with identifying the cause, understanding the affected structure and finishes, and rebuilding the area cleanly with the larger home in mind.",
+    "button1": "Start Project Review",
+    "button2": "View Related Work"
+  },
+  "part2": {
+    "part1": {
+      "label": "What We Plan",
+      "heading": "Built With Clear Steps.",
+      "item1": "Siding rot, moisture damage, deteriorated trim, brick, and stucco assessment",
+      "item2": "Structural review, demolition limits, rebuild sequencing, and permit needs",
+      "item3": "Interior and exterior finish restoration, material matching, and painting",
+      "item4": "Design-build support for improving function and durability during the repair"
+    },
+    "part2": {
+      "label": "Project Context",
+      "heading": "Designed for North Seattle & Eastside Homes.",
+      "text1": "Restoration work can preserve architectural character while improving weather protection, durability, layout, and finish quality.",
+      "text2": "Our design-build approach keeps planning and construction connected, so homeowners can make clearer decisions about scope, materials, layout, budget, and timing.",
+      "subheading": "How Silver Peak Handles the Project",
+      "text3": "Silver Peak first identifies how far the damage extends before defining the rebuild. The team coordinates demolition, structural or moisture repairs, code and permit needs, replacement materials, and finish restoration so the repaired area is safe, durable, and integrated with the surrounding home.",
+      "short1": "Project Planning",
+      "short2": "Existing Conditions",
+      "short3": "Permits",
+      "short4": "Buildability",
+      "short5": "Material Selection",
+      "short6": "Construction Coordination"
+    }
+  },
+  "part3": {
+    "label": "Silver Peak Process",
+    "heading": "Project Fit Before the Site Visit.",
+    "part1": {
+      "subheading": "Project Review",
+      "text": "We first review location, project type, goals, budget direction, timing, and overall working fit."
+    },
+    "part2": {
+      "subheading": "Technical Site Assessment",
+      "text": "For qualified projects, we review access, layout, existing conditions, utilities, and project constraints on site."
+    },
+    "part3": {
+      "subheading": "Planning",
+      "text": "We align scope, materials, permit needs, schedule, and construction strategy."
+    },
+    "part4": {
+      "subheading": "Build",
+      "text": "We execute with steady communication, clean detail work, and quality control."
+    }
+  },
+  "part4": {
+    "label": "Damage Restoration FAQ",
+    "heading": "Common Questions.",
+    "part1": {
+      "question": "What is damage restoration?",
+      "answer": "Damage restoration involves assessing damaged areas, planning repairs, rebuilding affected spaces, and restoring function and finish quality."
+    },
+    "part2": {
+      "question": "Can Silver Peak repair damaged interiors?",
+      "answer": "Yes. We can help with damaged walls, finishes, structural concerns, cabinetry, trim, flooring, and related rebuild needs."
+    },
+    "part3": {
+      "question": "When should damage be assessed?",
+      "answer": "Damage should be assessed early so the cause, affected materials, and repair scope are understood before rebuild work begins."
+    },
+    "part4": {
+      "question": "Can restoration include design improvements?",
+      "answer": "Yes. Restoration can be a good time to improve layout, materials, storage, lighting, or durability."
+    },
+    "part5": {
+      "question": "Do restoration projects need permits?",
+      "answer": "Permit needs depend on structural repairs, electrical, plumbing, framing, and the scale of the rebuild."
+    },
+    "part6": {
+      "question": "Can you match existing finishes?",
+      "answer": "When possible, we help coordinate materials and finishes that work with the existing home."
+    },
+    "part7": {
+      "question": "What causes restoration complexity?",
+      "answer": "Hidden damage, moisture, structural issues, older materials, access, and code requirements can affect the project."
+    },
+    "part8": {
+      "question": "Can damage restoration connect to remodeling?",
+      "answer": "Yes. Many restoration projects become remodeling opportunities when the affected area needs to be rebuilt."
+    },
+    "part9": {
+      "question": "How do you plan restoration work?",
+      "answer": "We review the damage, define the repair scope, identify construction needs, and plan the finished result."
+    },
+    "part10": {
+      "question": "Where does Silver Peak offer restoration services?",
+      "answer": "Silver Peak serves North Seattle and Eastside communities north of I-90. Our primary northern focus includes North Seattle, Bothell, Mill Creek, and Woodinville. We also consider select projects in Redmond and Kirkland when the location, scope, budget, timing, and overall fit make sense. On the Eastside, we prefer projects north of SR 520 when possible."
+    }
+  }
+}

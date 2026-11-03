@@ -1,0 +1,88 @@
+{
+  "part1": {
+    "label": "Your Information",
+    "title": "Privacy Policy",
+    "text": "Silver Peak Design Build respects your privacy and aims to be clear about the information we collect, why we use it, and the choices available to you."
+  },
+  "part2": {
+    "part1": {
+      "text": "On this page",
+      "button1": "Overview",
+      "button2": "Information We Collect",
+      "button3": "How We Use Information",
+      "button4": "Calls, Email & Texts",
+      "button5": "How We Share Information",
+      "button6": "Your Choices",
+      "button7": "Contact Us"
+    },
+    "part2": {
+      "text1": "Last updated: September 2, 2026",
+      "overview": {
+        "heading": "Overview",
+        "text1": "This Privacy Policy explains how Silver Peak Design Build (“Silver Peak,” “we,” “our,” or “us”) handles information collected through silverpeakdesignbuild.com, our website forms, and direct communications related to our residential design-build services.",
+        "text2": "By using this website or submitting information to us, you acknowledge the practices described in this policy. If you do not agree with this policy, please do not submit personal information through the website."
+      },
+      "information_we_collect": {
+        "heading": "Information We Collect",
+        "text1": "We may collect information you voluntarily provide, including your name, email address, phone number, project address or location, project type, goals, budget range, timeline, message, and any files or details you choose to share.",
+        "text2": "We may also receive limited technical information when you visit the website, such as your browser type, device type, IP address, referring page, pages viewed, and general interaction data. This information may be collected through cookies, server logs, or analytics tools."
+      },
+      "how_we_collect_information": {
+        "heading": "How We Collect Information",
+        "text": "We collect information when you complete a contact or project review form, send us an email, call or text us, communicate with our team, or otherwise request information about our services. Some website forms may open your email application so you can send the information directly to Silver Peak."
+      },
+      "how_we_use_information": {
+        "heading": "How We Use Information",
+        "text": "We may use information to:",
+        "item1": "Respond to questions and project inquiries.",
+        "item2": "Evaluate project location, scope, timing, budget direction, and overall fit.",
+        "item3": "Schedule conversations, site visits, or other requested follow-up.",
+        "item4": "Provide and improve our design-build services and website experience.",
+        "item5": "Maintain business records, prevent misuse, and protect our rights.",
+        "item6": "Meet legal, regulatory, insurance, or safety obligations."
+      },
+      "communications": {
+        "heading": "Email, Phone, and Text Communications",
+        "text1": "If you provide your contact information and consent to communication, Silver Peak may contact you by email, phone, or text regarding your inquiry, service request, appointment, or project. Consent to receive communications is not a condition of purchasing services.",
+        "text2": "Message frequency varies. Message and data rates may apply. You may opt out of text messages at any time by replying STOP, and you may request assistance by replying HELP. You may also contact us directly to update your communication preferences."
+      },
+      "cookies": {
+        "heading": "Cookies and Website Analytics",
+        "text": "Our website may use cookies or similar technologies to support basic functionality, understand site traffic, and improve performance. You can control cookies through your browser settings. Disabling cookies may affect how some website features work."
+      },
+      "sharing": {
+        "heading": "How We Share Information",
+        "text1": "We do not sell your personal information. We may share information with service providers or professional partners who help us operate the website, communicate with you, evaluate a project, or provide requested services. We may also disclose information when required by law or when reasonably necessary to protect our business, customers, or others.",
+        "text2": "**No mobile information will be shared with third parties or affiliates for marketing or promotional purposes.** Text messaging originator opt-in data and consent will not be shared with third parties for their own marketing."
+      },
+      "retention_security": {
+        "heading": "Data Retention and Security",
+        "text": "We retain information for as long as reasonably necessary to respond to an inquiry, provide services, maintain business records, resolve disputes, or meet legal obligations. We use reasonable administrative, technical, and physical safeguards appropriate to the information we maintain. However, no website, email, or storage system can be guaranteed to be completely secure."
+      },
+      "choices": {
+        "heading": "Your Choices",
+        "text1": "You may ask us to correct or delete personal information we maintain about you, or request that we stop using it for certain communications. Some information may need to be retained for active projects, contracts, legal requirements, security, or legitimate business records.",
+        "text2": "To make a privacy request, email [info@silverpeakdesignbuild.com](mailto:info@silverpeakdesignbuild.com). We may need to verify your identity before completing a request."
+      },
+      "children": {
+        "heading": "Children’s Privacy",
+        "text": "This website and our services are intended for adults and are not directed to children under 13. We do not knowingly collect personal information from children under 13 through the website."
+      },
+      "external_links": {
+        "heading": "Third-Party Links",
+        "text": "The website may link to third-party websites, including maps, contractor verification resources, or social platforms. Their privacy practices are governed by their own policies, and Silver Peak is not responsible for their content or privacy practices."
+      },
+      "changes": {
+        "heading": "Changes to This Policy",
+        "text": "We may update this Privacy Policy when our website, services, or privacy practices change. The “Last updated” date at the top of this page identifies the current version."
+      },
+      "contact_privacy": {
+        "label": "Privacy Questions",
+        "heading": "Contact Silver Peak",
+        "text": "For questions or requests related to this Privacy Policy, contact:",
+        "short": "Silver Peak Design Build"
+      },
+      "text2": "This page provides general information about Silver Peak’s website privacy practices and is not legal advice."
+    }
+  }
+}

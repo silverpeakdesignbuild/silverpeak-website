@@ -1,0 +1,81 @@
+{
+  "part1": {
+    "label": "Carpentry & Tiling",
+    "title": "Carpentry & Tiling That Shows the Finish Standard.",
+    "text": "Built-ins, benches, shelving, trim, doors, natural wood, tile, waterproofing, patterns, and finish details show the level of craftsmanship Silver Peak carries from small details into major residential projects.",
+    "button1": "Start Project Review",
+    "button2": "View Related Work"
+  },
+  "part2": {
+    "part1": {
+      "label": "What We Plan",
+      "heading": "Built With Clear Steps.",
+      "item1": "Built-ins, shelving, benches, Murphy beds, doors, trim, and custom storage",
+      "item2": "Shower, floor, backsplash, niche, and feature-wall tile",
+      "item3": "Waterproofing, slopes, drains, transitions, grout, and glass coordination",
+      "item4": "Natural wood, durable finishes, clean patterns, and custom details"
+    },
+    "part2": {
+      "label": "Project Context",
+      "heading": "Designed for North Seattle & Eastside Homes.",
+      "text1": "Carpentry and tile work are treated as functional art: the details should solve a practical need, fit the architecture, and remain durable through daily use.",
+      "text2": "Our design-build approach keeps planning and construction connected, so homeowners can make clearer decisions about scope, materials, layout, budget, and timing.",
+      "subheading": "How Silver Peak Handles the Project",
+      "text3": "Silver Peak treats finish work as part of the overall construction standard. Measurements, substrate preparation, waterproofing, transitions, wood species, profiles, patterns, and hardware are coordinated before installation so built-ins and tile details are useful, durable, and visually connected to the home.",
+      "short1": "Project Planning",
+      "short2": "Existing Conditions",
+      "short3": "Permits",
+      "short4": "Buildability",
+      "short5": "Material Selection",
+      "short6": "Construction Coordination"
+    }
+  },
+  "part3": {
+    "label": "Silver Peak Process",
+    "heading": "Project Fit Before the Site Visit.",
+    "part1": {
+      "subheading": "Project Review",
+      "text": "We first review location, project type, goals, budget direction, timing, and overall working fit."
+    },
+    "part2": {
+      "subheading": "Technical Site Assessment",
+      "text": "For qualified projects, we review access, layout, existing conditions, utilities, and project constraints on site."
+    },
+    "part3": {
+      "subheading": "Planning",
+      "text": "We align scope, materials, permit needs, schedule, and construction strategy."
+    },
+    "part4": {
+      "subheading": "Build",
+      "text": "We execute with steady communication, clean detail work, and quality control."
+    }
+  },
+  "part4": {
+    "label": "Carpentry & Tiling FAQ",
+    "heading": "Common Questions.",
+    "part1": {
+      "question": "What custom carpentry can Silver Peak build?",
+      "answer": "Projects may include built-in Murphy beds, shelving, vanities, and medicine cabinets, plus benches, custom doors, trim, cabinetry, and under-stair storage."
+    },
+    "part2": {
+      "question": "What types of tile work are included?",
+      "answer": "Tile work may include showers, bathroom floors, kitchen backsplashes, niches, benches, feature walls, and transitions."
+    },
+    "part3": {
+      "question": "Why is waterproofing important for tile?",
+      "answer": "Wet areas require a properly planned waterproofing system, drainage, slope, penetrations, and transitions to protect the structure."
+    },
+    "part4": {
+      "question": "Can custom details fit an older Seattle home?",
+      "answer": "Absolutely. Your existing home is the canvas. Silver Peak can help you find the areas best suited for custom work and the places where space can be used better, even if you don’t yet know exactly what you want."
+    },
+    "part5": {
+      "question": "Can carpentry and tile be part of a larger remodel?",
+      "answer": "Yes. These services are commonly coordinated with kitchens, bathrooms, basements, ADUs, and whole-home renovations."
+    },
+    "part6": {
+      "question": "Which areas does Silver Peak serve?",
+      "answer": "Silver Peak primarily serves North Seattle and select Eastside communities."
+    }
+  }
+}

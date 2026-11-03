@@ -1,0 +1,215 @@
+{
+  "part1": {
+    "label": "North Seattle Design-Build",
+    "title": "Whole House Builds, Additions, DADUs & ADUs",
+    "text": "Silver Peak specializes in whole-house builds, additions, DADUs, and ADUs, with select kitchen and bathroom remodels when the project is the right fit.",
+    "button1": "Start Project Review",
+    "button2": "View Major Projects",
+    "part1": {
+      "text": "Years of residential construction and remodeling experience."
+    }
+  },
+  "part2": {
+    "part1": {
+      "heading": "Whole House Builds",
+      "text": "One accountable team connects planning, design, permits, construction, and communication from start to finish."
+    },
+    "part2": {
+      "heading": "Additions",
+      "text": "New living space planned to connect naturally with the existing home."
+    },
+    "part3": {
+      "heading": "DADU Planning",
+      "text": "Feasibility, site access, utilities, permitting, and construction planning for detached backyard homes."
+    },
+    "part4": {
+      "heading": "ADU Planning",
+      "text": "Early review of zoning, utilities, access, trees, sewer conditions, and permit needs."
+    }
+  },
+  "part3": {
+    "short": "Plan first.\\\nBuild with clarity.",
+    "label": "Built for Major Residential Projects",
+    "heading": "Whole House Builds and Additions",
+    "text": "Silver Peak focuses on whole-house builds, major renovations, and additions that require coordinated planning, permitting, structural work, and construction.",
+    "item1": "Whole house builds and rebuilds",
+    "item2": "Home additions",
+    "item3": "Phased design-build planning",
+    "button": "Explore Our Services"
+  },
+  "services": {
+    "label": "Our Services",
+    "heading": "What We Build",
+    "part1": {
+      "subheading": "Whole House Builds",
+      "text": "Full-home builds, rebuilds, and major renovations."
+    },
+    "part2": {
+      "subheading": "Additions",
+      "text": "New living space designed to work with the existing home."
+    },
+    "part3": {
+      "subheading": "DADU & ADU",
+      "text": "Detached backyard homes built from the ground up, and attached apartments designed for your unique space."
+    },
+    "part4": {
+      "subheading": "Basement Remodels",
+      "text": "Lower levels converted into useful living space."
+    },
+    "part5": {
+      "subheading": "Kitchen Remodeling",
+      "text": "Better flow, storage, cabinetry, lighting, and natural light."
+    },
+    "part6": {
+      "subheading": "Bathroom Remodeling",
+      "text": "Custom bathroom designs to meet your unique style."
+    },
+    "part7": {
+      "subheading": "Porches",
+      "text": "Substantial entries and porches built for access and protection."
+    },
+    "part8": {
+      "subheading": "Exteriors",
+      "text": "Exterior repairs and upgrades for durability and curb appeal."
+    },
+    "part9": {
+      "subheading": "Damage Restoration",
+      "text": "Rot, water, and structural repairs followed by clean rebuilds."
+    },
+    "part10": {
+      "subheading": "Carpentry & Tile",
+      "text": "Custom carpentry, trim, cabinetry, and tile work."
+    }
+  },
+  "kitchen": {
+    "label": "Selective Remodeling, Same Attention to Detail",
+    "heading": "Kitchens and Bathrooms",
+    "text": "Kitchens and bathrooms are select projects that show Silver Peak’s finish quality, planning, and craftsmanship.",
+    "item1": "Flow, storage, cabinetry, and natural light",
+    "item2": "Waterproofing, tile, fixtures, and accessibility",
+    "item3": "Durable materials and clear coordination"
+  },
+  "adu_dadu": {
+    "label": "DADU & ADU Planning",
+    "heading": "Detached and Attached Living Spaces",
+    "text": "Silver Peak reviews zoning, access, utilities, trees, sewer, privacy, and permit needs before design moves forward.",
+    "button": "Start Project Review",
+    "subheading": "Early Planning Review",
+    "short1": "DADU Feasibility",
+    "short2": "ADU Planning",
+    "short3": "Site Access",
+    "short4": "Zoning",
+    "short5": "Sewer",
+    "short6": "Utilities",
+    "short7": "Trees",
+    "short8": "Permits"
+  },
+  "portfolio": {
+    "label": "Recent Work",
+    "heading": "Featured Major Projects",
+    "text": "Our featured work reflects Silver Peak’s focus on substantial residential renovations, additions, DADUs, and whole-house projects.",
+    "part1": {
+      "short1": "Whole House Build",
+      "subheading": "Greenwood Whole House Rebuild",
+      "text": "A two-phase project: a rear addition followed by a full rebuild of the 100-year-old primary house, including a basement ADU.",
+      "short2": "Whole House",
+      "short3": "Addition",
+      "short4": "Basement ADU"
+    },
+    "part2": {
+      "short1": "Whole House Interior Remodel",
+      "subheading": "Whole House Interior Remodel in Haller Lake",
+      "text": "A whole-house interior renovation with skylit living spaces, custom bathrooms, hardwood details, and a renewed entry.",
+      "short2": "Whole House",
+      "short3": "Haller Lake"
+    },
+    "part3": {
+      "short1": "Detached Accessory Dwelling",
+      "subheading": "DADU Project in View Ridge with Butterfly Roof",
+      "text": "A two-story backyard DADU with a compact kitchen, custom storage, Murphy beds, and a deck.",
+      "short2": "DADU",
+      "short3": "View Ridge"
+    }
+  },
+  "process": {
+    "label": "Project Fit Comes First",
+    "heading": "How Projects Start",
+    "text": "Silver Peak reviews fit before scheduling an in-person technical site assessment.",
+    "part1": {
+      "subheading": "Project Details",
+      "text": "Share your location, project type, goals, and budget range."
+    },
+    "part2": {
+      "subheading": "Project Fit Call",
+      "text": "We confirm the service area, budget, scope, and whether Silver Peak is the right fit."
+    },
+    "part3": {
+      "subheading": "Technical Site Assessment",
+      "text": "We meet on site to confirm a good working fit, review existing conditions and project feasibility, and present a Design Agreement proposal for the next phase."
+    },
+    "part4": {
+      "subheading": "Design & Build",
+      "text": "One company guides two connected phases. Design establishes the layout, key selections, working budget, and material and trade bids. The same team then carries the approved plan through construction."
+    }
+  },
+  "neighborhoods": {
+    "label": "Service Area",
+    "heading": "Core Service Area",
+    "text": "Silver Peak serves North Seattle and select Eastside communities, with a focus on projects that align with our location, scope, and budget criteria.",
+    "button": "Discuss Your Project →",
+    "subheading": "Local Experience",
+    "short1": "Greenwood",
+    "short2": "Phinney Ridge",
+    "short3": "Ballard",
+    "short4": "Queen Anne",
+    "short5": "Capitol Hill",
+    "short6": "North Seattle",
+    "short7": "Wallingford",
+    "short8": "Fremont",
+    "short9": "Select Eastside"
+  },
+  "faq": {
+    "label": "Helpful Answers",
+    "heading": "Common Renovation Questions",
+    "text": "Direct answers about whole-house projects, additions, DADUs, ADUs, basements, focused remodels, permits, project fit, and construction planning.",
+    "part1": {
+      "answer": "Yes. Silver Peak Design & Build’s contractor registration can be verified directly through Washington State Labor & Industries. [View Silver Peak’s official L&I contractor record](https://secure.lni.wa.gov/verify/Detail.aspx?UBI=603006436&LIC=SILVEPC907LT&SAW=)."
+    },
+    "part2": {
+      "answer": "A technical site assessment reviews existing conditions, access, structure, utilities, zoning, trees, drainage, side sewer needs, electrical capacity, permits, and project feasibility before design begins."
+    },
+    "part3": {
+      "answer": "Building a DADU in Seattle begins with a site assessment covering zoning, lot access, trees, sewer, utilities, electrical capacity, design options, permits, budget, and construction access."
+    },
+    "part4": {
+      "answer": "Kitchen design includes layout, traffic flow, work zones, appliance placement, cabinetry, storage, lighting, islands, materials, ventilation, and build coordination."
+    },
+    "part5": {
+      "answer": "Bathroom remodeling should address layout, waterproofing, tile, storage, lighting, ventilation, fixtures, accessibility, and durable materials."
+    },
+    "part6": {
+      "answer": "An ADU is typically attached to or inside the main home, while a DADU is detached. The right choice depends on lot size, access, zoning, utilities, budget, privacy, and permit feasibility in Seattle."
+    },
+    "part7": {
+      "answer": "Schedule a technical site assessment after the initial project-fit review and before finalizing design so zoning, access, utilities, structure, trees, sewer, and permit issues can be identified early."
+    },
+    "part8": {
+      "answer": "Well-planned kitchen remodels improve layout, storage, lighting, appliance placement, traffic flow, ventilation, material durability, and everyday usability."
+    },
+    "part9": {
+      "answer": "Yes. Bathroom remodeling can include curbless showers, wider clearances, grab bar blocking, slip-resistant materials, better lighting, reachable storage, and comfort-height fixtures."
+    },
+    "part10": {
+      "answer": "ADU and DADU planning may require review of electrical capacity, sewer, water service, drainage, heating, ventilation, access, and utility upgrade costs."
+    },
+    "part11": {
+      "answer": "Silver Peak focuses on North Seattle neighborhoods including Greenwood, Phinney Ridge, Ballard, Queen Anne, Wallingford, and Fremont, plus select Eastside communities when the project is a good fit."
+    }
+  },
+  "contact": {
+    "label": "Start With a Project Review",
+    "heading": "Tell Us About Your Project",
+    "text": "Share your location, project type, goals, and budget range. We’ll confirm fit before scheduling any site visit.",
+    "button": "Start Project Review"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "part1": {
+    "label": "DADU & ADU Planning",
+    "title": "DADU & ADU Projects for Flexible Living.",
+    "text": "DADUs and ADUs are planned around site access, zoning, utilities, sewer, trees, privacy, compact layouts, permitting, construction access, and long-term flexibility.",
+    "button1": "Start Project Review",
+    "button2": "View Related Work"
+  },
+  "part2": {
+    "part1": {
+      "label": "What We Plan",
+      "heading": "Built With Clear Steps.",
+      "item1": "Seattle DADU and ADU feasibility and permit review",
+      "item2": "Site access, privacy, utilities, side sewer, electrical, and tree considerations",
+      "item3": "Permit planning, preconstruction sequencing, and realistic project scope",
+      "item4": "Compact kitchens, flexible rooms, custom Murphy beds, storage, and efficient outdoor connections"
+    },
+    "part2": {
+      "label": "Project Context",
+      "heading": "Designed for North Seattle & Eastside Homes.",
+      "text1": "We help homeowners understand the DADU and ADU process while planning useful features such as natural light, efficient kitchens, flexible guest and office rooms, basement ADUs, custom storage, and outdoor connections.",
+      "text2": "Our design-build approach keeps planning and construction connected, so homeowners can make clearer decisions about scope, materials, layout, budget, and timing.",
+      "subheading": "How Silver Peak Handles the Project",
+      "text3": "Silver Peak starts with the constraints that can shape an ADU or DADU: zoning, access, utilities, trees, sewer conditions, privacy, and permitting. Once the site direction is clear, the team coordinates the layout, systems, materials, and construction around the homeowner's intended long-term use.",
+      "short1": "Project Planning",
+      "short2": "Existing Conditions",
+      "short3": "Permits",
+      "short4": "Buildability",
+      "short5": "Material Selection",
+      "short6": "Construction Coordination"
+    }
+  },
+  "part3": {
+    "label": "Silver Peak Process",
+    "heading": "Project Fit Before the Site Visit.",
+    "part1": {
+      "subheading": "Project Review",
+      "text": "We first review location, project type, goals, budget direction, timing, and overall working fit."
+    },
+    "part2": {
+      "subheading": "Technical Site Assessment",
+      "text": "For qualified projects, we review access, layout, existing conditions, utilities, and project constraints on site."
+    },
+    "part3": {
+      "subheading": "Planning",
+      "text": "We align scope, materials, permit needs, schedule, and construction strategy."
+    },
+    "part4": {
+      "subheading": "Build",
+      "text": "We execute with steady communication, clean detail work, and quality control."
+    }
+  },
+  "part4": {
+    "label": "DADU and ADU FAQ",
+    "heading": "Common Questions.",
+    "part1": {
+      "question": "What is the first step for a Seattle ADU or DADU?",
+      "answer": "Start with a project review covering location, scope, goals, budget direction, and timing. Qualified DADU and ADU projects can then move to a technical site assessment for lot conditions, access, zoning, utilities, trees, and feasibility."
+    },
+    "part2": {
+      "question": "Do Seattle DADU and ADU projects need permits?",
+      "answer": "Yes. DADU and ADU projects typically require permit planning, drawings, utility review, and coordination with city requirements."
+    },
+    "part3": {
+      "question": "Can Silver Peak help with ADU DADU feasibility?",
+      "answer": "Yes. We review site conditions, access, utility needs, privacy, layout, and construction constraints before the project moves forward."
+    },
+    "part4": {
+      "question": "What affects a Seattle DADU permit timeline?",
+      "answer": "Permit timing can be affected by plan completeness, zoning, tree protection, sewer inspection, electrical capacity, and city review periods."
+    },
+    "part5": {
+      "question": "Do ADUs and DADUs need utility planning?",
+      "answer": "Yes. Electrical panel capacity, water, sewer, drainage, heat pumps, and utility routing should be reviewed early."
+    },
+    "part6": {
+      "question": "What is a technical site assessment for ADU DADU planning?",
+      "answer": "It reviews the property conditions that can affect design, permits, access, utility requirements, and construction cost."
+    },
+    "part7": {
+      "question": "Can an ADU or DADU increase property value?",
+      "answer": "A well-planned ADU or DADU can support housing flexibility, rental potential, family use, and long-term property investment."
+    },
+    "part8": {
+      "question": "What Seattle zoning rules should homeowners consider?",
+      "answer": "Zoning, lot size, setbacks, height limits, tree protection, parking, and utility requirements may affect the project."
+    },
+    "part9": {
+      "question": "Can Silver Peak help with compact layouts?",
+      "answer": "Yes. DADU and ADU spaces require smart layout planning, storage, lighting, privacy, and efficient use of space."
+    },
+    "part10": {
+      "question": "Where does Silver Peak build ADUs and DADUs?",
+      "answer": "Silver Peak serves North Seattle and Eastside communities north of I-90. Our primary northern focus includes North Seattle, Bothell, Mill Creek, and Woodinville. We also consider select projects in Redmond and Kirkland when the location, scope, budget, timing, and overall fit make sense. On the Eastside, we prefer projects north of SR 520 when possible."
+    }
+  }
+}

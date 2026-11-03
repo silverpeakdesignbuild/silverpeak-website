@@ -1,0 +1,79 @@
+{
+  "services": {
+    "label": "Silver Peak Services",
+    "title": "Design-Build Services for Major Residential Projects.",
+    "text": "Whole-house builds and rebuilds, additions, DADUs and ADUs, basement remodels, kitchens, bathrooms, exteriors, porches, damage restoration, and carpentry & tiling. One accountable team connects planning, design, permitting, construction, and communication from start to finish.",
+    "button1": "Start Project Review",
+    "button2": "Explore Services"
+  },
+  "part2": {
+    "label": "What We Build",
+    "heading": "Services organized from major projects to detailed finish work.",
+    "part1": {
+      "label": "Silver Peak Service",
+      "subheading": "Whole House Builds & Rebuilds",
+      "text": "Full-home renovations and rebuilds that can include layout changes, ADUs, outdoor spaces, custom storage, and full-property improvements."
+    },
+    "part2": {
+      "label": "Silver Peak Service",
+      "subheading": "Additions",
+      "text": "Home additions planned around structure, access, permits, budget, and how the new space connects to the existing home."
+    },
+    "part3": {
+      "label": "Silver Peak Service",
+      "subheading": "DADU & ADU",
+      "text": "Attached and detached dwelling projects with planning for utilities, privacy, access, zoning, and flexible long-term use."
+    },
+    "part4": {
+      "label": "Silver Peak Service",
+      "subheading": "Basement Remodels",
+      "text": "Underused lower levels turned into family rooms, guest space, laundry zones, home offices, or basement ADUs."
+    },
+    "part5": {
+      "label": "Silver Peak Service",
+      "subheading": "Kitchen Remodeling",
+      "text": "Kitchens planned around workflow, storage, lighting, appliance placement, custom cabinetry, and natural light."
+    },
+    "part6": {
+      "label": "Silver Peak Service",
+      "subheading": "Bathroom Remodeling",
+      "text": "Bathrooms built for comfort, waterproofing, storage, accessibility, durable tile, and long-term daily use."
+    },
+    "part7": {
+      "label": "Silver Peak Service",
+      "subheading": "Exteriors",
+      "text": "Exterior updates that protect the home from weather, improve curb appeal, and repair siding, trim, entries, and transitions."
+    },
+    "part8": {
+      "label": "Silver Peak Service",
+      "subheading": "Porches",
+      "text": "Covered porch and entry work that improves access, structure, weather protection, and the home’s first impression."
+    },
+    "part9": {
+      "label": "Silver Peak Service",
+      "subheading": "Damage Restoration",
+      "text": "Rot, water, and damage repairs handled with careful assessment, structural planning, and clean rebuild work."
+    },
+    "part10": {
+      "label": "Silver Peak Service",
+      "subheading": "Carpentry & Tiling",
+      "text": "Built-ins, shelving, trim, barn doors, natural wood details, tile, and custom finish work."
+    }
+  },
+  "part3": {
+    "part1": {
+      "label": "North Seattle Design-Build",
+      "heading": "Planning First. Build Second.",
+      "text1": "Good remodeling starts before construction. Silver Peak reviews layout, materials, access, utilities, permitting needs, and existing site conditions so the project direction is realistic from the start.",
+      "text2": "This approach supports kitchen remodeling, bathroom remodeling, Seattle DADU and ADU planning, basement remodeling, exterior improvements, and long-term property investment."
+    },
+    "part2": {
+      "label": "Project Priorities",
+      "heading": "Big Projects First. Detail at Every Scale.",
+      "item1": "Whole-House Builds & Rebuilds",
+      "item2": "Additions",
+      "item3": "DADUs & ADUs",
+      "item4": "Basement Remodels"
+    }
+  }
+}

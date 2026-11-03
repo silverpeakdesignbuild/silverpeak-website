@@ -1,0 +1,97 @@
+{
+  "part1": {
+    "label": "Porches And Entries",
+    "title": "Porches and Entries Built as Part of the Home.",
+    "text": "Covered porches, stairs, railings, landings, and entries are planned for structure, access, weather protection, durability, and a natural architectural connection to the home.",
+    "button1": "Start Project Review",
+    "button2": "View Related Work"
+  },
+  "part2": {
+    "part1": {
+      "label": "What We Plan",
+      "heading": "Built With Clear Steps.",
+      "item1": "Porch, stair, landing, and entry planning",
+      "item2": "Railings, access improvements, concrete steps, and durable transitions",
+      "item3": "Weather protection, siding, trim, door, and exterior-detail coordination",
+      "item4": "Covered porches, entries, and outdoor transitions that match the home"
+    },
+    "part2": {
+      "label": "Project Context",
+      "heading": "Designed for North Seattle & Eastside Homes.",
+      "text1": "A well-built porch or entry can improve safety, curb appeal, weather protection, and the connection between interior rooms and the yard.",
+      "text2": "Our design-build approach keeps planning and construction connected, so homeowners can make clearer decisions about scope, materials, layout, budget, and timing.",
+      "subheading": "How Silver Peak Handles the Project",
+      "text3": "Silver Peak plans porches as real extensions of the home, not decorative add-ons. Structure, roof coverage, stairs, railings, drainage, lighting, and the connection to the entry are coordinated together to improve weather protection, access, and curb appeal.",
+      "short1": "Project Planning",
+      "short2": "Existing Conditions",
+      "short3": "Permits",
+      "short4": "Buildability",
+      "short5": "Material Selection",
+      "short6": "Construction Coordination"
+    }
+  },
+  "part3": {
+    "label": "Silver Peak Process",
+    "heading": "Project Fit Before the Site Visit.",
+    "part1": {
+      "subheading": "Project Review",
+      "text": "We first review location, project type, goals, budget direction, timing, and overall working fit."
+    },
+    "part2": {
+      "subheading": "Technical Site Assessment",
+      "text": "For qualified projects, we review access, layout, existing conditions, utilities, and project constraints on site."
+    },
+    "part3": {
+      "subheading": "Planning",
+      "text": "We align scope, materials, permit needs, schedule, and construction strategy."
+    },
+    "part4": {
+      "subheading": "Build",
+      "text": "We execute with steady communication, clean detail work, and quality control."
+    }
+  },
+  "part4": {
+    "label": "Porches FAQ",
+    "heading": "Common Questions.",
+    "part1": {
+      "question": "What porch services does Silver Peak offer?",
+      "answer": "We help with porch repairs, rebuilds, entries, railings, stairs, landings, and outdoor transitions."
+    },
+    "part2": {
+      "question": "Can a porch improve curb appeal?",
+      "answer": "Yes. A well-planned porch can improve the home’s first impression, entry experience, and overall exterior character."
+    },
+    "part3": {
+      "question": "Do porch projects require permits?",
+      "answer": "Permit needs depend on structure, height, stairs, railings, foundations, and the size of the scope."
+    },
+    "part4": {
+      "question": "What should be reviewed before rebuilding a porch?",
+      "answer": "Structure, drainage, access, railing needs, stairs, footings, materials, and weather exposure should be reviewed."
+    },
+    "part5": {
+      "question": "Can you improve porch safety?",
+      "answer": "Yes. Better railings, stair dimensions, landing design, lighting, and materials can improve safety."
+    },
+    "part6": {
+      "question": "Can porches be designed for Seattle weather?",
+      "answer": "Yes. Covered areas, drainage, durable materials, and weather-aware detailing are important in Seattle."
+    },
+    "part7": {
+      "question": "Can porch work connect with exterior remodeling?",
+      "answer": "Yes. Porch work often pairs well with siding, doors, windows, trim, and entry improvements."
+    },
+    "part8": {
+      "question": "Can you update an older porch?",
+      "answer": "Yes. Older porches may need careful repair, replacement, or design updates that match the existing home."
+    },
+    "part9": {
+      "question": "What materials are good for porches?",
+      "answer": "Material choice depends on exposure, style, maintenance goals, structure, and budget direction."
+    },
+    "part10": {
+      "question": "Where does Silver Peak build porches?",
+      "answer": "Silver Peak focuses on North Seattle and select Eastside communities."
+    }
+  }
+}

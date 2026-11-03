@@ -1,0 +1,57 @@
+{
+  "licton_springs_kitchen_bath_remodel": {
+    "button1": "← Back to All Projects",
+    "label1": "Kitchen + Bathroom Remodel",
+    "heading": "Kitchen and Bathroom Remodel in Licton Springs",
+    "text1": "This Licton Springs project combines a compact kitchen and bathroom renovation where both rooms needed to do more with limited square footage. The work focused on layout, custom built-ins, storage, and finish details that make the spaces feel more open and useful.",
+    "text2": "The kitchen uses blue lower cabinetry, warm wood uppers and trim, open shelving, bright counters, and a clean backsplash. A custom oak table and built-in bench create dining space without crowding the room. The bathroom was expanded into part of the hallway and a child’s bedroom, creating a larger full bath with a shower window and built-in shelving.",
+    "short1": "Project",
+    "short2": "Kitchen and Bathroom Remodel in Licton Springs",
+    "short3": "Category",
+    "short4": "Kitchen Remodel and Bathroom Remodel",
+    "short5": "Location",
+    "short6": "Licton Springs, Seattle, Washington",
+    "button2": "Start Project Review",
+    "button3": "View Project Gallery",
+    "label2": "Project Details",
+    "part1": {
+      "text1": "Kitchen design",
+      "small_heading": "A compact kitchen designed to feel open, warm, and practical",
+      "text2": "This compact kitchen delivers impactful daily functionality. The remodel brings together blue lower cabinets, lighter wood upper cabinets, open shelving, a bright backsplash, and clean counters so the room feels layered without becoming visually overwhelming.",
+      "text3": "The contrast between the painted base cabinets and the warm wood details gives the kitchen personality, while the matching sink countertop and backsplash keep it feeling calm and usable."
+    },
+    "part2": {
+      "text1": "Custom dining solution",
+      "small_heading": "A custom oak table and built-in bench solved the space problem",
+      "text2": "A custom oak table with a built-in bench solved the room’s tight dining-space challenge, creating a more efficient eating area directly within the kitchen."
+    },
+    "part3": {
+      "text1": "Kitchen details",
+      "small_heading": "Clean backsplash, open storage, and appliance zones sharpen the finish work",
+      "text2": "The stove wall, backsplash, and open shelving bring out this kitchen’s personality, and this section of backsplash still carries the blues from the lower cabinets."
+    },
+    "part4": {
+      "text1": "Bathroom expansion",
+      "small_heading": "The tiny bathroom was expanded into the hallway and kids’ bedroom",
+      "text2": "The original bathroom was a tiny room that needed to feel larger and become more functional. To make that happen, the remodel borrowed space from the hallway and part of a kids’ bedroom, allowing the finished bath to function as a true full bathroom while feeling far more spacious than before.",
+      "text3": "That extra space made room for a better layout and improved comfort."
+    },
+    "part5": {
+      "text1": "Bathroom light and layout",
+      "small_heading": "A shower window helps the compact bath feel brighter and more open",
+      "text2": "A window within the shower brings valuable natural light into the small room. In a room this small, natural light becomes part of the design strategy because it keeps the enclosure from feeling boxed in.",
+      "text3": "The glass shower wall, vertical tile, and window placement work together to visually stretch the room and make the finished space feel cleaner and more open."
+    },
+    "part6": {
+      "text1": "Built-in storage",
+      "small_heading": "Built-in shelves made the enlarged bath more useful",
+      "text2": "Built-in shelving uses about a foot of former hallway space to add valuable storage without cluttering the bathroom.",
+      "text3": "That kind of decision is a good example of practical remodeling: small layout adjustments can dramatically improve storage, organization, and everyday usability in a compact bathroom."
+    }
+  },
+  "gallery_licton_springs_kitchen_bath_remodel": {
+    "label": "Project Gallery",
+    "heading": "Kitchen and Bathroom Remodel in Licton Springs",
+    "text": "The kitchen remodel, custom oak table and bench, bathroom expansion, built-in shelving, and finish details from this Licton Springs renovation."
+  }
+}
