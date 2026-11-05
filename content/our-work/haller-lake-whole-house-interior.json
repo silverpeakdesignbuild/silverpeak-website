@@ -3,8 +3,8 @@
     "button1": "← Back to All Projects",
     "label1": "Whole House Interior Remodel",
     "heading": "Whole House Interior Remodel in Haller Lake",
-    "text1": "An ADA-compliant whole-house interior remodel in Haller Lake, including the living spaces, two bathrooms, custom woodwork, and front entry.",
-    "text2": "Project highlights include skylights in the living room, a custom wood floor vent set into the hardwood, two remodeled bathrooms, custom cabinetry and medicine cabinets, a wall-hung toilet with the tank hidden in the wall to save space, shower window and skylight details, dual shower heads, an accessibility-focused in-shower drying system, and a new front door.",
+    "text1": "A whole-house interior remodel in Haller Lake with accessibility-focused bathrooms, custom woodwork, and a renewed front entry.",
+    "text2": "The remodel connects the living spaces with two updated bathrooms, custom cabinetry, and a wood floor vent integrated into the hardwood.",
     "short1": "Project",
     "short2": "Whole House Interior Remodel in Haller Lake",
     "short3": "Category",
@@ -14,17 +14,16 @@
     "button2": "Start Project Review",
     "button3": "View Project Gallery",
     "label2": "Project Details",
-    "text3": "Explore the connected living spaces, custom wood details, bathrooms, accessibility features, and entry improvements completed throughout the home.",
+    "text3": "Living spaces, custom woodwork, accessible bathrooms, and a renewed entry.",
     "part1": {
       "text1": "Overall interior scope",
-      "small_heading": "A broad interior remodel across most of the home",
-      "text2": "The living room photos show the scale of the interior work with finished hardwood flooring, a long open room, recessed lighting, large windows, and two skylights."
+      "small_heading": "Living Spaces",
+      "text2": "Hardwood flooring, recessed lighting, large windows, and two skylights define the main living space."
     },
     "part2": {
       "text1": "Main living area",
-      "small_heading": "Skylights and clean finishes made the living room feel larger and brighter",
-      "text2": "The living room became one of the project’s defining spaces. The skylights, clean wall planes, recessed lighting, and large glass openings made the room feel bright and open, while the hardwood flooring added warmth throughout the interior.",
-      "text3": "This part of the project shows the value of updating the whole interior environment. The goal was not only to remodel isolated features, but to make the home feel more complete and comfortable from room to room."
+      "small_heading": "Hardwood flooring and an open connection to the hallway",
+      "text2": "Hardwood flooring and a wide interior opening connect the living area with the hallway."
     },
     "part3": {
       "text1": "Custom wood detail",
@@ -33,33 +32,28 @@
     },
     "part4": {
       "text1": "Guest bathroom",
-      "small_heading": "A three-quarter guest bath with a glass shower and bench",
-      "text2": "The bathroom includes a glass shower with a built-in bench, grab bars, and a custom vanity."
-    },
-    "part5": {
-      "text1": "Shower window detail",
-      "small_heading": "Custom shower windows and skylight-style openings became a key feature",
-      "text2": "The shower window is a unique detail. Its window-and-skylight style brings light from above and makes the bathroom feel more open."
+      "small_heading": "A guest shower with a bench and grab bars",
+      "text2": "The glass shower includes a built-in bench and grab bars, alongside a custom vanity."
     },
     "part6": {
       "text1": "Primary bathroom cabinetry",
-      "small_heading": "Custom cabinets, a roll-under vanity, and built-in medicine cabinets",
-      "text2": "The primary bathroom has custom cabinets, a double vanity with double sinks, and medicine cabinets recessed into the wall. Part of the vanity was built so a wheelchair can roll right under it, with the sink, plumbing, and fixtures placed to make that work."
+      "small_heading": "A wheelchair-accessible vanity and recessed medicine cabinets",
+      "text2": "The double vanity includes space beneath one sink for wheelchair access and recessed medicine cabinets. A wall-mounted toilet keeps the tank concealed in the wall."
     },
     "part7": {
       "text1": "Accessible shower feature",
-      "small_heading": "A curbless shower with grab bars, two shower heads, and a built-in dryer",
-      "text2": "The primary shower is curbless, with grab bars, two shower heads, and a warm-air drying system so the homeowner can dry off without a towel."
+      "small_heading": "A curbless shower with grab bars and warm-air drying",
+      "text2": "The primary shower has curbless access, grab bars, two shower heads, and an in-shower warm-air drying system."
     },
     "part8": {
       "text1": "Entry update",
-      "small_heading": "A new front door completed the interior and entry story",
-      "text2": "The new front door has a beautiful stain-grade finish. The natural wood adds warmth to the entry."
+      "small_heading": "A new front door completes the entry",
+      "text2": "The new front door gives the entry a finished look."
     }
   },
   "gallery_haller_lake_whole_house_interior": {
     "label": "Project Gallery",
     "heading": "Whole House Interior Remodel in Haller Lake",
-    "text": "Selected photos from the Haller Lake project, including the living room, custom floor vent, guest bathroom, primary bathroom, accessibility-focused shower features, and new front door."
+    "text": "Living spaces, custom woodwork, accessible bathrooms, and the new front door from the Haller Lake remodel."
   }
 }

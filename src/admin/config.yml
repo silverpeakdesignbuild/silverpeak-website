@@ -2998,7 +2998,7 @@ collections:
               - { label: "Button or link text 3", name: button3, widget: string }
               - { label: "Small label 2", name: label2, widget: string }
               - { label: "Paragraph 3", name: text3, widget: text }
-              - label: "A broad interior remodel across most of the home"
+              - label: "Living Spaces"
                 name: part1
                 widget: object
                 collapsed: true
@@ -3006,7 +3006,7 @@ collections:
                   - { label: "Paragraph 1", name: text1, widget: text }
                   - { label: "Small heading", name: small_heading, widget: string }
                   - { label: "Paragraph 2", name: text2, widget: text }
-              - label: "Skylights and clean finishes made the living room feel larger and bri…"
+              - label: "Hardwood flooring and an open connection to the hallway"
                 name: part2
                 widget: object
                 collapsed: true
@@ -3014,7 +3014,6 @@ collections:
                   - { label: "Paragraph 1", name: text1, widget: text }
                   - { label: "Small heading", name: small_heading, widget: string }
                   - { label: "Paragraph 2", name: text2, widget: text }
-                  - { label: "Paragraph 3", name: text3, widget: text }
               - label: "A custom hardwood floor vent shows the level of finish work"
                 name: part3
                 widget: object
@@ -3023,7 +3022,7 @@ collections:
                   - { label: "Paragraph 1", name: text1, widget: text }
                   - { label: "Small heading", name: small_heading, widget: string }
                   - { label: "Paragraph 2", name: text2, widget: text }
-              - label: "A three-quarter guest bath with a glass shower and bench"
+              - label: "A guest shower with a bench and grab bars"
                 name: part4
                 widget: object
                 collapsed: true
@@ -3031,15 +3030,7 @@ collections:
                   - { label: "Paragraph 1", name: text1, widget: text }
                   - { label: "Small heading", name: small_heading, widget: string }
                   - { label: "Paragraph 2", name: text2, widget: text }
-              - label: "Custom shower windows and skylight-style openings became a key feature"
-                name: part5
-                widget: object
-                collapsed: true
-                fields:
-                  - { label: "Paragraph 1", name: text1, widget: text }
-                  - { label: "Small heading", name: small_heading, widget: string }
-                  - { label: "Paragraph 2", name: text2, widget: text }
-              - label: "Custom cabinets, a roll-under vanity, and built-in medicine cabinets"
+              - label: "A wheelchair-accessible vanity and recessed medicine cabinets"
                 name: part6
                 widget: object
                 collapsed: true
@@ -3047,7 +3038,7 @@ collections:
                   - { label: "Paragraph 1", name: text1, widget: text }
                   - { label: "Small heading", name: small_heading, widget: string }
                   - { label: "Paragraph 2", name: text2, widget: text }
-              - label: "A curbless shower with grab bars, two shower heads, and a built-in dr…"
+              - label: "A curbless shower with grab bars and warm-air drying"
                 name: part7
                 widget: object
                 collapsed: true
@@ -3055,7 +3046,7 @@ collections:
                   - { label: "Paragraph 1", name: text1, widget: text }
                   - { label: "Small heading", name: small_heading, widget: string }
                   - { label: "Paragraph 2", name: text2, widget: text }
-              - label: "A new front door completed the interior and entry story"
+              - label: "A new front door completes the entry"
                 name: part8
                 widget: object
                 collapsed: true
@@ -3102,7 +3093,7 @@ collections:
                   - { label: "Paragraph 1", name: text1, widget: text }
                   - { label: "Subheading", name: subheading, widget: string }
                   - { label: "Paragraph 2", name: text2, widget: text }
-              - label: "Kitchen layout"
+              - label: "Custom kitchen in the whole-house renovation"
                 name: part2
                 widget: object
                 collapsed: true
