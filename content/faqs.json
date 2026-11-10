@@ -11,44 +11,44 @@
   },
   "faqs": [
     {
-      "question": "Is Silver Peak Design Build a licensed and bonded contractor?",
+      "question": "Is Silver Peak Design Build a registered contractor in Washington?",
       "answer": "Yes. Silver Peak Design & Build’s contractor registration can be verified directly through Washington State Labor & Industries. [View Silver Peak’s official L&I contractor record](https://secure.lni.wa.gov/verify/Detail.aspx?UBI=603006436&LIC=SILVEPC907LT&SAW=)."
     },
     {
       "question": "What types of projects are the best fit for Silver Peak?",
-      "answer": "We take on whole-house builds and rebuilds, additions, ADUs and DADUs, basement remodels, kitchens, bathrooms, exterior porches, damage restoration, and custom carpentry and tile work when the location, scope, schedule, budget, and overall fit are right."
+      "answer": "Whole-house renovations, builds and rebuilds, and major additions are our primary focus, followed by ADUs, DADUs, and basement remodels. We also consider kitchens, bathrooms, porches, restoration, and carpentry or tile work when the location, scope, schedule, and budget fit."
     },
     {
       "question": "What happens during the initial project review?",
-      "answer": "The project review comes before any on-site technical assessment. We review the property location, project type, goals, approximate scope, budget direction, timing, known conditions, and overall working fit. If the project appears aligned, we continue the conversation and determine whether an in-person technical site assessment is the right next step."
+      "answer": "First, we review the property's location, project type, goals, scope, budget direction, timing, known conditions, and fit. If it appears aligned, we continue the conversation and decide whether a technical site assessment is the right next step."
     },
     {
       "question": "When should I schedule a technical site assessment?",
-      "answer": "A technical site assessment comes after the initial project-fit review. Once the project looks aligned, the assessment can focus on existing conditions, access, structure, trees, side sewer considerations, drainage, electrical capacity, permitting needs, and other conditions that may affect design or construction. The goal is to identify major constraints early, before design decisions become expensive to change."
+      "answer": "A technical site assessment comes after the initial project-fit review, if Silver Peak determines it is the right next step. It covers existing conditions, access, structure, trees, side sewer, drainage, electrical capacity, and permit needs that could affect design or construction."
     },
     {
       "question": "Why design-build?",
-      "answer": "Design-build keeps design planning and construction thinking connected from the beginning. Instead of developing a concept in isolation and pricing it much later, the project can be reviewed through both a design and buildability lens as it develops. For larger renovations, that helps coordinate architecture, structure, utilities, permitting, materials, phasing, budget, and construction logistics as one connected plan."
+      "answer": "Design-build brings design and construction planning together from the start. On larger renovations, this helps coordinate structure, utilities, permits, materials, budget, phasing, and construction logistics as one plan."
     },
     {
       "question": "How do I know whether to renovate, add on, or rebuild?",
-      "answer": "That decision depends on the condition of the existing home, the amount of space you need, the layout, structural realities, zoning, budget, and how you want the property to function long term. Some homes have good bones and mainly need reconfiguration. Others need an addition. In older houses, hidden structural conditions can sometimes make a more extensive rebuild the clearer long-term solution."
+      "answer": "It depends on the home's condition, layout, space needs, zoning, and budget. Some homes need reconfiguration or an addition; hidden structural conditions in older homes may make a larger renovation or rebuild more practical."
     },
     {
       "question": "What should I expect when renovating an older Seattle home?",
-      "answer": "Older homes often have layers of previous work that are not obvious from the surface. Framing, foundations, plumbing, electrical systems, drainage, insulation, old additions, or water damage can affect what is practical. We plan carefully around known conditions, but larger renovations should still carry realistic contingency because some issues only become visible after selective demolition or deeper investigation."
+      "answer": "Older homes can conceal past work or issues with framing, foundations, plumbing, electrical, drainage, insulation, or water damage. We plan around known conditions, but larger renovations should include contingency for problems found after demolition."
     },
     {
       "question": "How do permits affect a whole house renovation or addition?",
-      "answer": "Permits can affect both design and schedule, especially when a project changes structure, footprint, living area, plumbing, electrical systems, stairs, windows, or the number and use of dwelling spaces. We prefer to identify likely permit and code issues early so the design can respond to them instead of discovering them after major decisions have already been made."
+      "answer": "Permits can affect design and schedule when work changes structure, footprint, living area, plumbing, electrical, stairs, windows, or dwelling use. We identify likely permit and code requirements early so the design can account for them."
     },
     {
       "question": "How do I build a DADU in Seattle?",
-      "answer": "A DADU begins with understanding whether the property can support the project. Lot configuration, access, trees, setbacks, utilities, sewer, electrical capacity, drainage, construction staging, design goals, and budget all matter. A project review and technical assessment help determine feasibility before the design is advanced too far."
+      "answer": "A DADU starts with checking whether the property can support it. Lot layout, access, trees, setbacks, utilities, sewer, drainage, construction staging, goals, and budget all affect feasibility. A project review comes first; if the project appears to fit, a technical site assessment can help determine feasibility."
     },
     {
       "question": "Should I build an ADU or DADU?",
-      "answer": "An ADU is usually within or attached to the primary home, while a DADU is a separate structure. The better option depends on privacy goals, available lot area, basement conditions, access, zoning, utility routing, construction cost, and how you expect the space to be used. In some whole-house projects, planning the ADU at the same time can create efficiencies because other structural or utility work is already underway."
+      "answer": "An ADU is usually within or attached to the home; a DADU is a separate structure. The right option depends on privacy, lot area, access, zoning, utilities, cost, and intended use. Planning an ADU with a whole-house project may coordinate related structural or utility work."
     },
     {
       "question": "Can a basement remodel become an ADU?",
@@ -56,14 +56,14 @@
     },
     {
       "question": "What is included in kitchen design and remodeling?",
-      "answer": "A well-planned kitchen considers much more than finishes. We look at circulation, work zones, appliance placement, cabinetry, storage, lighting, ventilation, islands, electrical needs, plumbing, sight lines, and how the kitchen connects to adjacent rooms. In a larger renovation, kitchen decisions may also tie into structural changes, windows, dining areas, and the overall main-floor layout."
+      "answer": "Kitchen remodeling considers circulation, work zones, appliances, cabinetry, storage, lighting, ventilation, plumbing, and how the room connects to nearby spaces. In a larger renovation, it may also involve structural changes, windows, or the main-floor layout."
     },
     {
       "question": "What should I plan for in a bathroom remodel?",
       "answer": "Bathroom remodeling should address layout, waterproofing, ventilation, lighting, storage, tile assemblies, fixtures, plumbing locations, accessibility, and durable materials. If the bathroom is part of a larger renovation, it is also worth considering whether walls, door locations, nearby closets, or adjacent rooms should change at the same time."
     },
     {
-      "question": "What bathrooms will be used during the remodel?",
+      "question": "What bathroom can we use during the remodel?",
       "answer": "If your home has only one bathroom, we may be able to build a temporary bathroom in an unfinished basement or another part of the home. We discuss bathroom access, temporary services, and the construction sequence during planning to help determine whether you can continue living in the home during a major renovation."
     },
     {
