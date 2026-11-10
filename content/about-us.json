@@ -2,7 +2,7 @@
   "part1": {
     "label": "About Silver Peak Design Build",
     "title": "Built for Major Residential Projects.",
-    "text": "Silver Peak Design Build is a North Seattle design-build contractor specializing in whole-house builds and rebuilds, additions, DADUs, ADUs, basement remodels, and select kitchen and bathroom projects.",
+    "text": "Silver Peak Design Build is a residential design-build contractor serving North Seattle and select Eastside communities, focused on whole-house renovations, builds, rebuilds, and major additions.",
     "button1": "Start Project Review →",
     "button2": "View Services",
     "part1": {
@@ -12,9 +12,9 @@
   "part2": {
     "label": "Our Story",
     "heading": "Built for Bigger Projects.",
-    "text1": "Silver Peak Design Build is built around one accountable team connecting planning, design, permits, construction, and communication. The goal is a clearer path from the first project conversation through the finished build.",
-    "text2": "Founder Craig Mauer brings more than 20 years of hands-on construction experience. That field background shapes the way Silver Peak plans projects, communicates with homeowners, and makes practical decisions before and during construction.",
-    "text3": "Today, Silver Peak leads with whole-house builds and major rebuilds, followed by additions, DADUs, ADUs, and basement remodels. Kitchens and bathrooms remain part of the work, but they are considered after the larger project types and when the scope, schedule, location, and overall fit make sense.",
+    "text1": "One team handles planning, design, permits, and construction for substantial residential projects.",
+    "text2": "Founder Craig Mauer brings more than 20 years of hands-on residential construction experience.",
+    "text3": "We take on projects based on scope, location, schedule, and fit.",
     "part1": {
       "label": "What We Do",
       "subheading": "Major Residential Design-Build.",
@@ -31,14 +31,14 @@
   "part3": {
     "label": "Why Silver Peak",
     "heading": "What Homeowners Value.",
-    "text": "Homeowners choose Silver Peak for practical planning, clear communication, extensive construction experience, and a project process that stays connected from planning through the build.",
+    "text": "We plan around site conditions, communicate clearly, and bring residential construction experience to each project.",
     "part1": {
       "subheading": "One Accountable Team",
-      "text": "Planning, design, permits, construction, and communication stay connected so decisions move forward with better continuity."
+      "text": "A consistent point of contact helps homeowners track decisions and next steps."
     },
     "part2": {
       "subheading": "Practical Planning",
-      "text": "We look at the real property conditions, project goals, budget direction, and construction needs before the work moves too far."
+      "text": "We review the property, project goals, budget direction, and construction needs early."
     },
     "part3": {
       "subheading": "Focused Service Area",
@@ -52,14 +52,14 @@
   "part4": {
     "label": "Where We Focus",
     "heading": "Projects We Build.",
-    "text": "Silver Peak presents its work from biggest to smaller projects: whole-house builds and additions first, then DADUs, ADUs, and basements, followed by kitchens, bathrooms, and select specialty work.",
+    "text": "Whole-house renovations, builds and rebuilds come first, followed by major additions. Next are ADUs, DADUs, and basement remodels; kitchens, bathrooms, and specialty work are considered selectively.",
     "part1": {
-      "subheading": "Whole-House Builds & Rebuilds",
-      "text": "Large residential projects that may include major structural work, full-property renovation, or rebuilding an existing home into a new residence."
+      "subheading": "Whole-House Renovations, Builds & Rebuilds",
+      "text": "Full-home renovations and rebuilds involving structural work or coordinated changes across the property."
     },
     "part2": {
       "subheading": "Additions",
-      "text": "Attached expansions that add meaningful living space while connecting the new construction to the existing home."
+      "text": "Major additions that add living space and connect the new construction to the existing home."
     },
     "part3": {
       "subheading": "DADUs & ADUs",
@@ -91,16 +91,16 @@
   "part6": {
     "label": "Start Your Project",
     "heading": "Start With a Project Review.",
-    "text": "Tell us your project location, project type, scope, and budget direction. If the project fits our service area and the work we are best set up to do, we will schedule the next conversation and determine whether a technical site assessment makes sense.",
+    "text": "Tell us the location, project type, scope, and budget direction. If the project is a fit for our service area and the work we are set up to do, we will talk through the next step and determine whether a technical site assessment makes sense.",
     "button": "Start Project Review"
   },
   "part7": {
     "label": "Meet the Owner",
     "title": "Meet Craig Mauer.",
-    "text1": "Craig Mauer brings more than 20 years of construction experience to whole-house builds, additions, DADUs, ADUs, basements, kitchens, bathrooms, and restoration work. His approach is shaped by field knowledge, practical planning, and respect for the homeowner’s investment.",
-    "text2": "Silver Peak Design Build is built around one accountable team connecting planning, design, permits, construction, and communication so homeowners have a clearer path through larger residential projects.",
-    "text3": "Craig’s priority is substantial residential work first: whole-house builds and rebuilds, additions, DADUs, ADUs, and basements. Silver Peak also takes select kitchen and bathroom projects when the scope, schedule, location, and fit are right.",
-    "text4": "His approach is direct, practical, and detail focused. The goal is to understand the project clearly before construction begins and then build it with steady communication and quality craftsmanship."
+    "text1": "Craig works directly with homeowners to understand project scope and existing site conditions.",
+    "text2": "His field experience helps identify construction questions while plans are still taking shape.",
+    "text3": "He keeps decisions practical and expectations clear.",
+    "text4": "On whole-house projects, a change in one area can affect work elsewhere."
   },
   "part8": {
     "label": "Plan With Confidence",
