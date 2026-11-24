@@ -1,31 +1,9 @@
 {
-  "part1": {
-    "label": "North Seattle Design-Build",
-    "title": "Whole-House Renovations, Builds & Rebuilds",
-    "text": "Silver Peak Design Build is a residential design-build contractor serving North Seattle and select Eastside communities. We focus on whole-house renovations, builds, rebuilds, and major additions, followed by ADUs, DADUs, and basements. We take select kitchen and bathroom projects when they fit.",
-    "button1": "Start Project Review",
-    "button2": "View Major Projects",
-    "part1": {
-      "text": "Years of residential construction and remodeling experience."
-    }
-  },
-  "part2": {
-    "part1": {
-      "heading": "Whole-House Renovations & Builds",
-      "text": "Full-home renovations, builds, and rebuilds involving structural work or coordinated changes across the property."
-    },
-    "part2": {
-      "heading": "Additions",
-      "text": "New space planned to fit the house, the site, and the way you live."
-    },
-    "part3": {
-      "heading": "DADU Planning",
-      "text": "Feasibility, access, utilities, and permitting reviewed early so the project has a realistic path forward."
-    },
-    "part4": {
-      "heading": "ADU Planning",
-      "text": "Zoning, sewer, utilities, trees, and site conditions reviewed early to inform practical design options."
-    }
+  "contact": {
+    "label": "Start With a Project Review",
+    "heading": "Tell Us About Your Project",
+    "text": "Share your location, project type, goals, and budget range. We’ll confirm fit before scheduling any site visit.",
+    "button": "Start Project Review"
   },
   "part3": {
     "short": "Plan first.\\\nBuild with clarity.",
@@ -37,50 +15,6 @@
     "item3": "Phased design-build planning",
     "button": "Explore Our Services"
   },
-  "services": {
-    "label": "Our Services",
-    "heading": "What We Build",
-    "part1": {
-      "subheading": "Whole-House Renovations, Builds & Rebuilds",
-      "text": "Whole-house renovations, builds, and rebuilds involving structural work or coordinated changes across the property."
-    },
-    "part2": {
-      "subheading": "Additions",
-      "text": "New living space designed to connect naturally with the existing home and site."
-    },
-    "part3": {
-      "subheading": "DADU & ADU",
-      "text": "Detached or attached dwelling units planned around zoning, utilities, access, privacy, and long-term use."
-    },
-    "part4": {
-      "subheading": "Basement Remodels",
-      "text": "Lower levels reworked into usable living space, storage, bedrooms, or flexible family rooms."
-    },
-    "part5": {
-      "subheading": "Kitchen Remodeling",
-      "text": "Layout, storage, appliance placement, lighting, and materials planned around how the kitchen is used every day."
-    },
-    "part6": {
-      "subheading": "Bathroom Remodeling",
-      "text": "Layouts, waterproofing, storage, lighting, and finishes planned for comfort, durability, and daily use."
-    },
-    "part7": {
-      "subheading": "Porches",
-      "text": "Covered entries and porch work that improve access, weather protection, and daily use."
-    },
-    "part8": {
-      "subheading": "Exteriors",
-      "text": "Exterior repairs and updates that address weather exposure, durability, and curb appeal."
-    },
-    "part9": {
-      "subheading": "Damage Restoration",
-      "text": "Rot, water, and structural damage repaired with careful assessment and rebuild work."
-    },
-    "part10": {
-      "subheading": "Carpentry & Tile",
-      "text": "Custom cabinetry, built-ins, trim, tile, and finish work for lasting detail."
-    }
-  },
   "kitchen": {
     "label": "Selective Remodeling, Same Attention to Detail",
     "heading": "Kitchens and Bathrooms",
@@ -89,20 +23,21 @@
     "item2": "Waterproofing, tile, fixtures, and accessibility",
     "item3": "Durable materials and clear coordination"
   },
-  "adu_dadu": {
-    "label": "DADU & ADU Planning",
-    "heading": "Detached and Attached Living Spaces",
-    "text": "Silver Peak reviews zoning, access, utilities, trees, sewer conditions, privacy, and permit needs before design moves ahead.",
-    "button": "Start Project Review",
-    "subheading": "Early Planning Review",
-    "short1": "DADU Feasibility",
-    "short2": "ADU Planning",
-    "short3": "Site Access",
-    "short4": "Zoning",
-    "short5": "Sewer",
-    "short6": "Utilities",
-    "short7": "Trees",
-    "short8": "Permits"
+  "neighborhoods": {
+    "heading": "Core Service Area",
+    "subheading": "Local Experience",
+    "text": "Silver Peak serves North Seattle and select Eastside communities, with a focus on projects that align with our location, scope, and budget criteria.",
+    "button": "Discuss Your Project →",
+    "label": "Service Area",
+    "short1": "Greenwood",
+    "short2": "Phinney Ridge",
+    "short3": "Ballard",
+    "short4": "Queen Anne",
+    "short5": "Capitol Hill",
+    "short6": "North Seattle",
+    "short7": "Wallingford",
+    "short8": "Fremont",
+    "short9": "Select Eastside"
   },
   "portfolio": {
     "label": "Recent Work",
@@ -152,38 +87,14 @@
       "text": "One company guides two connected phases. Design establishes the layout, key selections, working budget, and material and trade bids. The same team then carries the approved plan through construction."
     }
   },
-  "neighborhoods": {
-    "label": "Service Area",
-    "heading": "Core Service Area",
-    "text": "Silver Peak serves North Seattle and select Eastside communities, with a focus on projects that align with our location, scope, and budget criteria.",
-    "button": "Discuss Your Project →",
-    "subheading": "Local Experience",
-    "short1": "Greenwood",
-    "short2": "Phinney Ridge",
-    "short3": "Ballard",
-    "short4": "Queen Anne",
-    "short5": "Capitol Hill",
-    "short6": "North Seattle",
-    "short7": "Wallingford",
-    "short8": "Fremont",
-    "short9": "Select Eastside"
-  },
   "faq": {
-    "label": "Helpful Answers",
-    "heading": "Common Renovation Questions",
-    "text": "Direct answers about whole-house projects, additions, DADUs, ADUs, basements, focused remodels, permits, project fit, and construction planning.",
-    "part1": {
-      "answer": "Yes. Silver Peak Design & Build’s contractor registration can be verified directly through Washington State Labor & Industries. [View Silver Peak’s official L&I contractor record](https://secure.lni.wa.gov/verify/Detail.aspx?UBI=603006436&LIC=SILVEPC907LT&SAW=)."
-    },
-    "part2": {
-      "answer": "A technical site assessment reviews existing conditions, access, structure, utilities, zoning, trees, drainage, side sewer needs, electrical capacity, permits, and project feasibility before design begins."
-    },
     "part3": {
       "answer": "Building a DADU in Seattle begins with a site assessment covering zoning, lot access, trees, sewer, utilities, electrical capacity, design options, permits, budget, and construction access."
     },
     "part4": {
       "answer": "Kitchen design includes layout, traffic flow, work zones, appliance placement, cabinetry, storage, lighting, islands, materials, ventilation, and build coordination."
     },
+    "heading": "Common Renovation Questions",
     "part5": {
       "answer": "Bathroom remodeling should address layout, waterproofing, tile, storage, lighting, ventilation, fixtures, accessibility, and durable materials."
     },
@@ -199,17 +110,106 @@
     "part9": {
       "answer": "Yes. Bathroom remodeling can include curbless showers, wider clearances, grab bar blocking, slip-resistant materials, better lighting, reachable storage, and comfort-height fixtures."
     },
+    "text": "Direct answers about whole-house projects, additions, DADUs, ADUs, basements, focused remodels, permits, project fit, and construction planning.",
     "part10": {
       "answer": "ADU and DADU planning may require review of electrical capacity, sewer, water service, drainage, heating, ventilation, access, and utility upgrade costs."
     },
     "part11": {
       "answer": "Silver Peak focuses on North Seattle neighborhoods including Greenwood, Phinney Ridge, Ballard, Queen Anne, Wallingford, and Fremont, plus select Eastside communities when the project is a good fit."
+    },
+    "label": "Helpful Answers",
+    "part1": {
+      "answer": "Yes. Silver Peak Design & Build’s contractor registration can be verified directly through Washington State Labor & Industries. [View Silver Peak’s official L&I contractor record](https://secure.lni.wa.gov/verify/Detail.aspx?UBI=603006436&LIC=SILVEPC907LT&SAW=)."
+    },
+    "part2": {
+      "answer": "A technical site assessment reviews existing conditions, access, structure, utilities, zoning, trees, drainage, side sewer needs, electrical capacity, permits, and project feasibility before design begins."
     }
   },
-  "contact": {
-    "label": "Start With a Project Review",
-    "heading": "Tell Us About Your Project",
-    "text": "Share your location, project type, goals, and budget range. We’ll confirm fit before scheduling any site visit.",
-    "button": "Start Project Review"
+  "adu_dadu": {
+    "heading": "Detached and Attached Living Spaces",
+    "subheading": "Early Planning Review",
+    "text": "Silver Peak reviews zoning, access, utilities, trees, sewer conditions, privacy, and permit needs before design moves ahead.",
+    "button": "Start Project Review",
+    "label": "DADU & ADU Planning",
+    "short1": "DADU Feasibility",
+    "short2": "ADU Planning",
+    "short3": "Site Access",
+    "short4": "Zoning",
+    "short5": "Sewer",
+    "short6": "Utilities",
+    "short7": "Trees",
+    "short8": "Permits"
+  },
+  "services": {
+    "part3": {
+      "subheading": "DADU & ADU",
+      "text": "Detached or attached dwelling units planned around zoning, utilities, access, privacy, and long-term use."
+    },
+    "part4": {
+      "subheading": "Basement Remodels",
+      "text": "Lower levels reworked into usable living space, storage, bedrooms, or flexible family rooms."
+    },
+    "heading": "What We Build",
+    "part5": {
+      "subheading": "Kitchen Remodeling",
+      "text": "Layout, storage, appliance placement, lighting, and materials planned around how the kitchen is used every day."
+    },
+    "part6": {
+      "subheading": "Bathroom Remodeling",
+      "text": "Layouts, waterproofing, storage, lighting, and finishes planned for comfort, durability, and daily use."
+    },
+    "part7": {
+      "subheading": "Porches",
+      "text": "Covered entries and porch work that improve access, weather protection, and daily use."
+    },
+    "part8": {
+      "subheading": "Exteriors",
+      "text": "Exterior repairs and updates that address weather exposure, durability, and curb appeal."
+    },
+    "part9": {
+      "subheading": "Damage Restoration",
+      "text": "Rot, water, and structural damage repaired with careful assessment and rebuild work."
+    },
+    "part10": {
+      "subheading": "Carpentry & Tile",
+      "text": "Custom cabinetry, built-ins, trim, tile, and finish work for lasting detail."
+    },
+    "label": "Our Services",
+    "part1": {
+      "subheading": "Whole-House Renovations, Builds & Rebuilds",
+      "text": "Whole-house renovations, builds, and rebuilds involving structural work or coordinated changes across the property."
+    },
+    "part2": {
+      "subheading": "Additions",
+      "text": "Extra living space designed to connect naturally with the existing home."
+    }
+  },
+  "part1": {
+    "label": "North Seattle Design-Build",
+    "title": "Whole-House Renovations, Builds & Rebuilds",
+    "text": "Silver Peak Design Build is a residential design-build contractor serving North Seattle and select Eastside communities. We focus on whole-house renovations, builds, rebuilds, and major additions, followed by ADUs, DADUs, and basements. We take select kitchen and bathroom projects when they fit.",
+    "button1": "Start Project Review",
+    "button2": "View Major Projects",
+    "part1": {
+      "text": "Years of residential construction and remodeling experience."
+    }
+  },
+  "part2": {
+    "part1": {
+      "heading": "Whole-House Renovations & Builds",
+      "text": "Full-home renovations/builds, and rebuilds involving structural work or coordinated changes across the property."
+    },
+    "part2": {
+      "heading": "Additions",
+      "text": "New space planned to fit the house, the site, and the way you live."
+    },
+    "part3": {
+      "heading": "DADU",
+      "text": "Starting with a feasibility, access, utilities, and permitting review we make sure from the start your project Is possible and headed in the right direction."
+    },
+    "part4": {
+      "heading": "ADU",
+      "text": "Our ADU services help you navigate design, budgeting, permitting and everything else required to make this process as straightforward and seamless as possible.\n"
+    }
   }
 }
